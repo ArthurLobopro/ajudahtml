@@ -1,0 +1,82 @@
+body {
+    background-color:lightgrey;
+    color: black;
+    text-align: center;
+}
+red {color:red;}
+green {color:green}
+a:hover{
+    color:red
+}
+a{
+    font-weight: bold;
+    color:blue;
+}
+
+table {
+    background-color:white;
+    border-radius:5px;
+    border: 2px solid blue;
+    margin: auto;
+}
+th {
+    text-align:center;
+}
+td, th {
+    border:1px solid black;
+    border-radius: 3px;
+    border-left:2px solid black;
+    border-right: 2px solid black;
+}
+td.titulo, tr.subtitulo, th.titulo  {
+    text-align:center;
+    border:2px solid black;
+    font-weight: bold;
+}
+td{
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+}
+.tag{
+    font-family: monospace;
+    color:blue;
+    font-weight: bold;
+    font-size: 13px;
+}
+.atribute{
+    color:red;
+}
+.value{
+    color:blue;
+}
+.nao-possui{
+   font-family: monospace;
+    font-weight: bold;
+    font-size: 13px; 
+}
+.coment{
+    font-family: monospace;
+    color:green;
+}
+code{
+    font-size:13px;
+    font-weight: bold;
+}
+.mensagem{
+    font-family: 'Times New Roman';
+    font-size: 13.3333px; 
+    font-weight: bold;
+    text-align: center;
+}
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url ('../Fontes/RobotoSlab-Medium.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Balsamiq Sans';
+    src: url ('../Fontes/BalsamiqSans-Regular.ttf');
+    font-style: normal;
+    font-weight: 400
+}

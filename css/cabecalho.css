@@ -1,0 +1,66 @@
+/*Inicio do cabeçalho*/
+header{
+    height: 100px; 
+    background-color:rgb(35, 40, 45);
+    color: aliceblue;
+    font-family: cursive, 'Patrick Hand';
+    padding-right: 5px;
+}
+#cabecalho{
+    float:left;
+    padding: 5px;
+}#cabecalho .direita{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+#menu .direita{
+    height: 100px;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+#menu{
+    float: right;
+    height: 100px;
+    line-height: 120px;
+}
+header li {
+    display: inline;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.botao{
+    border: 1px solid aliceblue;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+.botao:hover{
+    color:skyblue;
+    border: 2px solid skyblue;
+    text-decoration: none;
+}
+header a li, header a li:visited, header a li:link{
+    text-decoration: none;
+    color:aliceblue;
+}
+header a{
+    text-decoration: none;
+}
+#home{
+    position: absolute;
+    top: 15px;
+    right:15px;
+    width: 30px;
+    height: 30px;
+}
+@font-face{
+    font-family: 'Patrick Hand';
+    src: url('../Fontes/PatrickHand-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*Fim do cabeçalho*/

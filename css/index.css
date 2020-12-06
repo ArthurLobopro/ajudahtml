@@ -1,0 +1,38 @@
+div{
+    border: 3px solid blue;
+    border-radius: 8px;
+    width: 300px;
+    height: 180px;
+}
+ul{
+    list-style: none;
+    position:relative;
+    text-align: center;
+}
+.div1{
+    padding-top: 20px;
+    box-shadow: 3px 3px 10px black;
+}
+.div2{
+    padding-top: 20px;
+     box-shadow: 3px 3px 10px black;
+}
+.center {
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+div:hover{
+    background-color: lightgrey;
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
+section{
+    text-align: center;
+}
+.div1.div2{
+    margin: auto;
+}
