@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Arthur Lobo">
+    <meta name="keywords" content="tag input">
+    <title>Tag Input</title>
+    <style>
+        red {color:red}          
+    </style>
+    </head>
+    <body>
+    <center>Aperte Ctrl + U para ver o código fonte com comentários<br><b><red>Atenção!!!</red>Algums dos exemplos abaixo não são suportados em alguns navegadores</b></center>
+    
+        <center><h1>Tag Input</h1>A tag input serve para receber algum determinado dado<br><br><h2>Types</h2></center>
+        
+        <center>
+                <form>
+                    
+                Nome:
+                <input type="text" name="nome" autofocus><br>
+                Senha:
+                <input type="text" name="senha" ><br><br>
+                <!--O atributo autofocus já seleciona automaticamente o campo de entrada assim que a página é carregada--> 
+            
+				Nome:<input type="text" name="nome"><br>
+				<!-- Recolhe o texto digitado dentro do campo de texto-->
+				Senha:<input type="password" name"senha">
+                <!--Deixa o texto degitado oculto-->
+				<!--Exemplo de um loguin comum--><br><br>
+        
+                <input type="radio" name="opcoes" value="css">CSS
+				<input type="radio" name="opcoes" value="html">HTML    <br><br><br>
+				<!--usado em questões de múltipla escolha em que apenas uma deve ser marcada,observação o atributo name="" precisa ser igual
+                para que isso aconteça,possibilitando que haja várias questões na página sem interferirem entre si-->
+    
+                <input type="checkbox" name="technology" value="html"> HTML
+				<input type="checkbox" name="technology" value="css"> CSS
+				<!--Usado para questões de múltipa escolha com mais de uma opção--><br><br><br>
+            
+                <input type="button" onclick="alert('Olá mundo!')" value="Clique aqui"><br><br>
+                <!--Cria um botão-->
+            
+                Escolha uma cor: <br>
+                <input type="color"><br><br>
+                <!-- Cria um,a área de seleção de cores-->
+                
+                Data de nascimento:<br>
+                <input type="date"><br><br>
+                <!--Cria uma área para selecionar uma data, não funciona em alguns navegadores-->
+                
+                Selecione o horário:<br>
+                <input type="time"><br><br>
+                <!--Cria uma área para selecionar um horário ,não funcioana em alguns navegadores-->
+            
+                Indique data e hora atuais:<br>
+                <input type="datetime-local"><br><br>
+                <!--Cria uma área para selecionar data e hora ,não funcioana em alguns navegadores-->
+                
+                Indique uma semana:<br>
+                <input type="week"><br><br>
+                <!--Cria uma área para selecionar uma semana ,não funcioana em alguns navegadores-->
+            
+                Indique um mês:<br>
+                <input type="month"><br><br>
+                <!--Cria uma área para selecionar um mês-->
+            
+                Escolha um número:<br>
+                <input type="number"><br><br>
+                <!--Cria uma área para ler ou escolher um número-->
+            
+                Digite seu email:<br>
+                <input type="email" id="email" name="email"><br><br>
+                <!--Cria um campo para digitar um email-->
+            
+                Ajuste o volume:(exemplo)<br>
+                <input type="range"><br><br>
+                <!--Cria uma barra para ajuste de algo,seja zoom,volume,etc--> 
+            
+                Digite o que você deseja pesquisar:<br>
+                <input type="search"><br><br>
+                <!-- Cria um campo de pesquisa de pesquisa-->
+                
+                Escolha um arquivo:<br>
+                <input type="file" id="myfile" name="Myfile"><br><br>
+                <!--Abre um campo para selecionar um arquivo-->
+            
+                Digite o link:<br>
+                <input type="url"><br><br>
+                <!--Cria um campo para ler um link--> 
+                    
+                <input type="submit" value="Enviar"><br><br>
+                <!--Cria um botão para enviar as opções-->
+            
+            
+                <input type="reset" value="Apagar"><br><br>
+                <!--Cria um botão que apaga as informações fornecidas-->
+                </form>
+        
+                <center><h2>Outros atributos para input</h2></center>
+            
+            
+                <form>
+                
+                Nome:    
+                <input type="text" name="nome" value="Arthur"><br>
+                Sobrenome:
+                <input type="text" name="sobrenome" value="Lobo"><br><br>
+                <!--O atributo value="" adiciona um valor para o campo de texto ou se seleção até que alguem o edite-->
+                
+                 Nome:    
+                <input type="text" name="nome" value="Arthur" disabled><br>
+                <!-- O atributo disabled indica que o campo de resposta está desativado, ele não pode ser editado e nem está "clicável"-->
+                Sobrenome:
+                <input type="text" name="sobrenome" value="Lobo"><br><br>
+                
+                Nome:    
+                <input type="text" name="nome" value="Arthur" readonly><br>   
+                <!-- O atributo readonly é semelhante ao atributo disabled, porém ele apenas não permite que a informação atribuida seja editada-->
+                Sobrenome:
+                <input type="text" name="sobrenome" value="Lobo"><br><br>
+                    
+                Email:
+                <input type="email" name="email" size="50">
+                Senha:
+                <input type="text" name="pin" size="8"><br><br>
+                <!--O atributo size especifica a largura (em caracteres) de um campo de entrada-->
+                <!--O atributo size funciona com os seguintes tipos de entrada:text, search, url, email, and password.-->
+            
+                Nome:
+                <input type="text" name="nome" size="50">
+                PIN:
+                <input type="text" name="pin" size="4" maxlength="4"><br><br>
+                <!--O atributo maxlength especifica o número máximo de caracteres permitido em um campo de entrada-->
+                
+                Nome:
+                <input type="text" name="nome" size="50" pattern="A-Za-z">
+                PIN:
+                <input type="text" name="pin" size="4" pattern="[0-9]{4}"><br><br>    
+                <!--O atributo pattern não deixa que você envie a resposta sem que ela cumpra com os requisitos de tipo e quantidade-->
+                <!--O atributo pattern funciona com os seguintes tipos de entrada: text, date, search, url,email e password.-->
+                    
+                Produtos no estoque: 50<br>
+                Quantidade que deja comprar:<input type="number" min="1" max="50"><br><br>
+                <!-- min e max são respectiamente mínimo e máximo e sua função como pode observar é definir o mínimo e máximo-->
+                
+                Escolha os arquivos:<br>
+                <input type="file" id="myfiles" name="Myfiles" multiple><br>
+                <!-- O atributo multiple indica que podem haver mais de uma entrada-->
+                <!--O atributo multiple funciona com os seguintes tipos de entrada: email e file-->
+                Lembrete: Para escolher mais de um arquivo pressione Ctrl enquanto seleciona os arquivos<br><br> 
+                
+                Digite seu CPF:
+                <input type="text" name="CPF" placeholder="000.000.000-00" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"><br><br>
+                <!--O atributo Placeholder adiciona um exemplo do tipo de dado esperado ou formato que se deve escrevêlo-->    
+                <!--O atributo placeholder funciona com os seguintes tipos de entrada: text, search, url,email, e password-->    
+                 
+                Nome:
+                <input type="text" name="nome" required ><br>
+                Senha:
+                <input type="text" name="senha" required><br><br>
+                <!--O atributo required mostra que um campo deve ser preenchido antes que a resposta seja enviada-->
+                <!--O atributo required funciona com os seguintes tipos de entrada: text, search, url,email, password, date pickers, number, checkbox, radio,file-->
+                    
+                Pontos:
+                <input type="number" step="2"><br><br>
+                <!--O atributo step define um intervalo entre números,datas etc...-->
+                <!-- O atributo step funciona com os seguintes tipos de entrada: number, range, date, datetime-local, month, time e week. -->       
+                    
+                Selecione seu navegador favorito:
+                <input list="navegadores">
+                <datalist id="navegadores">
+                <option value="Internet Explorer">    
+                <option value="Opera">
+                <option value="FireFox">
+                <option value="Chrome">
+                </datalist><br><br>
+                <!--O atributo list adiciona uma lista de opções que devem ser definidas na tag <option> que por sua vez deve estar dentro da tag <datalist>-->    
+                
+                Nome:
+                <input type="text" name="nome" autocomplete="on"><br>
+                Nome:    
+                <input type="text" name="nome" autocomplete="off"><br>
+                <!--O atributo autocomplete liga e desliga a opção de autocompletar texto-->    
+                <!-- O atributo autocomplete funciona com os seguintes tipos de entrada: text, search, url, email, password, datepickers, range e color.--> 
+				<input type="submit" value="Enviar" >
+				</form>
+        </body>
+</html>

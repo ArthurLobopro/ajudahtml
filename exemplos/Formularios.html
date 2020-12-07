@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8" >
+			  <Title>Formulários em HTML</title>
+		</head>
+		<body>
+			<CENTER> Aperte ctrl + u para ver o código fonte</center><br><Br><br>
+		<form>
+				<center>
+				Nome:<input type="text" name="nome"><br>
+				<!-- Recolhe o texto digitado dentro do campo de texto-->
+				Senha:<input type="password" name"senha">
+                <!--Deixa o texto degitado oculto-->
+				<!--Exemplo de um loguin comum--><br><br>
+				
+				<input type="radio" name="opcoes" value="css">CSS
+				<input type="radio" name="opcoes" value="html">HTML
+				<!--usado em questões de múltipla escolha em que apenas uma deve ser marcada--><br><br><br>
+		
+				<input type="checkbox" name="technology" value="html"> HTML
+				<input type="checkbox" name="technology" value="css"> CSS
+				<!--Usado para questões de múltipa escolha com mais de uma opção--><br><br><br>
+		
+				<select name="opcoes" >
+				<option value="" selected>Selecione uma opção</option>
+				<option value="html">HTML</option>
+				<option value="css">CSS</option>
+				<option value="javascript">JavaScript</option>
+				</select></center>
+				<!--Abre uma barra de seleção com as alternativas descritas--><br><br><br>
+				<fieldset>
+					<legend>Registrar</legend>
+					<!--Adiciona um título para a caixa de opções-->
+					<p>
+					Nome:<input type="text" name="nome"><br>
+					Sobrenome:<input type="text" name="sobrenome"><br></p>
+					<p>O que deseja aprender?
+					<input type="radio" name="opcoes" value="css">CSS
+					<input type="radio" name="opcoes" value="html">HTML</p>
+				</fieldset>
+				<center>
+				<textarea name="mensagem" rows="10" cols="30">
+				Coloque sua mensagem
+				</textarea><br>
+				<!-- Utilizado para enviar uma resposta escrita, o tamanho da area de texto pode ser alterado nos campos rows e cols como segue o exemplo abaixo-->
+				<textarea name="mensagem" rows="20" cols="35">
+				Coloque sua mensagem
+				</textarea>
+				</form>
+				</center><br><Br><br>
+				
+				<!-- deixa todas as opções em uma caixa-->
+				<center>
+				<b>Ações de envio</b>
+				<form action="envia-dados.php" method="post">
+                <!--Observação não tenho um php para enviar dados, ele está meramente ilustrativo-->
+				Nome:<input type="text" name="nome">
+				Senha:<input type="password" name="senha">
+				<input type="submit" value="Enviar"><br><br>
+				<!-- Os dados não serão anexados ao URL. Este atributo é opcional.Se não for fornecido, o metodo será postado-->
+				<form action="envia-dados.php" method="get">
+				Nome:<input type="text" name="nome">
+				Senha:<input type="password" name="senha">
+				<input type="submit" value="Enviar">
+				<!--Os dados do formulário serão anexados ao URL quando enviados. ou seja você pode ver as variaveisde formulario na barra de endereços do seu navegador quando o formulário é enviado, portanto não é um método seguro-->
+				</center>
+		</form>
+		<!--Formulário-->
+		</body>
+</html>
+<!--Por Arthur Lobo-->
