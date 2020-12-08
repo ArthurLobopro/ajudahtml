@@ -9,11 +9,11 @@ function verifica(){
 function tema(){
 	let home=document.getElementById("home")
 	if(teme==1){
-	document.getElementById("T").href="css/tabelaajuda.css"
+	document.getElementById("cores").href="css/tabela-html-white.css"
 	document.getElementById("cabecalho").href="css/cabecalho.css"
 	home.src="home_white.png"
 	}else{
-	document.getElementById("T").href="css/tabelaajudadark.css"
+	document.getElementById("cores").href="css/tabela-html-dark.css"
 	document.getElementById("cabecalho").href="css/cabecalho-dark.css"
 	home.src="home_black.png"
 	}
