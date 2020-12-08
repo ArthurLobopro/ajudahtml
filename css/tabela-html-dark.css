@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(29, 31, 33);
+    color:gray;
+}
+blue {color:blue;}
+red {color:rgb(206, 145, 120);}
+green {color:green}
+:visited,a:link {
+    color:darkcyan;
+}
+a:hover{
+    color:red;
+}
+td:hover{
+    color:yellow;
+}
+table {
+    background-color:rgb(50, 51, 54);
+    border-color: green;
+}
+td.titulo, tr.subtitulo,th.titulo,td, th{
+    border-color: gray;
+}
+td blue{
+    color:rgb(156, 220, 254);
+}
+.tag,.value{
+    color:rgb(156, 220, 254);
+}
+.atribute{
+    color:rgb(206, 145, 120);
+}
+.coment{
+    color:green;
+}
