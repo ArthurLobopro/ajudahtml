@@ -3,20 +3,18 @@ div{
     border-radius: 8px;
     width: 300px;
     height: 180px;
+    margin: auto;
 }
 ul{
     list-style: none;
     position:relative;
     text-align: center;
 }
-.div1{
+.div1,.div2{
     padding-top: 20px;
     box-shadow: 3px 3px 10px black;
 }
-.div2{
-    padding-top: 20px;
-     box-shadow: 3px 3px 10px black;
-}
+
 .center {
     text-align: center;
 }
@@ -29,10 +27,17 @@ div:hover{
 footer{
     text-align: center;
     margin-top: 10px;
+    font-family: 'Roboto Slab', Arial, sans-serif;
 }
 section{
     text-align: center;
 }
 .div1.div2{
     margin: auto;
+}
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('../fontes/RobotoSlab-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
 }
