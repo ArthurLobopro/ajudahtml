@@ -2,27 +2,85 @@
 <html>
  <head>
   <meta charset="utf-8">
-   <title>Ajuda imagens html</title>
+   <title>Imagens</title>
+   <link rel="stylesheet" href="css/main-exemplos.css">
+   <style>
+       .exemplo{
+           text-align: center;
+           width: 850px;
+       }
+       .mt15px,td{
+        text-align: left;
+       }
+   </style>
 </head>
 <body>
-	<center>
-        <center><b>Aperte Ctrl + U para ver o código fonte com comentários</b></center><br><br>
-            
-            <center><b> Imagens</b></center>
-        
-    <img src="../Midia/imagem1.jpg" alt="Linda paisagem" title="Linda paisagem"><br><br>
-    <!--Tag <img> Adiciona uma imagem, atributo src="" escolhe a imagem a ser mostrada e atributo alt="" adiciona um texto alternativo caso a imagem não carregue por algum motivo e o atributo title adiciona uma descrição para a imagem-->
-    <img src="../Midia/imagem1.jpg" alt="Linda paisagem" height="200" width="350" title="Linda paisagem"><br><br>
-    <!--Com o atributo height="" posso alterar a altura e com width="" posso alterar a largura da imagem-->
-    <img src="../Midia/imagem1.jpg" alt="Linda paisagem" style="width:350px;height:200px;"><br><br>
-    <img src="../Midia/imagem1.jpg" alt="Linda paisagem" height="150"><br><br>
-    <!--Caso você defina somente a altura a largura será definida altomaticamente seguindo as proporções originais da imagem-->
-    <img src="../Midia/imagem1.jpg" alt="Linda paisagem" width="280"><br><br>
-    <!-- O mesmo se aplica para a largura, a altura será definida altomaticamente seguindo as proporções-->
-    <marquee><img src="../Midia/imagem1.jpg" alt="Linda paisagem"></marquee>
-    <!--A tag <marquee> faz com que a imagem (ou texto) rode pela página-->
-    </center> 
+    <h1>Imagens</h1>    
+    <div class="exemplo">
+        <img src="../midia/imagem1.jpg" alt="Linda paisagem" title="Linda paisagem">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">
+                    &lt;
+                    <span class="text"><span class="tag">img</span> 
+                        <span class="atribute">src</span>=<span class="atribute-text">"../midia/imagem1.jpg"</span>
+                        <span class="atribute">alt</span>=<span class="atribute-text">"Linda paisagem"</span>
+                        <span class="atribute">title</span>=<span class="atribute-text">"Linda paisagem"</span>
+                    </span> &gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">&lt;!-- A tag &lt;img&gt; adiciona uma imagem há pagina--&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo src="" determina o caminho para o arquivo da imagem --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="coment">&lt;!-- O atributo alt="" atribui um texto alternativo caso haja um erro no carregamento da imagem --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="coment">&lt;!-- O atributo title="" faz com que ao cursor do mouse ser posto na imagem apareça algum texto --&gt;</td>
+            </tr>
+        </table>
+    </div>   
+    <div class="exemplo">
+        <img src="../midia/imagem1.jpg" alt="Linda paisagem" width="350px" height="200px" >
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">
+                    &lt;
+                    <span class="text"><span class="tag">img</span> 
+                        <span class="atribute">src</span>=<span class="atribute-text">"../midia/imagem1.jpg"</span>
+                        <span class="atribute">width</span>=<span class="atribute-text">"350px"</span>
+                        <span class="atribute">height</span>=<span class="atribute-text">"200px"</span>
+                    </span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">&lt;!-- O atributo width="" permite alterar a largura da imagem. --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo height="" permite alterar a altura da imagem. --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="coment">&lt;!-- Tanto a altura quanto a largura das imagens podem ser alteradas usando CSS. --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="coment">&lt;!-- Caso apenas um dos valores seja especificado o outro valor será proporcional ao tamanho da imagem. --&gt;</td>
+            </tr>
+        </table>
+    </div>
 </body>
-
-
 </html>
