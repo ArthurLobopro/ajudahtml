@@ -7,14 +7,14 @@
     --azul: #569CD6;
     --azul-claro: #9CDCFE;
     --laranja: #CE9178;
+    --amarelo: #DCDCAA;
     --tab: 20px;
-    
 }
 body{
     background-color: rgb(211, 211, 211);
     font-family: "Times New Roman", serif;
 }
-h1{
+h1,h2{
     text-align: center;
     margin:auto;
 }
@@ -40,11 +40,13 @@ table{
 }
 .code{
     color: var(--cinza);
-    border-left: 1pt solid var(--cinza);
-    padding-left: 5px;
+}
+.code,.tag,.comet,.text,.css-seletor{
+    font-family:  Consolas, 'Inconsolata', monospace;
 }
 .mt15px{
     margin-top: 15px;
+    text-align: left;
 }
 .tag{
     color: rgb(37, 104, 202);
@@ -52,6 +54,10 @@ table{
 }
 .text{
     color: rgb(229, 229, 229);
+}
+td.text,td.code,td.atribute{
+    padding-left: 5px;
+    border-left: 1pt solid var(--cinza);
 }
 .atribute{
     color: var(--azul-claro);
@@ -64,6 +70,11 @@ table{
     border-left: 1pt solid var(--cinza);
     padding-left: 5px;
 }
+.css-seletor{
+    color: var(--amarelo);
+    padding-left: 5px;
+    border-left: 1pt solid var(--cinza);
+}
 .number{
     text-align: right;
     color: var(--cinza);
@@ -74,11 +85,25 @@ table{
 }
 .tab{
     padding-left: var(--tab);
+    border-left: 1pt solid var(--cinza);
+}
+footer{
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 18px;
 }
 @font-face{
     font-family: 'Inconsolata';
-    src: url('../../Fontes/Inconsolata-VariableFont_wdth\,wght.ttf') format("truetype");
+    src: url('../../fontes/Inconsolata-VariableFont_wdth\,wght.ttf') format("truetype");
     font-stretch: semi-condensed;
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('../../fontes/RobotoSlab-Regular.ttf');
     font-style: normal;
     font-weight: 400;
 }
