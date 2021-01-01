@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style</title>
+    <link rel="stylesheet" href="../css/main-exemplos.css">
+    <link rel="stylesheet" href="css/border-style.css">
+</head>
+<body>
+    <section class="grid">
+        <div class="options1 flex">
+            <ul>
+                <li>
+                    <label><input type="radio" value="initial" name="style" onclick="troca(this.value)" checked> initial</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="none" name="style" onclick="troca(this.value)"> none</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="hidden" name="style" onclick="troca(this.value)"> hidden</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="dotted" name="style" onclick="troca(this.value)"> dotted</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="dashed" name="style" onclick="troca(this.value)"> dashed</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="solid" name="style" onclick="troca(this.value)"> solid</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="double" name="style" onclick="troca(this.value)"> double</label>
+                </li>
+            </ul>
+        </div>
+        <div class="flex">
+            <div id="div-cobaia">
+                Div comum
+            </div>
+        </div>
+        <div class="options2 flex">
+            <ul>
+                <li>
+                    <label><input type="radio" value="groove" name="style" onclick="troca(this.value)"> groove</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="ridge" name="style" onclick="troca(this.value)"> ridge</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="inset" name="style" onclick="troca(this.value)"> inset</label>
+                </li>
+                <li>
+                    <label><input type="radio" value="outset" name="style" onclick="troca(this.value)"> outset</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" value="solid dotted" name="style" onclick="troca(this.value)"> solid dotted
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" value="solid dotted dashed double" name="style" onclick="troca(this.value)"> solid dotted dashed double
+                    </label>
+                </li>
+                <li>*Podem ser feitas outras combinações*</li>
+            </ul>
+        </div>
+        <div class="table">
+            <h2>Estilo CSS:</h2>
+            <table>
+                <tr>
+                    <td class="number">1</td>
+                    <td class="css-seletor">div<span class="text">{</span></td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="text tab"><span class="atribute">border-width</span>: <span class="atribute-text">5px</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td class="text tab"><span class="atribute">border-color</span>: <span class="atribute-text">black</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="text tab"><span class="atribute">border-style</span>: <span id="style" class="atribute-text">initial</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">5</td>
+                    <td class="text">}</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script>
+        function troca(value){
+            document.getElementById("div-cobaia").style.borderStyle=value
+            document.getElementById("style").innerText=value
+        }
+    </script>
+</body>
+</html>
