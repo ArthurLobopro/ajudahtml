@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="midia/mark-icon.png" type="image/x-icon">
     <title>Tabela MarkDown</title>
 </head>
 <body>
@@ -45,6 +46,8 @@
                 <td><del>Riscado</del></td>
             </tr>
         </tbody>
+    </table>
+    <table>
         <thead>
             <tr>
                 <td colspan="3">Linhas Horizontais</td>
@@ -61,6 +64,8 @@
                 </td>
             </tr>
         </tbody>
+    </table>
+    <table>
         <thead>
             <td colspan="3">Inserindo Códigos</td>
         </thead>
@@ -77,14 +82,14 @@
                 <td colspan="2">Ao por um código entre ``` além dos efeitos de ` ele ainda obedece a identação.</td>
             </tr>
             <tr>
-                <td colspan="1" class="ta-left">
+                <td class="ta-left wd50">
                     Código: <br>
                     ```Python <br>
                     name = input('Digite seu nome') <br>
                     print('Olá, {} !'.format(nome)) <br>
                     ```
                 </td>
-                <td colspan="2" class="ta-left">
+                <td colspan="2" class="ta-left wd50">
                     Resultado:
 <pre>
 num = int(input(<span class="string">'Digite um número'</span>))
@@ -97,7 +102,20 @@ else:
                 </td>
             </tr>
         </tbody>
-        
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="3">Inserindo Imagens</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>![txt alternativo](link)</td>
+                <td>Você pode inserir imagens dessa forma ![Logo Markdown](midia/mark-logo.png)</td>
+            </tr>
+        </tbody>
+    
     </table>
 </body>
 </html>

@@ -1,8 +1,10 @@
 table{
     border-radius: 5px;
     border:2px solid;
-    margin: auto auto auto 15px;
+    margin: auto auto auto 5px;
     font-family: 'Roboto Slab';
+    width: 725px;
+    margin: 7.5px auto;
 }
 strong{
     font-family: initial;
