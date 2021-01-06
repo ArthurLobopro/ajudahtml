@@ -50,6 +50,7 @@ tr td:first-child,tr td:last-child{
 }
 .ta-left{
     text-align: left !important;
+    vertical-align: baseline;
 }
 .string{
     color: #CE9178;
@@ -67,6 +68,13 @@ code{
 .mm{
     font-family: 'Courier Prime','Literata', monospace;
     font-weight: bold;
+}
+.inherit{
+    background-color: inherit;
+    color: inherit;
+    margin: 0;
+    font-family: inherit;
+    font-weight:inherit;
 }
 @font-face{
     font-family: 'Roboto Slab';

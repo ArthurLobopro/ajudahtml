@@ -81,16 +81,23 @@
                 <td>```Código```</td>
                 <td colspan="2">Ao por um código entre ``` além dos efeitos de ` ele ainda obedece a identação.</td>
             </tr>
-            <tr>
-                <td class="ta-left wd50">
-                    Código: <br>
-                    ```Python <br>
-                    name = input('Digite seu nome') <br>
-                    print('Olá, {} !'.format(nome)) <br>
-                    ```
-                </td>
-                <td colspan="2" class="ta-left wd50">
-                    Resultado:
+            
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td class="ta-left">
+                Código: <br>
+                ```Python <br>
+                num = int(input('Digite um número')) <br>
+                if num%2==0: <br>
+                <pre class="inherit">   print('{} é par.'.format(num)) <br></pre>
+                else: <br>
+                <pre class="inherit">   print('{} é ímpar.'.format(num)) <br></pre>
+                ```
+            </td>
+            <td class="ta-left">
+                Resultado:
 <pre>
 num = int(input(<span class="string">'Digite um número'</span>))
 if num%2==0:
@@ -98,8 +105,36 @@ if num%2==0:
 else:
     print(<span class="string">'{} é ímpar.'</span>.format(num))
 </pre>
-                    *Python escrito junto dos ``` serve para indicar a linguagem.
-                </td>
+                *Python escrito junto dos ``` serve para indicar a linguagem.
+            </td>
+        </tr>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="3">Inserindo Links</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Código</th>
+                <th>Descrição</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>[texto](link)</td>
+                <td>Unsado [ ]( ) podemos inserir um link em um texto.</td>
+                <td><a href="https://google.com">clique aqui</a></td>
+            </tr>
+            <tr>
+                <td><span class="mm">&lt;link&gt;</span></td>
+                <td>Adiciona um link sem texto.</td>
+                <td><a href="https://google.com">https://google.com</a></td>
+            </tr>
+            <tr>
+                <td>https://google.com</td>
+                <td>Em alguns casos você pode simplesmente por o link</td>
+                <td><a href="https://google.com">https://google.com</a></td>
             </tr>
         </tbody>
     </table>
@@ -115,7 +150,7 @@ else:
                 <td>Você pode inserir imagens dessa forma ![Logo Markdown](midia/mark-logo.png)</td>
             </tr>
             <tr>
-                <td colspan="3" class="ta-left">
+                <td colspan="3">
                     Resultado: <br><br>
                     <img src="midia/mark-logo.png" alt="Logo Markdown">
                 </td>
@@ -125,21 +160,48 @@ else:
     <table>
         <thead>
             <tr>
-                <td colspan="3">Inserindo Links</td>
+                <td colspan="3">Listas</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>[texto](link)</td>
-                <td>Unsado []() podemos inserir um link em um texto.</td>
-                <td><a href="https://google.com">clique aqui</a></td>
+                <td>* ou - Item</td>
+                <td colspan="2">O texto colocado após * ou - se torna uma lista não enumerada.</td>
             </tr>
             <tr>
-                <td><span class="mm">&lt;link&gt;</span></td>
-                <td>Adiciona um link sem texto.</td>
-                <td><a href="https://google.com">https://google.com</a></td>
-            </tr>
+                <td>0. Item</td>
+                <td>Ao colocar algum numero seguido de um . e um espaço, ele se torna uma lista enumerada</td>
+            </tr> 
         </tbody>
+    </table>
+    <table>
+        <tr>
+            <td  class="ta-left">
+                Resultado: <br>
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <ul>
+                        <li>Sub Item</li>
+                        <li>Sub Item</li>
+                    </ul>
+                </ul>
+            </td>
+            <td class="ta-left">
+                Resultado: <br>
+                <ol>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <ol type="i">
+                        <li>SubItem</li>
+                        <li>SubItem</li>
+                    </ol>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">*Para adicionar uma sublista basta dar tres espaços antes de adicionar a lista*</td>
+        </tr>
     </table>
 </body>
 </html>
