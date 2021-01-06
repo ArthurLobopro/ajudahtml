@@ -1,2 +1,2 @@
 # ajudahtml
-Site para ajudar com HTML
+Site para ajudar desenvolvedores com HTML,CSS e Markdown.
