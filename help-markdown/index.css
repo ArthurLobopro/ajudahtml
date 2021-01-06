@@ -28,7 +28,13 @@ td.titulo, tr.subtitulo, th.titulo,.subtitulo td {
     border:2px solid ;
     font-weight: bold;
 }
-
+td a{
+    color: #4080D0;
+	text-decoration: none;
+}
+td a:hover{
+    text-decoration: underline;
+}
 .tag{
     font-family: 'Courier Prime','Literata', monospace;
     font-weight: bold;
@@ -57,6 +63,10 @@ code{
     border-radius: 3px;
     background-color:#484848;
     padding: 0 5px;
+}
+.mm{
+    font-family: 'Courier Prime','Literata', monospace;
+    font-weight: bold;
 }
 @font-face{
     font-family: 'Roboto Slab';
