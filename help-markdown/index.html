@@ -61,14 +61,42 @@
                 </td>
             </tr>
         </tbody>
-            
+        <thead>
+            <td colspan="3">Inserindo Códigos</td>
+        </thead>
+        <tbody>
             <tr>
                 <td>`print('Olá Mundo')`</td>
-                <td colspan="2">Colocar o texto entre ` tem o efeito da tag <span class="tag">&lt;code&gt;</span></td>
+                <td colspan="2">Colocar o texto entre ` indica um código inline</span></td>
             </tr>
             <tr>
                 <td colspan="3" class="one-line">Resultado: <code class="orange">print('Olá Mundo!')</code></td>
             </tr>
+            <tr>
+                <td>```Código```</td>
+                <td colspan="2">Ao por um código entre ``` além dos efeitos de ` ele ainda obedece a identação.</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="ta-left">
+                    Código: <br>
+                    ```Python <br>
+                    name = input('Digite seu nome') <br>
+                    print('Olá, {} !'.format(nome)) <br>
+                    ```
+                </td>
+                <td colspan="2" class="ta-left">
+                    Resultado:
+<pre>
+num = int(input(<span class="string">'Digite um número'</span>))
+if num%2==0:
+    print(<span class="string">'{} é par.'</span>.format(num))
+else:
+    print(<span class="string">'{} é ímpar.'</span>.format(num))
+</pre>
+                    *Python escrito junto dos ``` serve para indicar a linguagem.
+                </td>
+            </tr>
+        </tbody>
         
     </table>
 </body>
