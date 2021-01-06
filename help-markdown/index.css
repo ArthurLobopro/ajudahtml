@@ -1,0 +1,38 @@
+table{
+    border-radius: 5px;
+    border:2px solid;
+    margin: auto;
+    font-family: 'Roboto Slab';
+}
+strong{
+    font-family: initial;
+}
+th {
+    text-align:center;
+}
+td{
+    font-family: 'Roboto Slab';
+    font-size: 16px;
+    text-align: left;
+}
+td,th{
+    border-width: 1px 2px;
+    border-style: solid;
+    border-radius: 3px;
+    font-size: 14px;
+}
+td.titulo, tr.subtitulo, th.titulo,.subtitulo td {
+    text-align:center;
+    border:2px solid ;
+    font-weight: bold;
+}
+tr td:first-child,tr td:last-child{
+    text-align: center;
+}
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('fontes/RobotoSlab-Medium.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
