@@ -36,8 +36,6 @@ td a:hover{
     text-decoration: underline;
 }
 .tag{
-    font-family: 'Courier Prime','Literata', monospace;
-    font-weight: bold;
     font-size: 14px;
     text-align: center;
     color: blue;
@@ -65,7 +63,7 @@ code{
     background-color:#484848;
     padding: 0 5px;
 }
-.mm{
+.tag,.mm{
     font-family: 'Courier Prime','Literata', monospace;
     font-weight: bold;
 }
