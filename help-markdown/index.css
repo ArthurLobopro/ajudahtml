@@ -1,7 +1,7 @@
 table{
     border-radius: 5px;
     border:2px solid;
-    margin: auto;
+    margin: auto auto auto 15px;
     font-family: 'Roboto Slab';
 }
 strong{
@@ -29,9 +29,31 @@ td.titulo, tr.subtitulo, th.titulo,.subtitulo td {
 tr td:first-child,tr td:last-child{
     text-align: center;
 }
+.tag{
+    font-family: 'Courier Prime','Literata', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    color: blue;
+}
+.orange{
+    color: #C9AE75;
+}
+code{
+    border-radius: 3px;
+    background-color:#484848;
+    padding: 0 5px;
+}
 @font-face{
     font-family: 'Roboto Slab';
-    src: url('fontes/RobotoSlab-Medium.ttf');
+    src: url('/fontes/RobotoSlab-Medium.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Courier Prime';
+    src: url('../../fontes/CourierPrime-Regular.ttf');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
