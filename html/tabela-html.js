@@ -10,12 +10,12 @@ function tema(){
 	let home=document.getElementById("home")
 	if(teme==1){
 	document.getElementById("cores").href="css/tabela-html-white.css"
-	document.getElementById("cabecalho").href="css/cabecalho.css"
-	home.src="home_white.png"
+	document.getElementById("cabecalho").href="../css/cabecalho.css"
+	home.src="../midia/home_white.png"
 	}else{
 	document.getElementById("cores").href="css/tabela-html-dark.css"
-	document.getElementById("cabecalho").href="css/cabecalho-dark.css"
-	home.src="home_black.png"
+	document.getElementById("cabecalho").href="../css/cabecalho-dark.css"
+	home.src="../midia/home_black.png"
 	}
 }
 function trocatema(){
@@ -29,9 +29,9 @@ function trocatema(){
 function troca_home(num){
 	let home=document.getElementById("home")
 	if(teme==2 && num==1){
-		home.src="home_white.png"
+		home.src="../midia/home_white.png"
 	}
 	if(teme==2 && num==2){
-		home.src="home_black.png"
+		home.src="../midia/home_black.png"
 	}
 }
