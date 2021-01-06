@@ -1,8 +1,9 @@
 body {background-color:lightgray}
 table {
     background-color:white;
-    border:2px solid yellow;
+    border:2px solid green;
     border-radius: 5px;
+    padding: 1px;
 }
 td {border: 1px solid;
     border-radius: 3px;
@@ -15,11 +16,56 @@ th {
     border-radius: 2px;
     border: 2px solid;
 }
+a{
+    font-weight: bold;
+    color: blue;
+}
 .titulo {
     text-align:center;
     font-weight:bold;
     border: 2px solid; 
 }
-code {
-    font-weight: bold
+.code{
+    font-family:  'Literata', monospace;
+    font-weight: bold;
+    font-size: 13px;
+}
+table{
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.visible{
+    display: table-row-group;
+}
+.expand{
+    text-align: center;
+}
+.no-rotated{
+    animation: no-rotate 1s;
+    transform: rotate(0deg);
+}
+.rotated{
+    animation: rotate 1s ;
+    transform: rotate(180deg);
+}
+.hiden{
+    display: none;
+    background-color: #e6ffedd0;
+}
+@keyframes rotate{
+    from {transform: rotateX(0deg);}
+    to {transform: rotateX(180deg);}
+}
+@keyframes no-rotate {
+    from {transform: rotateX(180deg);}
+    to {transform: rotateX(0deg);}
+}
+@font-face{
+    font-family: 'Courier Prime';
+    src: url('../fontes/CourierPrime-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
