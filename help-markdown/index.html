@@ -8,245 +8,257 @@
     <title>Tabela MarkDown</title>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <td colspan="3">Formatação Simples</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Código</th>
-                <th>Descrição</th>
-                <th>Resultado</th>
-            </tr>
-            <tr>
-                <td>**Negrito**</td>
-                <td>Colocar um texto entre ** faz com que ele fique em negrito.</td>
-                <td><strong>Negrito</strong></td>
-            </tr>
-            <tr>
-                <td>__Negrito__</td>
-                <td>Colocar um texto entre __ faz com que ele fique em negrito.</td>
-                <td><strong>Negrito</strong></td>
-            </tr>
-            <tr>
-                <td>*Itálico*</td>
-                <td>Colocar o texto entre * faz com que ele fique em itálico.</td>
-                <td><em>Itálico</em></td>
-            </tr>
-            <tr>
-                <td>_Itálico_</td>
-                <td>Colocar o texto entre _ faz com que ele fique em itálico.</td>
-                <td><em>Itálico</em></td>
-            </tr>
-            <tr>
-                <td>~~Riscado~~</td>
-                <td>Colocar o texto entre ~~ faz com que ele seja riscado</td>
-                <td><del>Riscado</del></td>
-            </tr>
-        </tbody>
-    </table>
-    <table>
-        <thead>
-            <tr>
-                <td colspan="3">Linhas Horizontais</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>*** ou ---</td>
-                <td colspan="2">Criam Linhas Horizontais</td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    Resultado: <hr>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table>
-        <thead>
-            <td colspan="3">Inserindo Códigos</td>
-        </thead>
-        <tbody>
-            <tr>
-                <td>`print('Olá Mundo')`</td>
-                <td colspan="2">Colocar o texto entre ` indica um código inline</span></td>
-            </tr>
-            <tr>
-                <td colspan="3" class="one-line">Resultado: <code class="orange">print('Olá Mundo!')</code></td>
-            </tr>
-            <tr>
-                <td>```Código```</td>
-                <td colspan="2">Ao por um código entre ``` além dos efeitos de ` ele ainda obedece a identação.</td>
-            </tr>
-            
-        </tbody>
-    </table>
-    <table>
-        <tr>
-            <td class="ta-left">
-                Código: <br>
-                ```Python <br>
-                num = int(input('Digite um número')) <br>
-                if num%2==0: <br>
-                <pre class="inherit">   print('{} é par.'.format(num)) <br></pre>
-                else: <br>
-                <pre class="inherit">   print('{} é ímpar.'.format(num)) <br></pre>
-                ```
-            </td>
-            <td class="ta-left">
-                Resultado:
-<pre>
-num = int(input(<span class="string">'Digite um número'</span>))
-if num%2==0:
-    print(<span class="string">'{} é par.'</span>.format(num))
-else:
-    print(<span class="string">'{} é ímpar.'</span>.format(num))
-</pre>
-                *Python escrito junto dos ``` serve para indicar a linguagem.
-            </td>
-        </tr>
-    </table>
-    <table>
-        <thead>
-            <tr>
-                <td colspan="3">Inserindo Links</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Código</th>
-                <th>Descrição</th>
-                <th>Resultado</th>
-            </tr>
-            <tr>
-                <td>[texto](link)</td>
-                <td>Unsado [ ]( ) podemos inserir um link em um texto.</td>
-                <td><a href="https://google.com">clique aqui</a></td>
-            </tr>
-            <tr>
-                <td><span class="mm">&lt;link&gt;</span></td>
-                <td>Adiciona um link sem texto.</td>
-                <td><a href="https://google.com">https://google.com</a></td>
-            </tr>
-            <tr>
-                <td>https://google.com</td>
-                <td>Em alguns casos você pode simplesmente por o link</td>
-                <td><a href="https://google.com">https://google.com</a></td>
-            </tr>
-        </tbody>
-    </table>
-    <table>
-        <thead>
-            <tr>
-                <td colspan="3">Inserindo Imagens</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>![txt alternativo](link)</td>
-                <td>Você pode inserir imagens dessa forma ![Logo Markdown](midia/mark-logo.png)</td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    Resultado: <br><br>
-                    <img src="midia/mark-logo.png" alt="Logo Markdown">
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table>
-        <thead>
-            <tr>
-                <td colspan="3">Listas</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>* ou - Item</td>
-                <td colspan="2">O texto colocado após * ou - se torna uma lista não enumerada.</td>
-            </tr>
-            <tr>
-                <td>0. Item</td>
-                <td>Ao colocar algum numero seguido de um . e um espaço, ele se torna uma lista enumerada</td>
-            </tr> 
-        </tbody>
-    </table>
-    <table>
-        <tr>
-            <td  class="ta-left">
-                Resultado: <br>
-                <ul>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <ul>
-                        <li>SubItem</li>
-                        <li>SubItem</li>
-                    </ul>
-                </ul>
-            </td>
-            <td class="ta-left">
-                Resultado: <br>
-                <ol>
-                    <li>Item</li>
-                    <li>Item</li>
-                    <ol type="i">
-                        <li>SubItem</li>
-                        <li>SubItem</li>
-                    </ol>
-                </ol>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">*Para adicionar uma sublista basta dar tres espaços antes de adicionar a lista*</td>
-        </tr>
-    </table>
-    <table>
-        <thead>
-            <tr>
-                <td colspan="2">Citações</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>> Texto</td>
-                <td>Ao colocar um texto depois de > ele se torna uma citação</td>
-            </tr>
-            <tr>
-                <td colspan="2" class="ta-left">
-                    Resultado: <br>
-                    <div class="bgc-black">
-                        <blockquote >
-                            &quot;O Inferno está vazio e todos os demônios estão aqui.&quot; <br>
-                            William Shakespeare.
-                        </blockquote>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table>
-        <thead>
-            <tr>
-                <td colspan="2">Títulos</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td># Título 1</td>
-                <td>Adiciona um título de nível 1.</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>O mesmo vale pra todos os títulos sendo que a quantidade # define o nível do título.</td>
-            </tr>
-            <tr>
-                <td>###### Título 6</td>
-                <td>Adiciona um título de nível 6.</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="container">
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="3">Formatação Simples</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <td>**Negrito**</td>
+                        <td>Colocar um texto entre ** faz com que ele fique em negrito.</td>
+                        <td><strong>Negrito</strong></td>
+                    </tr>
+                    <tr>
+                        <td>__Negrito__</td>
+                        <td>Colocar um texto entre __ faz com que ele fique em negrito.</td>
+                        <td><strong>Negrito</strong></td>
+                    </tr>
+                    <tr>
+                        <td>*Itálico*</td>
+                        <td>Colocar o texto entre * faz com que ele fique em itálico.</td>
+                        <td><em>Itálico</em></td>
+                    </tr>
+                    <tr>
+                        <td>_Itálico_</td>
+                        <td>Colocar o texto entre _ faz com que ele fique em itálico.</td>
+                        <td><em>Itálico</em></td>
+                    </tr>
+                    <tr>
+                        <td>~~Riscado~~</td>
+                        <td>Colocar o texto entre ~~ faz com que ele seja riscado</td>
+                        <td><del>Riscado</del></td>
+                    </tr>
+                    <tr>
+                        <td>\* Itálico \*</td>
+                        <td>Para adicionar caracteres especiais da linguagem basta colocar uma \ antes</td>
+                        <td>*Itálico</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="3">Linhas Horizontais</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>*** ou ---</td>
+                        <td colspan="2">Criam Linhas Horizontais</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Resultado: <hr>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <td colspan="3">Inserindo Códigos</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>`print('Olá Mundo')`</td>
+                        <td colspan="2">Colocar o texto entre ` indica um código inline</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="one-line">Resultado: <code class="orange">print('Olá Mundo!')</code></td>
+                    </tr>
+                    <tr>
+                        <td>```Código```</td>
+                        <td colspan="2">Ao por um código entre ``` além dos efeitos de ` ele ainda obedece a identação.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <table>
+                <tr>
+                    <td class="ta-left">
+                        Código: <br>
+                        ```Python <br>
+                        num = int(input('Digite um número')) <br>
+                        if num%2==0: <br>
+                        <pre class="inherit">   print('{} é par.'.format(num)) <br></pre>
+                        else: <br>
+                        <pre class="inherit">   print('{} é ímpar.'.format(num)) <br></pre>
+                        ```
+                    </td>
+                    <td class="ta-left">
+                        Resultado:
+        <pre>
+        num = int(input(<span class="string">'Digite um número'</span>))
+        if num%2==0:
+            print(<span class="string">'{} é par.'</span>.format(num))
+        else:
+            print(<span class="string">'{} é ímpar.'</span>.format(num))
+        </pre>
+                        *Python escrito junto dos ``` serve para indicar a linguagem.
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="3">Inserindo Links</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <td>[texto](link)</td>
+                        <td>Unsado [ ]( ) podemos inserir um link em um texto.</td>
+                        <td><a href="https://google.com">clique aqui</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="mm">&lt;link&gt;</span></td>
+                        <td>Adiciona um link sem texto.</td>
+                        <td><a href="https://google.com">https://google.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>https://google.com</td>
+                        <td>Em alguns casos você pode simplesmente por o link</td>
+                        <td><a href="https://google.com">https://google.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="3">Inserindo Imagens</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>![txt alternativo](link)</td>
+                        <td>Você pode inserir imagens dessa forma ![Logo Markdown](midia/mark-logo.png)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Resultado: <br><br>
+                            <img src="midia/mark-logo.png" alt="Logo Markdown">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="3">Listas</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>* ou - Item</td>
+                        <td colspan="2">O texto colocado após * ou - se torna uma lista não enumerada.</td>
+                    </tr>
+                    <tr>
+                        <td>0. Item</td>
+                        <td>Ao colocar algum numero seguido de um . e um espaço, ele se torna uma lista enumerada</td>
+                    </tr> 
+                </tbody>
+            </table>
+            <table>
+                <tr>
+                    <td  class="ta-left">
+                        Resultado: <br>
+                        <ul>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <ul>
+                                <li>SubItem</li>
+                                <li>SubItem</li>
+                            </ul>
+                        </ul>
+                    </td>
+                    <td class="ta-left">
+                        Resultado: <br>
+                        <ol>
+                            <li>Item</li>
+                            <li>Item</li>
+                            <ol type="i">
+                                <li>SubItem</li>
+                                <li>SubItem</li>
+                            </ol>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">*Para adicionar uma sublista basta dar tres espaços antes de adicionar a lista*</td>
+                </tr>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="2">Citações</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>> Texto</td>
+                        <td>Ao colocar um texto depois de > ele se torna uma citação</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ta-left">
+                            Resultado: <br>
+                            <div class="bgc-black">
+                                <blockquote >
+                                    &quot;O Inferno está vazio e todos os demônios estão aqui.&quot; <br>
+                                    William Shakespeare.
+                                </blockquote>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="2">Títulos</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td># Título 1</td>
+                        <td>Adiciona um título de nível 1.</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>O mesmo vale pra todos os títulos sendo que a quantidade # define o nível do título.</td>
+                    </tr>
+                    <tr>
+                        <td>###### Título 6</td>
+                        <td>Adiciona um título de nível 6.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <object data="" type=""></object>
+        </div>
+    </div>
 </body>
 </html>

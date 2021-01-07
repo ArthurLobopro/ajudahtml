@@ -39,6 +39,10 @@ td a{
     color: #4080D0;
 	text-decoration: none;
 }
+#container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
 td a:hover{
     text-decoration: underline;
 }
