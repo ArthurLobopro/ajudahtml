@@ -1,10 +1,46 @@
-table{
+.table,table{
     border-radius: 5px;
     border:2px solid;
-    margin: auto auto auto 5px;
     font-family: 'Roboto Slab';
-    width: 725px;
+    width: 720px;
     margin: 7.5px auto;
+}
+.table{
+    padding: 2px;
+    width: 712px;
+}
+/*Tabela de Exemplo*/
+#exemplo td,#exemplo th{
+    border: none;
+    text-align: left;
+}
+#exemplo {
+	border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+#exemplo > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+#exemplo > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+#exemplo > thead > tr > th,
+#exemplo > thead > tr > td,
+#exemplo > tbody > tr > th,
+#exemplo > tbody > tr > td {
+	padding: 5px 10px;
+}
+/*Fim tabela de Exemplo*/
+td,th,.internal-table{
+    border-width: 1px 2px;
+    border-style: solid;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.internal-table{
+    padding: 0 2px;
 }
 strong{
     font-family: initial;
@@ -24,24 +60,9 @@ td{
     font-size: 16px;
     text-align: left;
 }
-td,th{
-    border-width: 1px 2px;
-    border-style: solid;
-    border-radius: 3px;
-    font-size: 14px;
-}
-td.titulo, tr.subtitulo, th.titulo,.subtitulo td {
-    text-align:center;
-    border:2px solid ;
-    font-weight: bold;
-}
 td a{
     color: #4080D0;
 	text-decoration: none;
-}
-#container{
-    display: grid;
-    grid-template-columns: 45% 45%;
 }
 td a:hover{
     text-decoration: underline;
@@ -60,6 +81,9 @@ tr td:first-child,tr td:last-child{
 .ta-left{
     text-align: left !important;
     vertical-align: baseline;
+}
+.pl5px{
+    padding-left: 5px;
 }
 .string{
     color: #CE9178;
@@ -87,14 +111,14 @@ code{
 }
 @font-face{
     font-family: 'Roboto Slab';
-    src: url('/fontes/RobotoSlab-Medium.ttf');
+    src: url('../fontes/RobotoSlab-Medium.ttf');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
 }
 @font-face{
     font-family: 'Courier Prime';
-    src: url('../../fontes/CourierPrime-Regular.ttf');
+    src: url('../fontes/CourierPrime-Regular.ttf');
     font-style: normal;
     font-weight: 400;
     font-display: swap;

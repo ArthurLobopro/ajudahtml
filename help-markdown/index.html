@@ -244,8 +244,20 @@ else:
                 <td>Adiciona um título de nível 1.</td>
             </tr>
             <tr>
-                <td>...</td>
-                <td>O mesmo vale pra todos os títulos sendo que a quantidade # define o nível do título.</td>
+                <td>## Título 2</td>
+                <td>Adiciona um título de nível 2.</td>
+            </tr>
+            <tr>
+                <td>### Título 3</td>
+                <td>Adiciona um título de nível 3.</td>
+            </tr>
+            <tr>
+                <td>#### Título 4</td>
+                <td>Adiciona um título de nível 4.</td>
+            </tr>
+            <tr>
+                <td>##### Título 5</td>
+                <td>Adiciona um título de nível 5.</td>
             </tr>
             <tr>
                 <td>###### Título 6</td>
@@ -253,5 +265,58 @@ else:
             </tr>
         </tbody>
     </table>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2">Tabelas</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="ta-left pl5px">
+                    Para fazer tabelas em markdown basta fazer a primeira linha delimitando as colunas com |. <br>
+                    Depois é só replicar a divisão com --- | --- para indicar que a linha anterior é o cabeçalho. <br>
+                    Após isso é só continuar adicionando linhas e delimitando as colunas com | obedecendo a formatação original <br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td class="ta-left">
+                Código: <br>
+                Matéria | 1 Semestre | 2 Semestre <br>
+                --- | --- | --- <br>
+                Matemática | 8,7 | 9 <br>
+                Física | 7 | 8,5
+            </td>
+        </tr>
+    </table>
+    <div class="table">
+        <div class="internal-table">
+            Resultado: <br>
+            <table id="exemplo">
+                <thead>
+                    <tr>
+                        <th>Matéria</th>
+                        <th>1 Semestre</th>
+                        <th>2 Semestre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Matemática</td>
+                        <td>8,7</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Física</td>
+                        <td>7</td>
+                        <td>8,5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
