@@ -41,7 +41,7 @@ td a{
 }
 #container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 45% 45%;
 }
 td a:hover{
     text-decoration: underline;
