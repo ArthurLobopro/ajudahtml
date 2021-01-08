@@ -295,7 +295,7 @@ else:
     <div class="table">
         <div class="internal-table">
             Resultado: <br>
-            <table id="exemplo">
+            <table class="exemplo">
                 <thead>
                     <tr>
                         <th>Matéria</th>
@@ -305,14 +305,77 @@ else:
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Matemática</td>
+                        <td class="ta-left">Matemática</td>
                         <td>8,7</td>
-                        <td>9</td>
+                        <td class="ta-left">9</td>
                     </tr>
                     <tr>
-                        <td>Física</td>
+                        <td class="ta-left">Física</td>
                         <td>7</td>
-                        <td>8,5</td>
+                        <td class="ta-left">8,5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2">Alinhamento em Tabelas</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="ta-left pl5px" colspan="2">
+                    Para fazer o alinhamento nas tabelas basta adicionar : na posição que o texto deve ficar na linha da formatação da tabela
+                </td>
+            </tr>
+            <tr>
+                <td>:---:</td>
+                <td>Alinha o texto ao centro.</td>
+            </tr>
+            <tr>
+                <td>:---</td>
+                <td>Alinha o texto à esquerda.</td>
+            </tr>
+            <tr>
+                <td>---:</td>
+                <td>Alinha o texto à direita.</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td class="ta-left">
+                Código: <br>
+                Matéria | 1 Semestre | 2 Semestre <br>
+                ---: | :---: | :--- <br>
+                Matemática | 8,7 | 9 <br>
+                Física | 7 | 8,5
+            </td>
+        </tr>
+    </table>
+    <div class="table">
+        <div class="internal-table">
+            Resultado: <br>
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th class="ta-right">Matéria</th>
+                        <th class="ta-center">1 Semestre</th>
+                        <th class="ta-left">2 Semestre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="ta-right">Matemática</td>
+                        <td class="ta-center">8,7</td>
+                        <td class="ta-left">9</td>
+                    </tr>
+                    <tr>
+                        <td class="ta-right">Física</td>
+                        <td class="ta-center">7</td>
+                        <td class="ta-left">8,5</td>
                     </tr>
                 </tbody>
             </table>

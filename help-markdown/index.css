@@ -10,26 +10,26 @@
     width: 712px;
 }
 /*Tabela de Exemplo*/
-#exemplo td,#exemplo th{
+.exemplo td,.exemplo th{
     border: none;
     text-align: left;
 }
-#exemplo {
+.exemplo {
 	border-collapse: collapse;
     width: 100%;
     border: none;
 }
-#exemplo > thead > tr > th {
+.exemplo > thead > tr > th {
 	text-align: left;
 	border-bottom: 1px solid;
 }
-#exemplo > tbody > tr + tr > td {
+.exemplo > tbody > tr + tr > td {
 	border-top: 1px solid;
 }
-#exemplo > thead > tr > th,
-#exemplo > thead > tr > td,
-#exemplo > tbody > tr > th,
-#exemplo > tbody > tr > td {
+.exemplo > thead > tr > th,
+.exemplo > thead > tr > td,
+.exemplo > tbody > tr > th,
+.exemplo > tbody > tr > td {
 	padding: 5px 10px;
 }
 /*Fim tabela de Exemplo*/
@@ -81,6 +81,12 @@ tr td:first-child,tr td:last-child{
 .ta-left{
     text-align: left !important;
     vertical-align: baseline;
+}
+.ta-right{
+    text-align: right !important;
+}
+.ta-center{
+    text-align: center !important;
 }
 .pl5px{
     padding-left: 5px;
