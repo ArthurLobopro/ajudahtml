@@ -41,6 +41,7 @@ td,th,.internal-table{
 }
 .internal-table{
     padding: 0 2px;
+    margin-bottom: 2px;
 }
 strong{
     font-family: initial;
