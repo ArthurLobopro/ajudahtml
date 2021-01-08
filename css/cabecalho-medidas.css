@@ -1,6 +1,6 @@
 header{
     height: 100px; 
-    font-family: cursive, 'Patrick Hand';
+    font-family: 'Noto Sans JP', 'Patrick Hand';
     padding-right: 5px;
 }
 #cabecalho{
@@ -48,7 +48,7 @@ header a{
     height: 30px;
 }
 /* Botão animado*/
-.teste{
+.theme-button{
     width: 50px;
     height: 25px;
     background-color:#696969;
@@ -64,6 +64,10 @@ header a{
     border-radius: 50%;
     background-color: white;
     position: relative;
+    display: flex;
+}
+.circle img{
+    margin: auto;
 }
 .right{
     animation: to_right 1s;
@@ -85,6 +89,12 @@ header a{
 @font-face{
     font-family: 'Patrick Hand';
     src: url('../Fontes/PatrickHand-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family:'Noto Sans JP';
+    src: url('../fontes/NotoSansJP-Regular.otf');
     font-style: normal;
     font-weight: 400;
 }

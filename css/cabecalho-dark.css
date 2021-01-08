@@ -1,19 +1,20 @@
 header{
-    background-color:slategray;
-    color: black;
+    background-color:black;
+    color: lightgray;
 }
 .botao{
-    border-color: black;
+    border-color: lightgray;
+    color: lightgray;
 }
 .botao:hover{
     color:white;
     border-color: white;
 }
-.teste{
-    background-color: white;
+.theme-button{
+    background-color:#696969;
 }
 .circle{
-    background-color:#696969;
+   background-color: darkslateblue;
 }
 header a li,header a li:visited,header a li:link {
     color:black;
