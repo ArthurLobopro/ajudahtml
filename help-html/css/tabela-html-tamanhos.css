@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    min-width: 840px;
 }
 a{
     font-weight: bold;

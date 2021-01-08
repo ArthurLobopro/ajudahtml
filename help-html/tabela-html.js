@@ -10,7 +10,7 @@ function tema(){
 	let home=document.getElementById("home")
 	if(teme==1){
 	document.getElementById("cores").href="css/tabela-html-white.css"
-	document.getElementById("cabecalho").href="../css/cabecalho.css"
+	document.getElementById("cabecalho").href="../css/cabecalho-white.css"
 	home.src="../midia/home_white.png"
 	}else{
 	document.getElementById("cores").href="css/tabela-html-dark.css"
@@ -25,6 +25,12 @@ function trocatema(){
 		teme=1
 	}
 	tema()
+}
+function troca(){
+	const circle = document.querySelector('.circle')
+	circle.classList.toggle('left')
+	circle.classList.toggle('right')
+	trocatema()
 }
 function troca_home(num){
 	let home=document.getElementById("home")

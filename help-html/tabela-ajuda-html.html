@@ -10,7 +10,8 @@
     <link href="css/tabela-html-tamanhos.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/tabela-html-white.css" id="cores">
     <!-- CSS secundários-->
-    <link rel="stylesheet" href="../css/cabecalho.css" type="text/css" id="cabecalho">
+    <link rel="stylesheet" href="../css/cabecalho-medidas.css" type="text/css">
+    <link rel="stylesheet" href="../css/cabecalho-white.css" id="cabecalho">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
     
@@ -18,15 +19,19 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="../midia/home_white.png" onmousemove="troca_home(1)" onmouseleave="troca_home(2)"
-                id="home"></a>
+        
         <div id="cabecalho">
-            Tabela HTML por <br> <span class="direita">Arthur Lobo</span>
+            Tema:
+            <div class="teste" onclick="troca()">
+                <div class="circle left"></div>
+            </div>
         </div>
 
         <div id="menu">
+            <a href="index.html"><img src="../midia/home_white.png" onmousemove="troca_home(1)" onmouseleave="troca_home(2)"
+                id="home"></a>
             <ul>
-                <a href="#1"><li class="botao">Formt. Texto</li></a>
+                <a href="#1"><li class="botao">Formtação</li></a>
                 <a href="#2"><li class="botao">Espaçamento</li></a>
                 <a href="#3"><li class="botao ">Listas</li></a>
                 <a href="#4"><li class="botao">Tabelas</li></a>
@@ -37,7 +42,6 @@
     </header>
 
     <h1>Tabela Ajuda HTML</h1><br>
-    <input type="button" value="Trocar tema" onclick="trocatema()">
     <table>
         <thead>
             <tr>
