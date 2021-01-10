@@ -1,0 +1,20 @@
+section{
+    border: 1px solid #ddd;
+    width: 80%;
+    height: 100px;
+    margin: 15px auto auto;
+}
+section > ul >  li{
+    list-style: none;
+    border: 1px solid #ddd;
+    width: 50%;
+    height: 35px;
+    margin: -1px;
+    padding: 0;
+    float: left;
+}
+section > ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
