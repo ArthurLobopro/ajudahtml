@@ -7,8 +7,8 @@ header{
     color: lightgray;
 }
 .botao:hover{
-    color:white;
-    border-color: white;
+    border-color: skyblue;
+    color:skyblue;
 }
 .theme-button{
     background-color:#696969;
