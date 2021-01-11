@@ -25,15 +25,21 @@
             <a href="../index.html"><img src="../midia/home_white.png" onmousemove="troca_home(1)" onmouseleave="troca_home(2)"
                 id="home"></a>
             <ul>
-                <a href="#"><li class="botao">Página em HTML</li></a>
-                <a href="#1"><li class="botao">Página em Markdown (convertido)</li></a>
+                <a href="html-table.html"><li class="botao">Página em HTML</li></a>
+                <a href="markdown-table.html"><li class="botao">Página em Markdown (convertido)</li></a>
             </ul>
         </div>
     </header>
     <section>
         <ul>
-            <li class="focus" id="li-html" onclick="troca('html')">Feito em HTML</li>
-            <li id="li-mark" onclick="troca('mark')">Feito em Markdown (e convertido)</li>
+            <li class="focus" id="li-html" onclick="troca('html')">
+                <a href="./html-table.html" target="_blank"><div class="link"></div></a>
+                <span class="mg-auto">Feito em HTML</span>
+            </li>
+            <li id="li-mark" onclick="troca('mark')">
+                <a href="./markdown-table.html" target="_blank"><div class="link"></div></a>
+                <span class="mg-auto">Feito em Markdown (e convertido)</span>
+            </li>
         </ul>
         <div id="container">
             <div id="html" class="visible">
