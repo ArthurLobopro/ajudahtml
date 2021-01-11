@@ -5,16 +5,18 @@ div{
     height: 180px;
     margin: auto;
 }
+.logo{
+    margin: 20px auto;
+    box-shadow: 3px 3px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 ul{
     list-style: none;
     position:relative;
     text-align: center;
 }
-.div1,.div2{
-    padding-top: 20px;
-    box-shadow: 3px 3px 10px black;
-}
-
 .center {
     text-align: center;
 }
@@ -22,7 +24,7 @@ h1{
     text-align: center;
 }
 div:hover{
-    background-color: lightgrey;
+    background-color: rgb(240, 240, 240);
 }
 footer{
     text-align: center;
@@ -31,9 +33,6 @@ footer{
 }
 section{
     text-align: center;
-}
-.div1.div2{
-    margin: auto;
 }
 @font-face{
     font-family: 'Roboto Slab';
