@@ -10,7 +10,6 @@ section > ul >  li{
     height: 45px;
     padding: 0;
     float: left;
-    margin-bottom: 10px;
     font-family: 'Noto Sans JP';
     display: flex;
     justify-content: center;
@@ -29,7 +28,7 @@ section > ul{
 }
 #html,#mark{
     width: inherit;
-    padding-top: 10px;
+    padding-top: 1px;
     border: 1px solid gray;
     border-top: none;
 }
@@ -38,7 +37,7 @@ section > ul{
     color: #4080D0;
 }
 .visible{
-    display: initial !important;
+    display: flex !important;
 }
 .invisible{
     display: none !important;
