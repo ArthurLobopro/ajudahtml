@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Arthur Lobo">
-    <link rel="stylesheet" href="css/main-exemplos.css">
+    <link rel="stylesheet" href="../../css/main-exemplos.css">
     <title>Tag Input</title>
     <style>
         red {
@@ -297,29 +297,71 @@
             <tr>
                 <td class="number">2</td>
                 <td class="coment">
-                    &lt;!-- Quando type é definido como "week" ele recolhe um horário (não suportado em alguns navegadores)--&gt;
+                    &lt;!-- Quando type é definido como "time" ele recolhe um horário (não suportado em alguns navegadores)--&gt;
                 </td>
             </tr>
         </table>
     </div>
-    
+    <div class="exemplo">
+        Informe data e hora atuais: <input type="datetime-local">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Informe um horário:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"datetime-local"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "datetime-local" ele recolhe data e hora atuais (não suportado em alguns navegadores)--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Digite seu email:<input type="email">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Digite seu email:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"email"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "email" ele cria um campo para digitar um email--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Ajuste o volume:(exemplo)<input type="range">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Ajuste o volume:(exemplo)
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span>=<span class="range">"email"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "range" ele recolhe uma barra de progresso que pode ser usada para ajustar volume,brilho, etc.--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+
     <center>
         <form>
-           
-            Indique data e hora atuais:<br>
-            <input type="datetime-local"><br><br>
-            <!--Cria uma área para selecionar data e hora ,não funcioana em alguns navegadores-->
-
-            
-            <!--Cria uma área para ler ou escolher um número-->
-
-            Digite seu email:<br>
-            <input type="email" id="email" name="email"><br><br>
-            <!--Cria um campo para digitar um email-->
-
-            Ajuste o volume:(exemplo)<br>
-            <input type="range"><br><br>
-            <!--Cria uma barra para ajuste de algo,seja zoom,volume,etc-->
 
             Digite o que você deseja pesquisar:<br>
             <input type="search"><br><br>
@@ -341,9 +383,6 @@
             <!--Cria um botão que apaga as informações fornecidas-->
         </form>
 
-        <center>
-            <h2>Outros atributos para input</h2>
-        </center>
 
 
         <form>
