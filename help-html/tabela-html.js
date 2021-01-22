@@ -30,3 +30,6 @@ function troca(){
 	circle.classList.toggle('right')
 	trocatema()
 }
+setTimeout(() => {
+	document.querySelector('.circle').classList.remove('ad-2s')
+}, 1000);
