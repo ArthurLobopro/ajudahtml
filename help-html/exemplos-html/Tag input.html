@@ -59,7 +59,7 @@
                 <td class="coment tab">Quando especificado como "text" recolhe texto </td>
             </tr>
             <tr>
-                <td class="number">7</td>
+                <td class="number">8</td>
                 <td class="coment tab">Quando especificado como "password" recolhe texto e o oculta o mesmo </td>
             </tr>
             <tr>
@@ -115,6 +115,10 @@
                 <td class="coment">
                     &lt;!-- o atributo step define um intervalo entre os valores permitidos --&gt;
                 </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- o atributo value="" atribui um valor para o input, ele é compatível com quase todos os types --&gt;</td>
             </tr>
         </table>
     </div>
@@ -215,13 +219,65 @@
                 <td class="number">1</td>
                 <td class="text">Escolha uma cor:
                     <span class="code">&lt;<span class="tag">input</span>
-                    <span class="atribute">type</span>=<span class="atribute-text">"color"</span>&gt;</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"color"</span>&gt;</span>
                 </td>
             </tr>
             <tr>
                 <td class="number">2</td>
                 <td class="coment">
                     &lt;!-- Quando type é definido como "color" ele recolhe uma cor --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Arquivo para upload:<br>
+        <input type="file">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">
+                    <span class="text">Digite o que você deseja pesquisar:</span>&lt;<span class="tag">br</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"file"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "file" ele recolhe um arquivo para upload --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Arquivos para upload:<br>
+        <input type="file" multiple>
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">
+                    <span class="text">Digite o que você deseja pesquisar:</span>&lt;<span class="tag">br</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"file"</span> <span class="atribute">multiple</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">
+                    &lt;!-- Quando o atributo multiple é declarado em um input type="upload" ele adquire a suporte para multiplos arquivos --&gt;
                 </td>
             </tr>
         </table>
@@ -234,7 +290,7 @@
                 <td class="number">1</td>
                 <td class="text">Escolha uma data:
                     <span class="code">&lt;<span class="tag">input</span>
-                    <span class="atribute">type</span>=<span class="atribute-text">"date"</span>&gt;</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"date"</span>&gt;</span>
                 </td>
             </tr>
             <tr>
@@ -253,7 +309,7 @@
                 <td class="number">1</td>
                 <td class="text">Escolha um mês:
                     <span class="code">&lt;<span class="tag">input</span>
-                    <span class="atribute">type</span>=<span class="atribute-text">"month"</span>&gt;</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"month"</span>&gt;</span>
                 </td>
             </tr>
             <tr>
@@ -272,7 +328,7 @@
                 <td class="number">1</td>
                 <td class="text">Escolha uma semana:
                     <span class="code">&lt;<span class="tag">input</span>
-                    <span class="atribute">type</span>=<span class="atribute-text">"week"</span>&gt;</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"week"</span>&gt;</span>
                 </td>
             </tr>
             <tr>
@@ -291,7 +347,7 @@
                 <td class="number">1</td>
                 <td class="text">Informe um horário:
                     <span class="code">&lt;<span class="tag">input</span>
-                    <span class="atribute">type</span>=<span class="atribute-text">"time"</span>&gt;</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"time"</span>&gt;</span>
                 </td>
             </tr>
             <tr>
@@ -310,7 +366,7 @@
                 <td class="number">1</td>
                 <td class="text">Informe um horário:
                     <span class="code">&lt;<span class="tag">input</span>
-                    <span class="atribute">type</span>=<span class="atribute-text">"datetime-local"</span>&gt;</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"datetime-local"</span>&gt;</span>
                 </td>
             </tr>
             <tr>
@@ -329,7 +385,7 @@
                 <td class="number">1</td>
                 <td class="text">Digite seu email:
                     <span class="code">&lt;<span class="tag">input</span>
-                    <span class="atribute">type</span>=<span class="atribute-text">"email"</span>&gt;</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"email"</span>&gt;</span>
                 </td>
             </tr>
             <tr>
@@ -348,7 +404,7 @@
                 <td class="number">1</td>
                 <td class="text">Ajuste o volume:(exemplo)
                     <span class="code">&lt;<span class="tag">input</span>
-                    <span class="atribute">type</span>=<span class="range">"email"</span>&gt;</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"email"</span>&gt;</span>
                 </td>
             </tr>
             <tr>
@@ -359,29 +415,55 @@
             </tr>
         </table>
     </div>
-
+    <div class="exemplo">
+        Digite o que você deseja pesquisar: <input type="search">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Digite o que você deseja pesquisar:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"search"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "search" ele cria uma barra de pesquisa, pode ser iconpatível com alguns navegadores --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Informe a url: <input type="url">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Informe o link:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"url"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "url" ele recolhe uma url, pode ser incompatível em alguns navegadores --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
     <center>
-        <form>
-
-            Digite o que você deseja pesquisar:<br>
-            <input type="search"><br><br>
-            <!-- Cria um campo de pesquisa de pesquisa-->
-
-            Escolha um arquivo:<br>
-            <input type="file" id="myfile" name="Myfile"><br><br>
-            <!--Abre um campo para selecionar um arquivo-->
-
-            Digite o link:<br>
-            <input type="url"><br><br>
-            <!--Cria um campo para ler um link-->
-
+        <!-- <form>
+            
+            <input type="text">
             <input type="submit" value="Enviar"><br><br>
             <!--Cria um botão para enviar as opções-->
 
 
             <input type="reset" value="Apagar"><br><br>
-            <!--Cria um botão que apaga as informações fornecidas-->
-        </form>
+            <!--Cria um botão que apaga as informações fornecida
+        </form> -->
 
 
 
@@ -424,12 +506,6 @@
             <input type="text" name="pin" size="4" pattern="[0-9]{4}"><br><br>
             <!--O atributo pattern não deixa que você envie a resposta sem que ela cumpra com os requisitos de tipo e quantidade-->
             <!--O atributo pattern funciona com os seguintes tipos de entrada: text, date, search, url,email e password.-->
-
-            Escolha os arquivos:<br>
-            <input type="file" id="myfiles" name="Myfiles" multiple><br>
-            <!-- O atributo multiple indica que podem haver mais de uma entrada-->
-            <!--O atributo multiple funciona com os seguintes tipos de entrada: email e file-->
-            Lembrete: Para escolher mais de um arquivo pressione Ctrl enquanto seleciona os arquivos<br><br>
 
             Digite seu CPF:
             <input type="text" name="CPF" placeholder="000.000.000-00"
