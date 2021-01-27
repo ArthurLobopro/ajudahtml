@@ -453,28 +453,59 @@
             </tr>
         </table>
     </div>
+    <div class="exemplo">
+        <object data="submit.html" type="text/html"></object>
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">form</span>&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="text tab">Nome: 
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>&gt; &lt;<span class="tag">br</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="code tab">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"submit"</span> <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Enviar"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="code tab">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"reset"</span> <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Apagar"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="code">&lt;/<span class="tag">form</span>&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">6</td>
+                <td class="coment">&lt;!-- </td>
+            </tr>
+            <tr>
+                <td class="number">7</td>
+                <td class="coment">
+                    Quando type é definido como "submit" ele cria um botão para enviar valores do formulário em que está. 
+                </td>
+            </tr>
+            <tr>
+                <td class="number">8</td>
+                <td class="coment">
+                    Quando type é definido como "reset" ele redefine todos os valores do formulário em que está. --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
     <center>
-        <!-- <form>
-            
-            <input type="text">
-            <input type="submit" value="Enviar"><br><br>
-            <!--Cria um botão para enviar as opções-->
-
-
-            <input type="reset" value="Apagar"><br><br>
-            <!--Cria um botão que apaga as informações fornecida
-        </form> -->
-
-
-
         <form>
-
-            Nome:
-            <input type="text" name="nome" value="Arthur"><br>
-            Sobrenome:
-            <input type="text" name="sobrenome" value="Lobo"><br><br>
-            <!--O atributo value="" adiciona um valor para o campo de texto ou se seleção até que alguem o edite-->
-
             Nome:
             <input type="text" name="nome" value="Arthur" disabled><br>
             <!-- O atributo disabled indica que o campo de resposta está desativado, ele não pode ser editado e nem está "clicável"-->
