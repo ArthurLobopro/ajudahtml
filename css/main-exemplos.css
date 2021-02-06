@@ -3,6 +3,7 @@
     --preto: rgb(30, 30, 30);
     --cinza:#787878;
     --verde: #6A9955;
+    --verde-claro: #B5CEA8;
     --branco: #e5e5e5;
     --azul: #569CD6;
     --azul-claro: #9CDCFE;
@@ -83,6 +84,9 @@ td.text,td.code,td.atribute{
     float: left;
     margin-right: 5px;
     user-select: none;
+}
+.number-css{
+    color:var(--verde-claro);
 }
 .tab{
     padding-left: var(--tab) !important;
