@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="../../css/main-exemplos.css">
     <title>Tag Input</title>
     <style>
-        red {
-            color: red
-        }
         .exemplo{
             text-align: center;
         }
@@ -454,7 +451,7 @@
         </table>
     </div>
     <div class="exemplo">
-        <object data="submit.html" type="text/html"></object>
+        <object data="submit.html" type="text/html" height="77px"></object>
         <div class="mt15px">Código:</div>
         <table>
             <tr>
@@ -504,33 +501,116 @@
             </tr>
         </table>
     </div>
+    <div class="exemplo">
+        <input type="text" value="Este campo está desativado" disabled><br><br>
+        <input type="text" value="Este campo está ativado">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Este campo está desativado"</span>
+                    <span class="atribute">disabled</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Este campo está ativado"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo disabled indica que um campo está desativado --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <input type="text" value="Este campo é para leitura" readonly><br><br>
+        <input type="text" value="Este campo é editável">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Este campo é somente para leitura"</span>
+                    <span class="atribute">readonly</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Este campo é editável"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo readonly indica que um campo é somente para leitura --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <input type="text" size="10" value="Tamanho 10">
+        <input type="text" size="5" value="Size5">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Tamanho 10"</span>
+                    <span class="atribute">size</span>=<span class="atribute-text">"10"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"size5"</span>
+                    <span class="atribute">size</span>=<span class="atribute-text">"5"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo size define a largura do campo input por caracteres --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <input type="text" size="10" value="Máximo 10." maxlength="10">
+        <input type="text" size="4" value="Max4" maxlength="4">
+        <div class="mt15px">Código:</div>
+        <table>
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Máximo 10."</span>
+                    <span class="atribute">size</span>=<span class="atribute-text">"10"</span>
+                    <span class="atribute">maxlength</span>=<span class="atribute-text">"10"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Max4"</span>
+                    <span class="atribute">size</span>=<span class="atribute-text">"4"</span>
+                    <span class="atribute">maxlength</span>=<span class="atribute-text">"4"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo maxlength define o máximo de caracteres dentro de um campo --&gt;</td>
+            </tr>
+        </table>
+    </div>
     <center>
         <form>
-            Nome:
-            <input type="text" name="nome" value="Arthur" disabled><br>
-            <!-- O atributo disabled indica que o campo de resposta está desativado, ele não pode ser editado e nem está "clicável"-->
-            Sobrenome:
-            <input type="text" name="sobrenome" value="Lobo"><br><br>
-
-            Nome:
-            <input type="text" name="nome" value="Arthur" readonly><br>
-            <!-- O atributo readonly é semelhante ao atributo disabled, porém ele apenas não permite que a informação atribuida seja editada-->
-            Sobrenome:
-            <input type="text" name="sobrenome" value="Lobo"><br><br>
-
-            Email:
-            <input type="email" name="email" size="50">
-            Senha:
-            <input type="text" name="pin" size="8"><br><br>
-            <!--O atributo size especifica a largura (em caracteres) de um campo de entrada-->
-            <!--O atributo size funciona com os seguintes tipos de entrada:text, search, url, email, and password.-->
-
-            Nome:
-            <input type="text" name="nome" size="50">
-            PIN:
-            <input type="text" name="pin" size="4" maxlength="4"><br><br>
-            <!--O atributo maxlength especifica o número máximo de caracteres permitido em um campo de entrada-->
-
             Nome:
             <input type="text" name="nome" size="50" pattern="A-Za-z">
             PIN:

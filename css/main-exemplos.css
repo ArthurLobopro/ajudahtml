@@ -85,7 +85,7 @@ td.text,td.code,td.atribute{
     user-select: none;
 }
 .tab{
-    padding-left: var(--tab);
+    padding-left: var(--tab) !important;
     border-left: 1pt solid var(--cinza);
 }
 footer{
