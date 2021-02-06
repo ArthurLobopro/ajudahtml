@@ -48,19 +48,22 @@ h1{
 }
 .rotated{
     animation: rotate 1s ;
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
 }
 .hiden{
     display: none;
     background-color: #e6ffedd0;
 }
-@keyframes rotate{
-    from {transform: rotateX(0deg);}
-    to {transform: rotateX(180deg);}
+.delay-1{
+    animation-delay: -1s;
 }
-@keyframes no-rotate {
-    from {transform: rotateX(180deg);}
-    to {transform: rotateX(0deg);}
+@keyframes no-rotate{
+    from {transform: rotateZ(-90deg);}
+    to {transform: rotateZ(0deg);}
+}
+@keyframes rotate {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(-90deg);}
 }
 @font-face{
     font-family: 'Courier Prime';
