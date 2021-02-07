@@ -33,12 +33,12 @@
             <a href="../index.html"><img src="../midia/home_white.png" onmousemove="troca_home(1)" onmouseleave="troca_home(2)"
                 id="home"></a>
             <ul>
-                <a href="#1"><li class="botao">Formatação</li></a>
-                <a href="#2"><li class="botao">Espaçamento</li></a>
-                <a href="#3"><li class="botao ">Listas</li></a>
-                <a href="#4"><li class="botao">Tabelas</li></a>
-                <a href="#5"><li class="botao">Formulários</li></a>
-                <a href="#6"><li class="botao">Títulos</li></a>
+                <a href="#texto"><li class="botao">Formatação</li></a>
+                <a href="#espacamento"><li class="botao">Espaçamento</li></a>
+                <a href="#listas"><li class="botao ">Listas</li></a>
+                <a href="#tabelas"><li class="botao">Tabelas</li></a>
+                <a href="#forms"><li class="botao">Formulários</li></a>
+                <a href="#titles"><li class="botao">Títulos</li></a>
             </ul>
         </div>
     </header>
@@ -55,370 +55,398 @@
                 <th>Função</th>
             </tr>
         </thead>
-        <tr>
-            <td colspan="3" class="titulo">Basico</td>
-        </tr>
-        <tr>
-        <tr>
-            <td class="tag">&lt;html&gt;</td>
-            <td class="tag">&lt;/html&gt;</td>
-            <td>Define a raiz do documento html</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;head&gt;</td>
-            <td class="tag">&lt;/head&gt;</td>
-            <td>Tag onde são postas as informações da página.</td>
-        </tr>
-        <tr>
-            <td colspan="3">Dentre essas informações estão:</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;title&gt;</td>
-            <td class="tag">&lt;/title&gt;</td>
-            <td>Define o título da página (que é visto na guia)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;link&gt;</td>
-            <td class="nao-possui">Não possui</td>
-            <td>Faz a ligação de algum arquivo na página (um arquivo css, um icone, entre outros).</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;meta&gt;</td>
-            <td class="nao-possui">Não possui</td>
-            <td>Define alguma informação da página como autor,descrição,codificação de caracteres,etc</td>
-        </tr>
-        <tr>
-            <td colspan="3" class="mensagem">Observação: as definições devem ser feitas por meio de atributos</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;body&gt;</td>
-            <td class="tag">&lt;/body&gt;</td>
-            <td>É o "corpo" da página, colocado <b>após</b> a tag <span class="tag">&lt;head&gt;</span></td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;header&gt;</td>
-            <td class="tag">&lt;/header&gt;</td>
-            <td>Define o cabeçalho para a página</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;main&gt;</td>
-            <td class="tag">&lt;/main&gt;</td>
-            <td>Define o conteúdo principal da página</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;section&gt;</td>
-            <td class="tag">&lt;/section&gt;</td>
-            <td>Cria uma seção na página</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;div&gt;</td>
-            <td class="tag">&lt;/div&gt;</td>
-            <td>Cria uma divisão na página</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;a&gt;</td>
-            <td class="tag">&lt;/a&gt;</td>
-            <td>Adiciona um hiperlink, para exemplos <a href="exemplos-html/tag-a.html">clique aqui</a></td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;footer&gt;</td>
-            <td class="tag">&lt;/footer&gt;</td>
-            <td>Define o rodapé da página</td>
-        </tr>
-        <tr>
-            <td class="coment">&lt;!--</td>
-            <td class="coment">--&gt;</td>
-            <td>Adiciona um comentário (só pode ser visualizado no código fonte)</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td colspan="3" class="titulo">Basico</td>
+            </tr>
+            <tr>
+            <tr>
+                <td class="tag">&lt;html&gt;</td>
+                <td class="tag">&lt;/html&gt;</td>
+                <td>Define a raiz do documento html</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;head&gt;</td>
+                <td class="tag">&lt;/head&gt;</td>
+                <td>Tag onde são postas as informações da página.</td>
+            </tr>
+            <tr>
+                <td colspan="3">Dentre essas informações estão:</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;title&gt;</td>
+                <td class="tag">&lt;/title&gt;</td>
+                <td>Define o título da página (que é visto na guia)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;link&gt;</td>
+                <td class="nao-possui">Não possui</td>
+                <td>Faz a ligação de algum arquivo na página (um arquivo css, um icone, entre outros).</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;meta&gt;</td>
+                <td class="nao-possui">Não possui</td>
+                <td>Define alguma informação da página como autor,descrição,codificação de caracteres,etc</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="mensagem">Observação: as definições devem ser feitas por meio de atributos</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;body&gt;</td>
+                <td class="tag">&lt;/body&gt;</td>
+                <td>É o "corpo" da página, colocado <b>após</b> a tag <span class="tag">&lt;head&gt;</span></td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;header&gt;</td>
+                <td class="tag">&lt;/header&gt;</td>
+                <td>Define o cabeçalho para a página</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;main&gt;</td>
+                <td class="tag">&lt;/main&gt;</td>
+                <td>Define o conteúdo principal da página</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;section&gt;</td>
+                <td class="tag">&lt;/section&gt;</td>
+                <td>Cria uma seção na página</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;div&gt;</td>
+                <td class="tag">&lt;/div&gt;</td>
+                <td>Cria uma divisão na página</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;a&gt;</td>
+                <td class="tag">&lt;/a&gt;</td>
+                <td>Adiciona um hiperlink, para exemplos <a href="exemplos-html/tag-a.html">clique aqui</a></td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;footer&gt;</td>
+                <td class="tag">&lt;/footer&gt;</td>
+                <td>Define o rodapé da página</td>
+            </tr>
+            <tr>
+                <td class="coment">&lt;!--</td>
+                <td class="coment">--&gt;</td>
+                <td>Adiciona um comentário (só pode ser visualizado no código fonte)</td>
+            </tr>
+        </tbody>
+        
         <!-- Formatação de texto -->
 
-        <tr>
-            <td colspan="3" class="titulo" id="1">Formatação de Texto</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;i&gt;</td>
-            <td class="tag">&lt;/i&gt;</td>
-            <td>Deixa o texto em itálico (forma)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;em&gt;</td>
-            <td class="tag"> &lt;/em&gt;</td>
-            <td>Deixa o texto enfatizado (itálico, porém semântico)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;b&gt;</td>
-            <td class="tag">&lt;/b&gt;</td>
-            <td>Deixa o texto em negrito (forma)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;strong&gt;</td>
-            <td class="tag">&lt;/strong&gt;</td>
-            <td>Deixa o texto em destaque (negrito, porém semântico)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;mark&gt;</td>
-            <td class="tag">&lt;/mark&gt;</td>
-            <td>Marca o texto</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;small&gt;</td>
-            <td class="tag">&lt;/small&gt;</td>
-            <td>Deixa o texto pequeno</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;del&gt;</td>
-            <td class="tag">&lt;/del&gt;</td>
-            <td>Risca o texto</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;ins&gt;</td>
-            <td class="tag">&lt;/ins&gt;</td>
-            <td>Sublinha o texto</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;u&gt;</td>
-            <td class="tag">&lt;/u&gt;</td>
-            <td>Sublinha o texto, porém de forma não semântica</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;sup&gt;</td>
-            <td class="tag">&lt;/sup&gt;</td>
-            <td>Deixa o texto mais acima na linha</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;sub&gt;</td>
-            <td class="tag">&lt;/sub&gt;</td>
-            <td>Deixa o texto abaixo da linha</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;code&gt;</td>
-            <td class="tag">&lt;/code&gt;</td>
-            <td>Deixa a fonte semelhante a codigos de computador</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;marquee&gt;</td>
-            <td class="tag">&lt;/marquee&gt;</td>
-            <td>Faz o texto (ou imagem) rodar na página</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;abrr&gt;</td>
-            <td class="tag">&lt;/abrr&gt;</td>
-            <td>Quando o mouse fica em cima da palavra mostra um texto pré definido</td>
-        </tr>
-        <tr>
-            <td colspan="3">O texto deve ser definido pelo atributo <spam class="atribute">title="
-                    <spam class="value">texto</spam>"</spam>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3">Para ver os exemplos relacionados a texto <a href="exemplos-html/formatacao-de-texto.html">clique aqui</a></td>
-        </tr>
-
+        <tbody id="texto">
+            <tr>
+                <td colspan="3" class="titulo">Formatação de Texto</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;i&gt;</td>
+                <td class="tag">&lt;/i&gt;</td>
+                <td>Deixa o texto em itálico (forma)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;em&gt;</td>
+                <td class="tag"> &lt;/em&gt;</td>
+                <td>Deixa o texto enfatizado (itálico, porém semântico)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;b&gt;</td>
+                <td class="tag">&lt;/b&gt;</td>
+                <td>Deixa o texto em negrito (forma)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;strong&gt;</td>
+                <td class="tag">&lt;/strong&gt;</td>
+                <td>Deixa o texto em destaque (negrito, porém semântico)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;mark&gt;</td>
+                <td class="tag">&lt;/mark&gt;</td>
+                <td>Marca o texto</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;small&gt;</td>
+                <td class="tag">&lt;/small&gt;</td>
+                <td>Deixa o texto pequeno</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;del&gt;</td>
+                <td class="tag">&lt;/del&gt;</td>
+                <td>Risca o texto</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;ins&gt;</td>
+                <td class="tag">&lt;/ins&gt;</td>
+                <td>Sublinha o texto</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;u&gt;</td>
+                <td class="tag">&lt;/u&gt;</td>
+                <td>Sublinha o texto, porém de forma não semântica</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;sup&gt;</td>
+                <td class="tag">&lt;/sup&gt;</td>
+                <td>Deixa o texto mais acima na linha</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;sub&gt;</td>
+                <td class="tag">&lt;/sub&gt;</td>
+                <td>Deixa o texto abaixo da linha</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;code&gt;</td>
+                <td class="tag">&lt;/code&gt;</td>
+                <td>Deixa a fonte semelhante a codigos de computador</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;marquee&gt;</td>
+                <td class="tag">&lt;/marquee&gt;</td>
+                <td>Faz o texto (ou imagem) rodar na página</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;abrr&gt;</td>
+                <td class="tag">&lt;/abrr&gt;</td>
+                <td>Quando o mouse fica em cima da palavra mostra um texto pré definido</td>
+            </tr>
+            <tr>
+                <td colspan="3">O texto deve ser definido pelo atributo <spam class="atribute">title="
+                        <spam class="value">texto</spam>"</spam>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">Para ver os exemplos relacionados a texto <a href="exemplos-html/formatacao-de-texto.html">clique aqui</a></td>
+            </tr>
+        </tbody>
+        
         <!-- Espaçamento -->
 
-        <tr>
-            <td colspan="3" class="titulo" id="2">Espaçamento</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;p&gt;</td>
-            <td class="tag">&lt;/p&gt;</td>
-            <td>Define um parágrafo</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;br&gt;</td>
-            <td class="nao-possui">Não possui</td>
-            <td>Esta tag pula uma linha quando usada,tem a mesma função da tecla enter</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;hr&gt;</td>
-            <td class="nao-possui">Não possui</td>
-            <td>Cria uma linha que divide toda a página</td>
-        </tr>
-        <tr>
-            <td colspan="3">Para exemplos de espaçamento <a href="exemplos-html/espacamento.html">clique aqui</a></td>
-        </tr>
+        <tbody id="espacamento">
+            <tr>
+                <td colspan="3" class="titulo">Espaçamento</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;p&gt;</td>
+                <td class="tag">&lt;/p&gt;</td>
+                <td>Define um parágrafo</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;br&gt;</td>
+                <td class="nao-possui">Não possui</td>
+                <td>Esta tag pula uma linha quando usada,tem a mesma função da tecla enter</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;hr&gt;</td>
+                <td class="nao-possui">Não possui</td>
+                <td>Cria uma linha que divide toda a página</td>
+            </tr>
+            <tr>
+                <td colspan="3">Para exemplos de espaçamento <a href="exemplos-html/espacamento.html">clique aqui</a></td>
+            </tr>
+        </tbody>
 
         <!-- Listas -->
 
-        <tr>
-            <td colspan="3" class="titulo" id="3">Listas</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;li&gt;</td>
-            <td class="tag">&lt;/li&gt;</td>
-            <td>Lista itens</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;ul&gt;</td>
-            <td class="tag">&lt;/ul&gt;</td>
-            <td>Lista itens em formato de tópico</td>
-        </tr>
-        <tr>
-            <td colspan="3" class="mensagem">
-                <red>Atenção!!!</red> A tag <spam class="tag">&lt;li&gt;</spam> deve ser usada dentro da tag <spam class="tag">&lt;ul&gt;</spam> para que ela funcione
-            </td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;ol&gt;</td>
-            <td class="tag">&lt;/ol&gt;</td>
-            <td>Lista intens em ordem numérica</td>
-        </tr>
-        <tr>
-            <td colspan="3" class="mensagem">
-                <red>Atenção!!!</red> A tag <spam class="tag">&lt;li&gt;</spam> deve ser usada dentro da tag <spam class="tag">&lt;ol&gt;</spam> para que ela funcione
-            </td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;dt&gt;</td>
-            <td class="tag">&lt;/dt&gt;</td>
-            <td>Define um item (como um título)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;dd&gt;</td>
-            <td class="tag">&lt;/dd&gt;</td>
-            <td>Define um item secundário (como um subtítulo)</td>
-        </tr>
-        <tr>
-            <td colspan="3">Para vez exemplos das tags de listagem <a href="exemplos-html/listas.html">clique aqui</a></td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;img&gt;</td>
-            <td class="tag">&lt;/img&gt;</td>
-            <td>Adiciona uma imagem,Para exemplos <a href="exemplos-html/imagem.html">clique aqui</a></td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;audio&gt;</td>
-            <td class="tag">&lt;/audio&gt;</td>
-            <td>Adiciona um audio na página</td>
-        </tr>
-        <tr>
-            <td colspan="3" class="mensagem">
-                <red>Atenção!!!</red> A imagem deve ser especificada no atributo <span class="atribute">src="<span class="value">nome do arquivo da imagem</span>"</span>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3" class="titulo" id="4">Tabelas</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;table&gt;</td>
-            <td class="tag">&lt;/table&gt;</td>
-            <td>Cria uma tabela</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;thead&gt;</td>
-            <td class="tag">&lt;/thead&gt;</td>
-            <td>Cria um cabeçalho para a tabela</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;tbody&gt;</td>
-            <td class="tag">&lt;/tbody&gt;</td>
-            <td>Define o corpo da tabela</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;tr&gt;</td>
-            <td class="tag">&lt;/tr&gt;</td>
-            <td>Cria uma linha na tabela</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;th&gt;</td>
-            <td class="tag">&lt;/th&gt;</td>
-            <td>Cria colunas de cabeçalho para a tabela</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;td&gt;</td>
-            <td class="tag">&lt;/td&gt;</td>
-            <td>Cria colunas para a tabela</td>
-        </tr>
-        <tr>
-            <td colspan="3" class="titulo" id="5">Formulários</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;form&gt;</td>
-            <td class="tag">&lt;/form&gt;</td>
-            <td>Cria um formulário,em outras palavras,ele agrupa todas as tags seguintes que recebem dados</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;input&gt;</td>
-            <td class="nao-possui">Não possui</td>
-            <td> Recebe algum determinado tipo de dado, para exemplos <a href="exemplos-html/tag-input.html">clique aqui</a></td><tr>
-            <td colspan="3" class="mensagem">
-            <red>Atenção!!!</red> O tipo de dado a ser coletado deve ser especificado pelo atributo <span class="atribute">type="<span class="value">tipo de dado</span>"</span>
-            </td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;select&gt;</td>
-            <td class="tag">&lt;/select&gt;</td>
-            <td>Cria um quadro de seleção</td>
-        </tr>
-        <tr>
-            <td colspan="3">Para adicionar as opções use a tag abaixo</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;option&gt;</td>
-            <td class="tag">&lt;/option&gt;</td>
-            <td>Adiciona opções</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;fieldset&gt;</td>
-            <td class="tag">&lt;/fieldset&gt;</td>
-            <td>Adiciona uma caixa onde se pode colocar as perguntas,opções etc</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;legend&gt;</td>
-            <td class="tag">&lt;/legend&gt;</td>
-            <td>Adiciona um título para a caixa de perguntas</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;textarea&gt;</td>
-            <td class="tag">&lt;/textarea&gt;</td>
-            <td>Cria uma área para digitar texto</td>
-        </tr>
-        <tr>
-            <td colspan="3"> Para exemplos <a href="exemplos-html/Formularios.html">clique aqui</a></td>
-        </tr>
-        <tr>
-            <td colspan="3" class="titulo" id="6">Títulos</td>
-        </tr>
-        <tr class="subtitulo">
-            <td>Tag</td>
-            <td>Fechamento</td>
-            <td>Função</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;h1&gt;</td>
-            <td class="tag">&lt;/h1&gt;</td>
-            <td>Define um título importante</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;h2&gt;</td>
-            <td class="tag">&lt;/h2&gt;</td>
-            <td>Define um título menos importante que h1(ainda assim importante)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;h3&gt;</td>
-            <td class="tag">&lt;/h3&gt;</td>
-            <td>Define um título menos importante que h2(ainda assim importante)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;h4&gt;</td>
-            <td class="tag">&lt;/h4&gt;</td>
-            <td>Define um título menos importante que h3(ainda assim importante)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;h5&gt;</td>
-            <td class="tag">&lt;/h5&gt;</td>
-            <td>Define um título menos importante que h4(ainda assim importante)</td>
-        </tr>
-        <tr>
-            <td class="tag">&lt;h6&gt;</td>
-            <td class="tag">&lt;/h6&gt;</td>
-            <td>Define um título menos importante que h5(ainda assim importante)</td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                Para exemplos de títulos <a href="exemplos-html/titulos.html">clique aqui.</a>
-            </td>
-        </tr>
+        <tbody id="listas">
+            <tr>
+                <td colspan="3" class="titulo">Listas</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;li&gt;</td>
+                <td class="tag">&lt;/li&gt;</td>
+                <td>Lista itens</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;ul&gt;</td>
+                <td class="tag">&lt;/ul&gt;</td>
+                <td>Lista itens em formato de tópico</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="mensagem">
+                    <red>Atenção!!!</red> A tag <spam class="tag">&lt;li&gt;</spam> deve ser usada dentro da tag <spam class="tag">&lt;ul&gt;</spam> para que ela funcione
+                </td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;ol&gt;</td>
+                <td class="tag">&lt;/ol&gt;</td>
+                <td>Lista intens em ordem numérica</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="mensagem">
+                    <red>Atenção!!!</red> A tag <spam class="tag">&lt;li&gt;</spam> deve ser usada dentro da tag <spam class="tag">&lt;ol&gt;</spam> para que ela funcione
+                </td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;dt&gt;</td>
+                <td class="tag">&lt;/dt&gt;</td>
+                <td>Define um item (como um título)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;dd&gt;</td>
+                <td class="tag">&lt;/dd&gt;</td>
+                <td>Define um item secundário (como um subtítulo)</td>
+            </tr>
+            <tr>
+                <td colspan="3">Para vez exemplos das tags de listagem <a href="exemplos-html/listas.html">clique aqui</a></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="titulo">Mídia</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;img&gt;</td>
+                <td class="tag">&lt;/img&gt;</td>
+                <td>Adiciona uma imagem,Para exemplos <a href="exemplos-html/imagem.html">clique aqui</a></td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;audio&gt;</td>
+                <td class="tag">&lt;/audio&gt;</td>
+                <td>Adiciona um audio na página</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="mensagem">
+                    <red>Atenção!!!</red> A imagem deve ser especificada no atributo <span class="atribute">src="<span class="value">nome do arquivo da imagem</span>"</span>
+                </td>
+            </tr>
+        </tbody>
+        
+        <!-- Tabelas -->
+
+        <tbody id="tabelas">
+            <tr>
+                <td colspan="3" class="titulo">Tabelas</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;table&gt;</td>
+                <td class="tag">&lt;/table&gt;</td>
+                <td>Cria uma tabela</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;thead&gt;</td>
+                <td class="tag">&lt;/thead&gt;</td>
+                <td>Cria um cabeçalho para a tabela</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;tbody&gt;</td>
+                <td class="tag">&lt;/tbody&gt;</td>
+                <td>Define o corpo da tabela</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;tr&gt;</td>
+                <td class="tag">&lt;/tr&gt;</td>
+                <td>Cria uma linha na tabela</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;th&gt;</td>
+                <td class="tag">&lt;/th&gt;</td>
+                <td>Cria colunas de cabeçalho para a tabela</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;td&gt;</td>
+                <td class="tag">&lt;/td&gt;</td>
+                <td>Cria colunas para a tabela</td>
+            </tr>
+        </tbody>
+        
+        <!-- Formulários -->
+
+        <tbody id="forms">
+            <tr>
+                <td colspan="3" class="titulo">Formulários</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;form&gt;</td>
+                <td class="tag">&lt;/form&gt;</td>
+                <td>Cria um formulário,em outras palavras,ele agrupa todas as tags seguintes que recebem dados</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;input&gt;</td>
+                <td class="nao-possui">Não possui</td>
+                <td> Recebe algum determinado tipo de dado, para exemplos <a href="exemplos-html/tag-input.html">clique aqui</a></td><tr>
+                <td colspan="3" class="mensagem">
+                <red>Atenção!!!</red> O tipo de dado a ser coletado deve ser especificado pelo atributo <span class="atribute">type="<span class="value">tipo de dado</span>"</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;select&gt;</td>
+                <td class="tag">&lt;/select&gt;</td>
+                <td>Cria um quadro de seleção</td>
+            </tr>
+            <tr>
+                <td colspan="3">Para adicionar as opções use a tag abaixo</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;option&gt;</td>
+                <td class="tag">&lt;/option&gt;</td>
+                <td>Adiciona opções</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;fieldset&gt;</td>
+                <td class="tag">&lt;/fieldset&gt;</td>
+                <td>Adiciona uma caixa onde se pode colocar as perguntas,opções etc</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;legend&gt;</td>
+                <td class="tag">&lt;/legend&gt;</td>
+                <td>Adiciona um título para a caixa de perguntas</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;textarea&gt;</td>
+                <td class="tag">&lt;/textarea&gt;</td>
+                <td>Cria uma área para digitar texto</td>
+            </tr>
+            <tr>
+                <td colspan="3"> Para exemplos <a href="exemplos-html/Formularios.html">clique aqui</a></td>
+            </tr>
+        </tbody>
+        
+        <!-- Títulos  -->
+
+        <tbody id="titles">
+            <tr>
+                <td colspan="3" class="titulo" id="6">Títulos</td>
+            </tr>
+            <tr class="subtitulo">
+                <td>Tag</td>
+                <td>Fechamento</td>
+                <td>Função</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;h1&gt;</td>
+                <td class="tag">&lt;/h1&gt;</td>
+                <td>Define um título importante</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;h2&gt;</td>
+                <td class="tag">&lt;/h2&gt;</td>
+                <td>Define um título menos importante que h1(ainda assim importante)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;h3&gt;</td>
+                <td class="tag">&lt;/h3&gt;</td>
+                <td>Define um título menos importante que h2(ainda assim importante)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;h4&gt;</td>
+                <td class="tag">&lt;/h4&gt;</td>
+                <td>Define um título menos importante que h3(ainda assim importante)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;h5&gt;</td>
+                <td class="tag">&lt;/h5&gt;</td>
+                <td>Define um título menos importante que h4(ainda assim importante)</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;h6&gt;</td>
+                <td class="tag">&lt;/h6&gt;</td>
+                <td>Define um título menos importante que h5(ainda assim importante)</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Para exemplos de títulos <a href="exemplos-html/titulos.html">clique aqui.</a>
+                </td>
+            </tr>
+        </tbody>
+        
     </table>
     <footer>&copy;Arthur Lobo</footer>
 </body>
