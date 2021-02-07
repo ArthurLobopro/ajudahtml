@@ -37,9 +37,9 @@
                 ok.push((cpf[3] == '.' && cpf[7] == '.')? true : false)
                 ok.push(cpf[11] == '-' ? true : false)
                 ok.push(isNaN(Number(cpf.substring(12,13))) == false ? true : false)
-                return (ok.indexOf(false)== -1 ? alert('Este cpf está formatado corretamente') : alert('Este cpf não está formatado corretamente'))
+                return (ok.indexOf(false)== -1 ? alert('Este CPF está formatado corretamente') : alert('Este CPF não está formatado corretamente'))
             }else{
-                alert('Este cpf não está formatado corretamente')
+                alert('Este CPF não está formatado corretamente')
             }
         }
         
