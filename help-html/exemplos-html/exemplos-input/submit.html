@@ -6,9 +6,10 @@
     <title>Exemplo submit</title>
 </head>
 <body>
-    <form style="text-align: center;">
-        Nome: <input type="text" id="nom"><br><br>
-        <input type="submit" value="Enviar"  onclick="alert(`Olá ${document.getElementById('nom').value}!`)">
+    <form style="text-align: left;line-height: 1.5;" action="../envia_form.html">
+        Nome: <input type="text" name="nome"><br>
+        Sobrenome: <input type="text" name="sobrenome"> <br>
+        <input type="submit" value="Enviar">
         <input type="reset" value="Apagar">
     </form>
 </body>
