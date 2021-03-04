@@ -10,6 +10,7 @@
     --laranja: #CE9178;
     --amarelo: #DCDCAA;
     --tab: 20px;
+    --number-width: 35px
 }
 body{
     background-color: rgb(211, 211, 211);
@@ -31,8 +32,8 @@ table{
     border-collapse:collapse;
 }
 tr{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: var(--number-width) auto;
 }
 .exemplo{
     padding: 10px;
@@ -81,8 +82,8 @@ td.text,td.code,td.atribute{
     text-align: right;
     color: var(--cinza);
     padding-right: 5px;
-    width: 25px;
-    float: left;
+    width: var(--number-width);
+    box-sizing: border-box;
     margin-right: 5px;
     user-select: none;
     border-right: 1pt solid var(--cinza);
