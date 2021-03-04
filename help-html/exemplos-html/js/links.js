@@ -1,58 +1,47 @@
+const get = id => document.getElementById(id)
+
 //Target
-var msg = document.getElementById("msg-target")
-            let link_t = document.getElementById("link-target")
-            let target_s = document.getElementById("target")
-            function escreve_self() {
-                msg.innerText="Este link será aberto na mesma guia."
-                link_t.target="_self"
-                target_s.innerText="_self"
-            }
-            function escreve_blank() {
-                msg.innerText="Este link será aberto em nova guia."
-                link_t.target="_blank"
-                target_s.innerText="_blank"
-            }
+const msg = get("msg-target")
+const escreve_target = event => {
+    const link_t = get("link-target")
+    const target_s = get("target")
+    const target = event.target.dataset.target
+    link_t.target=target
+    target_s.innerText=target
+}
+const target_inputs = document.getElementsByName("target")
+for(let e of target_inputs){ e.onclick = escreve_target }
+
 //Style
-var link = document.getElementById("link-color")
-function troca_cor(cor){
-    let text_color = document.getElementById("color")
-    text_color.innerText=cor
+const link = get("link-color")
+const troca_cor = event => {
+    const cor = event.target.value
+    get("color").innerText = cor
     link.style.color=cor
 }
-function troca_cor_fundo(cor){
-    let text_bgcolor = document.getElementById("bg-color")
-    text_bgcolor.innerText=cor
+const troca_background = event => {
+    const cor = event.target.value
+    get("bg-color").innerText=cor
     link.style.backgroundColor=cor
 }
-function txtDecoration(valor){
-    let text_deco = document.getElementById("txt-decor")
-    text_deco.innerText=valor
-    link.style.textDecoration=valor
-    let text_decoStl = document.getElementsByName("tdecstl")
-    for(i=0;i<6;i++){
-        if (text_decoStl[i].checked){
-            switch (i) {
-                case 1:
-                    link.style.textDecoration+=" dashed"
-                    break
-                case 2:
-                    link.style.textDecoration+=" dotted"
-                    break
-                case 3:
-                    link.style.textDecoration+=" double"
-                    break
-                case 4:
-                    link.style.textDecoration+=" wavy"
-                    break
-                case 5:
-                    link.style.textDecoration+=" initial"
-                    break
-            }
-        }
-    }
+const txtDecoration = event => {
+    const style = event.target.value
+    get("txt-decor-line").innerText = style
+    link.style.textDecorationLine = style
 }
-function txtDecorationStl(valor){
-    let text_decoStl = document.getElementById("txt-decor-st")
-    text_decoStl.innerText=valor
-    link.style.textDecorationStyle=valor
+const txtDecorationStl = event => {
+    const style = event.target.value
+    get("txt-decor-st").innerText = style
+    link.style.textDecorationStyle= style
 }
+const color_inputs = document.getElementsByName("color")
+for(let e of color_inputs){ e.onclick = troca_cor }
+
+const bgcolor_inputs = document.getElementsByName("bgcolor")
+for(let e of bgcolor_inputs){ e.onclick = troca_background }
+
+const tdec_input = document.getElementsByName("tdec")
+for(let e of tdec_input){ e.onclick = txtDecoration }
+
+const tdecstl_input = document.getElementsByName("tdecstl")
+for(let e of tdecstl_input){ e.onclick = txtDecorationStl }

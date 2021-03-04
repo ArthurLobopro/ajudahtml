@@ -36,8 +36,8 @@
             </table>
         </div>
         <div class="exemplo">
-            <a href="../midia/imagem1.jpg" download>
-                <img src="../midia/imagem1.jpg">
+            <a href="../../midia/imagem1.jpg" download>
+                <img src="../../midia/imagem1.jpg">
             </a><br>
             Clique na imagem para fazer download da mesma.
             <div class="mt15px">Código:</div>
@@ -107,8 +107,8 @@
             <div class="left">
                 Exemplos:<br>
                 <div id="exemplo-target" class="grid">
-                    <label><input type="radio" name="target" onclick="escreve_self()" checked>_self</label>
-                    <label><input type="radio" name="target" onclick="escreve_blank()">_blank</label>
+                    <label><input type="radio" name="target" data-target="_self" checked>_self</label>
+                    <label><input type="radio" name="target" data-target="_blank">_blank</label>
                 </div><br>
                 _self abre o link na mesma guia (padrão). <br>
                 _black abre o link em nova guia.
@@ -144,12 +144,12 @@
                 </tr>
                 <tr>
                     <td class="number">4</td>
-                    <td class="tab text"><span class="atribute">text-decoration</span>: <span class="atribute-text" id="txt-decor">underline</span>;
+                    <td class="tab text"><span class="atribute">text-decoration-line</span>: <span class="atribute-text" id="txt-decor-line">underline</span>;
                     </td>
                 </tr>
                 <tr>
                     <td class="number">5</td>
-                    <td class="tab text"><span class="atribute">text-decoration-style:</span>: <span class="atribute-text" id="txt-decor-st">solid</span>;
+                    <td class="tab text"><span class="atribute">text-decoration-style</span>: <span class="atribute-text" id="txt-decor-st">solid</span>;
                     </td>
                 </tr>
                 <tr>
@@ -162,39 +162,39 @@
                 <div id="exemplo-style" class="grid">
                     <div>
                         <p>Cor:</p>
-                        <label><input type="radio" name="color" onclick="troca_cor('blue')" checked>Azul</label><br>
-                        <label><input type="radio" name="color" onclick="troca_cor('red')">Vermelho</label><br>
-                        <label><input type="radio" name="color" onclick="troca_cor('green')">Verde</label><br>
-                        <label><input type="radio" name="color" onclick="troca_cor('violet')">Violeta</label><br>
-                        <label><input type="radio" name="color" onclick="troca_cor('purple')">Roxo</label><br>
+                        <label><input type="radio" name="color" value="blue" checked>Azul</label><br>
+                        <label><input type="radio" name="color" value="red">Vermelho</label><br>
+                        <label><input type="radio" name="color" value="green">Verde</label><br>
+                        <label><input type="radio" name="color" value="violet">Violeta</label><br>
+                        <label><input type="radio" name="color" value="purple">Roxo</label><br>
                         <span class="rob-slab">*Há várias outras cores*</span>
                     </div>
                     <div>
                         <p>Cor de Fundo:</p>
-                        <label><input type="radio" name="bgcolor" onclick="troca_cor_fundo('white')" checked>Branco</label><br>
-                        <label><input type="radio" name="bgcolor" onclick="troca_cor_fundo('black')">Preto</label><br>
-                        <label><input type="radio" name="bgcolor" onclick="troca_cor_fundo('gray')">Cinza</label><br>
-                        <label><input type="radio" name="bgcolor" onclick="troca_cor_fundo('purple')">Roxo</label><br>
-                        <label><input type="radio" name="bgcolor" onclick="troca_cor_fundo('lightblue')">Azul Claro</label><br>
+                        <label><input type="radio" name="bgcolor" value="white" checked>Branco</label><br>
+                        <label><input type="radio" name="bgcolor" value="black">Preto</label><br>
+                        <label><input type="radio" name="bgcolor" value="gray">Cinza</label><br>
+                        <label><input type="radio" name="bgcolor" value="purple">Roxo</label><br>
+                        <label><input type="radio" name="bgcolor" value="lightblue">Azul Claro</label><br>
                         <span class="rob-slab">*Há várias outras cores*</span>
                     </div>
                     <div>
-                        <p>text-decoration:</p>
-                        <input type="radio" name="tdec" onclick="txtDecoration('underline')" checked>underline<br>
-                        <input type="radio" name="tdec" onclick="txtDecoration('overline')">overline<br>
-                        <input type="radio" name="tdec" onclick="txtDecoration('line-through')">line-through<br>
-                        <input type="radio" name="tdec" onclick="txtDecoration('underline overline')">underline overline<br>
-                        <input type="radio" name="tdec" onclick="txtDecoration('underline overline line-through')">underline overline line-through<br>
-                        <input type="radio" name="tdec" onclick="txtDecoration('none')">none
+                        <p>text-decoration-line:</p>
+                        <input type="radio" name="tdec" value="underline" checked>underline<br>
+                        <input type="radio" name="tdec" value="overline">overline<br>
+                        <input type="radio" name="tdec" value="line-through">line-through<br>
+                        <input type="radio" name="tdec" value="underline overline">underline overline<br>
+                        <input type="radio" name="tdec" value="underline overline line-through">underline overline line-through<br>
+                        <input type="radio" name="tdec" value="none">none
                     </div>
                     <div>
                         <p>text-decoration-style:</p>
-                        <input type="radio" name="tdecstl" onclick="txtDecorationStl('solid')" checked>solid<br>
-                        <input type="radio" name="tdecstl" onclick="txtDecorationStl('dashed')">dashed<br>
-                        <input type="radio" name="tdecstl" onclick="txtDecorationStl('dotted')">dotted<br>
-                        <input type="radio" name="tdecstl" onclick="txtDecorationStl('double')">double<br>
-                        <input type="radio" name="tdecstl" onclick="txtDecorationStl('wavy')">wavy<br>
-                        <input type="radio" name="tdecstl" onclick="txtDecorationStl('initial')">initial
+                        <input type="radio" name="tdecstl" value="solid" checked>solid<br>
+                        <input type="radio" name="tdecstl" value="dashed">dashed<br>
+                        <input type="radio" name="tdecstl" value="dotted">dotted<br>
+                        <input type="radio" name="tdecstl" value="double">double<br>
+                        <input type="radio" name="tdecstl" value="wavy">wavy<br>
+                        <input type="radio" name="tdecstl" value="initial">initial
                     </div>
                 </div><br>
             </div>
