@@ -44,6 +44,10 @@ tr{
     margin: 10px auto 10px;
     background-color: white;
 }
+.mga{
+    margin: auto;
+    width: max-content;
+}
 .code{
     color: var(--cinza);
 }
