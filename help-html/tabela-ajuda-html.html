@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de ajuda HTML</title>
     <script src="tabela-html.js"></script>
     <link rel="shortcut icon" href="midia/html.ico" type="image/x-icon">
@@ -86,7 +87,7 @@
             <tr>
                 <td class="tag">&lt;meta&gt;</td>
                 <td class="nao-possui">Não possui</td>
-                <td>Define alguma informação da página como autor,descrição,codificação de caracteres,etc</td>
+                <td>Define metadados da página como autor,descrição,codificação de caracteres,etc</td>
             </tr>
             <tr>
                 <td colspan="3" class="mensagem">Observação: as definições devem ser feitas por meio de atributos</td>
@@ -94,7 +95,7 @@
             <tr>
                 <td class="tag">&lt;body&gt;</td>
                 <td class="tag">&lt;/body&gt;</td>
-                <td>É o "corpo" da página, colocado <b>após</b> a tag <span class="tag">&lt;head&gt;</span></td>
+                <td>É o "corpo" da página, aqui onde são colocados todos os elementos visíveis.</span></td>
             </tr>
             <tr>
                 <td class="tag">&lt;header&gt;</td>
@@ -162,7 +163,7 @@
             <tr>
                 <td class="tag">&lt;mark&gt;</td>
                 <td class="tag">&lt;/mark&gt;</td>
-                <td>Marca o texto</td>
+                <td>Deixa o texto em destaque (marcado,semelhante a canetinhas marca texto).</td>
             </tr>
             <tr>
                 <td class="tag">&lt;small&gt;</td>
@@ -172,47 +173,46 @@
             <tr>
                 <td class="tag">&lt;del&gt;</td>
                 <td class="tag">&lt;/del&gt;</td>
-                <td>Risca o texto</td>
+                <td>Indica um texto deletado.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;ins&gt;</td>
                 <td class="tag">&lt;/ins&gt;</td>
-                <td>Sublinha o texto</td>
+                <td>Indica um texto inserido.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;u&gt;</td>
                 <td class="tag">&lt;/u&gt;</td>
-                <td>Sublinha o texto, porém de forma não semântica</td>
+                <td>Sublinha o texto.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;sup&gt;</td>
                 <td class="tag">&lt;/sup&gt;</td>
-                <td>Deixa o texto mais acima na linha</td>
+                <td>Indica um texto sobrescrito</td>
             </tr>
             <tr>
                 <td class="tag">&lt;sub&gt;</td>
                 <td class="tag">&lt;/sub&gt;</td>
-                <td>Deixa o texto abaixo da linha</td>
+                <td>Indica um texto subscrito</td>
             </tr>
             <tr>
                 <td class="tag">&lt;code&gt;</td>
                 <td class="tag">&lt;/code&gt;</td>
-                <td>Deixa a fonte semelhante a codigos de computador</td>
+                <td>Indica um trecho de código.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;abrr&gt;</td>
+                <td class="tag">&lt;/abrr&gt;</td>
+                <td>Indica uma abreviatura (com definição).</td>
+            </tr>
+            <tr>
+                <td colspan="3">A definição deve ser definida pelo atributo <spam class="atribute">title="<spam class="value">definição</spam>"</spam>
+                </td>
             </tr>
             <tr>
                 <td class="tag">&lt;marquee&gt;</td>
                 <td class="tag">&lt;/marquee&gt;</td>
                 <td>Faz o texto (ou imagem) rodar na página</td>
-            </tr>
-            <tr>
-                <td class="tag">&lt;abrr&gt;</td>
-                <td class="tag">&lt;/abrr&gt;</td>
-                <td>Quando o mouse fica em cima da palavra mostra um texto pré definido</td>
-            </tr>
-            <tr>
-                <td colspan="3">O texto deve ser definido pelo atributo <spam class="atribute">title="
-                        <spam class="value">texto</spam>"</spam>
-                </td>
             </tr>
             <tr>
                 <td colspan="3">Para ver os exemplos relacionados a texto <a href="exemplos-html/formatacao-de-texto.html">clique aqui</a></td>
@@ -233,12 +233,12 @@
             <tr>
                 <td class="tag">&lt;br&gt;</td>
                 <td class="nao-possui">Não possui</td>
-                <td>Esta tag pula uma linha quando usada,tem a mesma função da tecla enter</td>
+                <td>Indica uma quebra de linha (enter).</td>
             </tr>
             <tr>
                 <td class="tag">&lt;hr&gt;</td>
                 <td class="nao-possui">Não possui</td>
-                <td>Cria uma linha que divide toda a página</td>
+                <td>Cria uma linha horizontal que divide todo o elemento em que está presente</td>
             </tr>
             <tr>
                 <td colspan="3">Para exemplos de espaçamento <a href="exemplos-html/espacamento.html">clique aqui</a></td>
@@ -254,12 +254,12 @@
             <tr>
                 <td class="tag">&lt;li&gt;</td>
                 <td class="tag">&lt;/li&gt;</td>
-                <td>Lista itens</td>
+                <td>Indica um item em uma lista.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;ul&gt;</td>
                 <td class="tag">&lt;/ul&gt;</td>
-                <td>Lista itens em formato de tópico</td>
+                <td>Indica uma lista não enumerada.</td>
             </tr>
             <tr>
                 <td colspan="3" class="mensagem">
@@ -269,7 +269,7 @@
             <tr>
                 <td class="tag">&lt;ol&gt;</td>
                 <td class="tag">&lt;/ol&gt;</td>
-                <td>Lista intens em ordem numérica</td>
+                <td>Indica uma lista enumerada</td>
             </tr>
             <tr>
                 <td colspan="3" class="mensagem">
@@ -318,32 +318,32 @@
             <tr>
                 <td class="tag">&lt;table&gt;</td>
                 <td class="tag">&lt;/table&gt;</td>
-                <td>Cria uma tabela</td>
+                <td>Cria uma tabela.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;thead&gt;</td>
                 <td class="tag">&lt;/thead&gt;</td>
-                <td>Cria um cabeçalho para a tabela</td>
+                <td>Indica um cabeçalho para a tabela.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;tbody&gt;</td>
                 <td class="tag">&lt;/tbody&gt;</td>
-                <td>Define o corpo da tabela</td>
+                <td>Indica o corpo da tabela.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;tr&gt;</td>
                 <td class="tag">&lt;/tr&gt;</td>
-                <td>Cria uma linha na tabela</td>
+                <td>Indica uma linha na tabela.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;th&gt;</td>
                 <td class="tag">&lt;/th&gt;</td>
-                <td>Cria colunas de cabeçalho para a tabela</td>
+                <td>Indica uma coluna de cabeçalho para a tabela.</td>
             </tr>
             <tr>
                 <td class="tag">&lt;td&gt;</td>
                 <td class="tag">&lt;/td&gt;</td>
-                <td>Cria colunas para a tabela</td>
+                <td>Indica uma coluna para a tabela.</td>
             </tr>
         </tbody>
         
@@ -413,32 +413,35 @@
             <tr>
                 <td class="tag">&lt;h1&gt;</td>
                 <td class="tag">&lt;/h1&gt;</td>
-                <td>Define um título importante</td>
+                <td>Indica um título de nível 1</td>
             </tr>
             <tr>
                 <td class="tag">&lt;h2&gt;</td>
                 <td class="tag">&lt;/h2&gt;</td>
-                <td>Define um título menos importante que h1(ainda assim importante)</td>
+                <td>Indica um título de nível 2</td>
             </tr>
             <tr>
                 <td class="tag">&lt;h3&gt;</td>
                 <td class="tag">&lt;/h3&gt;</td>
-                <td>Define um título menos importante que h2(ainda assim importante)</td>
+                <td>Indica um título de nível 3</td>
             </tr>
             <tr>
                 <td class="tag">&lt;h4&gt;</td>
                 <td class="tag">&lt;/h4&gt;</td>
-                <td>Define um título menos importante que h3(ainda assim importante)</td>
+                <td>Indica um título de nível 4</td>
             </tr>
             <tr>
                 <td class="tag">&lt;h5&gt;</td>
                 <td class="tag">&lt;/h5&gt;</td>
-                <td>Define um título menos importante que h4(ainda assim importante)</td>
+                <td>Indica um título de nível 5</td>
             </tr>
             <tr>
                 <td class="tag">&lt;h6&gt;</td>
                 <td class="tag">&lt;/h6&gt;</td>
-                <td>Define um título menos importante que h5(ainda assim importante)</td>
+                <td>Indica um título de nível 6</td>
+            </tr>
+            <tr>
+                <td colspan="3">Os títulos seguem uma ordem hierárquica onde o nível 1 é o mais importante e o nível 6 o menos importante.</td>
             </tr>
             <tr>
                 <td colspan="3">
