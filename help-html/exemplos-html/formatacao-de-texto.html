@@ -8,6 +8,12 @@
 			.exemplo{
 				width: 750px;
 			}
+			pre{
+				margin: 0;
+			}
+			:root{
+				--tab: 35px
+			}
 		</style>
 	</head>
 	<body>
@@ -165,23 +171,67 @@
 			</table>
 		</div>
 		<div class="exemplo">
-			Texto <code>monoespaçado</code>
+			Um trecho de código: <code>alert("Olá mundo!")</code>
 			<div class="mt15px">Código:</div>
 			<table>
 				<tr>
 					<td class="number">1</td>
 					<td class="text">
-						Texto
-						<span class="code">&lt;<span class="tag">code</span>&gt;</span>monoespaçado<span class="code">&lt;/<span class="tag">code</span>&gt;</span>.
+						Um trecho de código:
+						<span class="code">&lt;<span class="tag">code</span>&gt;</span>alert("Olá mundo!")<span class="code">&lt;/<span class="tag">code</span>&gt;</span>.
 					</td>
 				</tr>
 				<tr>
 					<td class="number">2</td>
 					<td class="coment">
-						&lt;!-- a tag &lt;code&gt; aplica uma fonte monoespaçada, <br> ideal para ler códigos de programação --&gt;
+						&lt;!-- a tag &lt;code&gt; indica um trecho de código inline, ela também aplica uma fonte monoespacaçada, o que é ideal para a leitura de códigos --&gt;
 					</td>
 				</tr>
 			</table>
+		</div>
+		<div class="exemplo">
+<pre>
+let nome = prompt("Informe seu nome: ")
+let sexo = prompt("Informe seu sexo (F/M):").toUpperCase()
+alert( 
+	sexo == "M" ? `Bom dia Sr. ${nome}` : `Bom dia Sra. ${nome}` 
+)
+</pre>
+		<div class="mt15px">Código:</div>
+		<table>
+			<tr>
+				<td class="number">1</td>
+				<td class="code">&lt;<span class="tag">pre</span>&gt;</td>
+			</tr>
+			<tr>
+				<td class="number">2</td>
+				<td class="text">let nome = prompt("Informe seu nome: ")</td>
+			</tr>
+			<tr>
+				<td class="number">3</td>
+				<td class="text">let sexo = prompt("Informe seu sexo (F/M):").toUpperCase()</td>
+			</tr>
+			<tr>
+				<td class="number">4</td>
+				<td class="text">alert(</td>
+			</tr>
+			<tr>
+				<td class="number">5</td>
+				<td class="text tab">sexo == "M" ? `Bom dia Sr. ${nome}` : `Bom dia Sra. ${nome}`</td>
+			</tr>
+			<tr>
+				<td class="number">6</td>
+				<td class="text">)</td>
+			</tr>
+			<tr>
+				<td class="number">7</td>
+				<td class="code">&lt;/<span class="tag">pre</span>&gt;</td>
+			</tr>
+			<tr>
+				<td class="number">8</td>
+				<td class="coment">&lt;!-- A tag &lt;pre&gt; é usada para inserir textos pré formatados, ou seja ela respeita todos espaços quebras de linha inseridos dentro dela. --&gt;</td>
+			</tr>
+		</table>
 		</div>
 		<div class="exemplo">
 			Coloque o mouse <abbr title="Significado">aqui</abbr>.
