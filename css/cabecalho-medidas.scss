@@ -1,0 +1,98 @@
+header{
+    min-height: 100px;
+    font-family: 'Noto Sans JP', 'Patrick Hand';
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    & li{
+        list-style: none;
+        // margin-left: 15px;
+        margin: 5px 7.5px;
+        text-decoration: none;
+    }
+    & a{
+        text-decoration: none
+    }
+}
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    & ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+.botao{
+    border: 1px solid;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    &:hover{
+        border: 2px solid;
+        text-decoration: none;
+    }
+}
+#home{
+    float: right;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+}
+/* Botão animado*/
+.theme-button{
+    width: 50px;
+    height: 25px;
+    background-color:#696969;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 2px ;
+    margin: 5px 0 0 10px;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    & img{
+        margin: auto;
+    }
+}
+.right{
+    animation: to_right 1s;
+    left: 26px;
+}
+.left{
+    animation: to_left 1s;
+    left: 2px;
+}
+.ad-2s{
+    animation-delay: -1s;
+}
+@keyframes to_right{
+    from{left: 2px;}
+    to{left: 26px;}
+}
+@keyframes to_left{
+    from{left: 26px;}
+    to{left: 2px;}
+}
+/*Fim botão animado*/
+@font-face{
+    font-family: 'Patrick Hand';
+    src: url('../Fontes/PatrickHand-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face{
+    font-family:'Noto Sans JP';
+    src: url('../fontes/NotoSansJP-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}

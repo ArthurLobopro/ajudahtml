@@ -1,102 +1,166 @@
-header{
-    height: 100px; 
-    font-family: 'Noto Sans JP', 'Patrick Hand';
-    padding-right: 5px;
+@charset "UTF-8";
+header {
+  min-height: 100px;
+  font-family: 'Noto Sans JP', 'Patrick Hand';
+  padding-right: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70px auto;
+      grid-template-columns: 70px auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-#cabecalho{
-    float:left;
-    padding: 5px;
-}
-#cabecalho .direita{
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-}
-#menu{
-    float: right;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-}
+
 header li {
-    display: inline;
-    margin-left: 15px;
-    text-decoration: none;
+  list-style: none;
+  margin: 5px 7.5px;
+  text-decoration: none;
 }
-.botao{
-    border: 1px solid;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: none;
+
+header a {
+  text-decoration: none;
 }
-.botao:hover{
-    border: 2px solid;
-    text-decoration: none;
+
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-header a li, header a li:visited, header a li:link{
-    text-decoration: none;
+
+#menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-header a{
-    text-decoration: none;
+
+.botao {
+  border: 1px solid;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
 }
-#home{
-    float: right;
-    margin-bottom: 10px;
-    width: 30px;
-    height: 30px;
+
+.botao:hover {
+  border: 2px solid;
+  text-decoration: none;
 }
+
+#home {
+  float: right;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+}
+
 /* Botão animado*/
-.theme-button{
-    width: 50px;
-    height: 25px;
-    background-color:#696969;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 2px ;
-    float: right;
-    margin-left: 15px;
+.theme-button {
+  width: 50px;
+  height: 25px;
+  background-color: #696969;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2px;
+  margin: 5px 0 0 10px;
 }
-.circle{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: relative;
-    display: flex;
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.circle img{
-    margin: auto;
+
+.circle img {
+  margin: auto;
 }
-.right{
-    animation: to_right 1s;
-    left: 26px;
+
+.right {
+  -webkit-animation: to_right 1s;
+          animation: to_right 1s;
+  left: 26px;
 }
-.left{
-    animation: to_left 1s;
+
+.left {
+  -webkit-animation: to_left 1s;
+          animation: to_left 1s;
+  left: 2px;
+}
+
+.ad-2s {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+@-webkit-keyframes to_right {
+  from {
     left: 2px;
+  }
+  to {
+    left: 26px;
+  }
 }
-.ad-2s{
-    animation-delay: -1s;
+
+@keyframes to_right {
+  from {
+    left: 2px;
+  }
+  to {
+    left: 26px;
+  }
 }
-@keyframes to_right{
-    from{left: 2px;}
-    to{left: 26px;}
+
+@-webkit-keyframes to_left {
+  from {
+    left: 26px;
+  }
+  to {
+    left: 2px;
+  }
 }
-@keyframes to_left{
-    from{left: 26px;}
-    to{left: 2px;}
+
+@keyframes to_left {
+  from {
+    left: 26px;
+  }
+  to {
+    left: 2px;
+  }
 }
+
 /*Fim botão animado*/
-@font-face{
-    font-family: 'Patrick Hand';
-    src: url('../Fontes/PatrickHand-Regular.ttf');
-    font-style: normal;
-    font-weight: 400;
+@font-face {
+  font-family: 'Patrick Hand';
+  src: url("../Fontes/PatrickHand-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
 }
-@font-face{
-    font-family:'Noto Sans JP';
-    src: url('../fontes/NotoSansJP-Regular.otf');
-    font-style: normal;
-    font-weight: 400;
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url("../fontes/NotoSansJP-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
 }
+/*# sourceMappingURL=cabecalho-medidas.css.map */
