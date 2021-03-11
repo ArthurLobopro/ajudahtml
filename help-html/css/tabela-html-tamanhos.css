@@ -30,9 +30,9 @@ td.titulo, tr.subtitulo, th.titulo,.subtitulo td {
     font-weight: bold;
 }
 .tag{
-    font-family: 'Courier Prime','Literata', monospace;
+    font-family: 'Kreon','Courier Prime','Literata', monospace;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
 }
 .nao-possui{
@@ -62,6 +62,12 @@ td[colspan="3"]{
 footer{
     font-family: 'Roboto Slab', Verdana,sans-serif;
     font-weight: bold;
+}
+@font-face{
+    font-family: 'Kreon';
+    src: url('../../fontes/Kreon-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
 }
 @font-face{
     font-family: 'Roboto Slab';
