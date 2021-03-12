@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+.table {
+    background-color:white;
+    border:2px solid green;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 800px;
+    padding: 2px 4px 2px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & .grid{
+        display: grid;
+        grid-template-columns: max-content auto;
+        width: 100%;
+        margin: 2px;
+    }
+    & h2{
+        width: max-content;
+        margin: 2px auto;
+        display: inherit;
+        align-items: center;
+        cursor: pointer;
+        & img{
+            margin-right: 5px;
+        }
+    }
+}
+.seletor,.definition,.full {
+    border: 1px solid;
+    border-radius: 3px;
+    border-right:2px solid black;
+    border-left:2px solid black;
+    width: auto;
+    margin-bottom: 2px;
+    padding: 0 2px;
+    & :last-child{
+        margin-bottom: 0px;
+    }
+}
+.seletor{
+    margin-right: 2px;
+    font-family:  'Literata', monospace;
+    font-weight: bold;
+    font-size: 13px;
+    grid-column: 1/1;
+}
+.definition{
+    grid-column: 2/2;
+}
+.full{
+    text-align: center;
+    grid-column: 1/3;
+}
+
+a{
+    font-weight: bold;
+    color: blue;
+}
+
+.rotated{
+    animation: rotate 1s ;
+    transform: rotate(180deg);
+}
+.delay-1{
+    animation-delay: -1s;
+}
+@keyframes no-rotate{
+    from {transform: rotateZ(180deg);}
+    to {transform: rotateZ(0deg);}
+}
+@keyframes rotate {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(-90deg);}
+}
