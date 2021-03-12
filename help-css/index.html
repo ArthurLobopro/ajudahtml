@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="table">
-        <h2 data-target="border-selectors" onclick="expandAndMinimize(event)">
+        <h2 data-target="border-selectors">
             <img src="../midia/seta-baixo.png" class="no-rotated delay-1" id="expand-selectors" height="9px">
             Seletores de borda
         </h2>
@@ -73,6 +73,24 @@
             
         </div>
     </div>
-    <script src="tabela-css.js"></script>
+    <div class="table"> 
+        <h2 data-target="text-properties">
+            <img src="../midia/seta-baixo.png" class="no-rotated delay-1" id="expand-selectors" height="9px">
+            Propriedades para texto
+        </h2>
+        <div class="text-properties" style="display: none;">
+            <div class="grid">
+                    <div class="seletor">text-align:</div>
+                    <div class="definition">Define o alinhamento do texto.</div>
+                    <div class="seletor">font-size:</div>
+                    <div class="definition">Define o tamanho da fonte.</div>
+                    <div class="seletor">font-weight:</div>
+                    <div class="definition">Define a tonalidade da fonte.</div>
+                    <div class="seletor">font-style:</div>
+                    <div class="definition">Define o estilo da fonte(itálico por exemplo).</div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

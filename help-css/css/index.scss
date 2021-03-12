@@ -6,7 +6,7 @@
     border:2px solid green;
     border-radius: 5px;
     margin: 10px auto;
-    width: 800px;
+    width: 500px;
     padding: 2px 4px 2px 0px;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,7 @@
         display: inherit;
         align-items: center;
         cursor: pointer;
+        user-select: none;
         & img{
             margin-right: 5px;
         }

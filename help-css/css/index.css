@@ -8,7 +8,7 @@
   border: 2px solid green;
   border-radius: 5px;
   margin: 10px auto;
-  width: 800px;
+  width: 500px;
   padding: 2px 4px 2px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,6 +42,10 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .table h2 img {
