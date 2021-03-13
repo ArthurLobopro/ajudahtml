@@ -16,7 +16,6 @@ const querySelector = str => document.querySelector(str)
 // }
 function expandAndMinimize(event){
     let target = event.target.tagName !== 'IMG' ? event.target : event.target.parentElement
-    target.children[0].classList.toggle('no-rotated')
     target.children[0].classList.toggle('rotated')
 
     const element = querySelector(`.${target.dataset.target}`)
