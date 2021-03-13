@@ -50,6 +50,8 @@
 }
 .definition{
     grid-column: 2/2;
+    font-family: 'Roboto Slab';
+    font-size: 14px;
 }
 .full{
     text-align: center;
@@ -62,4 +64,10 @@ a{
 }
 .rotated{
     transform: rotate(180deg);
+}
+@font-face{
+    font-family: 'Roboto Slab';
+    src: url('../../fontes/RobotoSlab-Medium.ttf');
+    font-style: normal;
+    font-weight: 400;
 }
