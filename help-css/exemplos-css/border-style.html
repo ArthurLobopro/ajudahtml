@@ -9,63 +9,69 @@
 </head>
 <body>
     <section class="grid">
-        <div class="options1 flex">
-            <ul>
+        
+        <ul>
+            <li>
+                border-style:
+                <select id="border-style">
+                    <option value="initial">initial</option>
+                    <option value="dashed">dashed</option>
+                    <option value="dotted">dotted</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="hidden">hidden</option>
+                    <option value="inset">inset</option>
+                    <option value="none">none</option>
+                    <option value="outset">outset</option>
+                    <option value="ridge">ridge</option>
+                    <option value="solid" selected>solid</option>
+                </select>
+            </li>
+            <li class="separado">
+                <div>border-color: <input type="text" id="border-color" data-name="Color" value="black"></div>
+                <img src="../../midia/seta-baixo.png" data-target="color-selectors" height="9px">
+            </li>
+            <ul id="color-selectors" style="display: none;">
                 <li>
-                    <label><input type="radio" value="initial" name="style" onclick="troca(this.value)" checked> initial</label>
+                    border-top-color: <input type="text" data-lado="Top" name="Color" id="border-top-color" value="black">
                 </li>
                 <li>
-                    <label><input type="radio" value="none" name="style" onclick="troca(this.value)"> none</label>
+                    border-right-color: <input type="text" data-lado="Right" name="Color" id="border-right-color" value="black">
                 </li>
                 <li>
-                    <label><input type="radio" value="hidden" name="style" onclick="troca(this.value)"> hidden</label>
+                    border-bottom-color: <input type="text" data-lado="Bottom" name="Color" id="border-bottom-color" value="black">
                 </li>
                 <li>
-                    <label><input type="radio" value="dotted" name="style" onclick="troca(this.value)"> dotted</label>
-                </li>
-                <li>
-                    <label><input type="radio" value="dashed" name="style" onclick="troca(this.value)"> dashed</label>
-                </li>
-                <li>
-                    <label><input type="radio" value="solid" name="style" onclick="troca(this.value)"> solid</label>
-                </li>
-                <li>
-                    <label><input type="radio" value="double" name="style" onclick="troca(this.value)"> double</label>
+                    border-left-color: <input type="text" data-lado="Left" name="Color" id="border-left-color" value="black">
                 </li>
             </ul>
-        </div>
-        <div class="flex">
-            <div id="div-cobaia">
-                Div comum
-            </div>
-        </div>
-        <div class="options2 flex">
-            <ul>
+            <li class="separado">
+                <div>border-width: <input type="text" id="border-width" data-name="Width" value="5px"></div>
+                <img src="../../midia/seta-baixo.png" data-target="width-selectors" height="9px">
+            </li>
+            <ul id="width-selectors" style="display: none;">
                 <li>
-                    <label><input type="radio" value="groove" name="style" onclick="troca(this.value)"> groove</label>
+                    border-top-color: <input type="text" data-lado="Top" name="Width" id="border-top-width" value="5px">
                 </li>
                 <li>
-                    <label><input type="radio" value="ridge" name="style" onclick="troca(this.value)"> ridge</label>
+                    border-right-color: <input type="text" data-lado="Right" name="Width" id="border-right-width" value="5px">
                 </li>
                 <li>
-                    <label><input type="radio" value="inset" name="style" onclick="troca(this.value)"> inset</label>
+                    border-bottom-color: <input type="text" data-lado="Bottom" name="Width" id="border-bottom-width" value="5px">
                 </li>
                 <li>
-                    <label><input type="radio" value="outset" name="style" onclick="troca(this.value)"> outset</label>
+                    border-left-color: <input type="text" data-lado="Left" name="Width" id="border-left-width" value="5px">
                 </li>
-                <li>
-                    <label>
-                        <input type="radio" value="solid dotted" name="style" onclick="troca(this.value)"> solid dotted
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <input type="radio" value="solid dotted dashed double" name="style" onclick="troca(this.value)"> solid dotted dashed double
-                    </label>
-                </li>
-                <li>*Podem ser feitas outras combinações*</li>
             </ul>
+            <li>
+                border-radius: <input type="text" id="border-radius" value="0px">
+            </li>
+        </ul>
+        
+        <div id="div-cobaia">
+            Div comum
         </div>
+        
         <div class="table">
             <h2>Estilo CSS:</h2>
             <table>
@@ -75,28 +81,27 @@
                 </tr>
                 <tr>
                     <td class="number">2</td>
-                    <td class="text tab"><span class="atribute">border-width</span>: <span class="atribute-text">5px</span>;</td>
+                    <td class="text tab"><span class="atribute">border-style</span>: <span id="style" class="atribute-text">solid</span>;</td>
                 </tr>
                 <tr>
                     <td class="number">3</td>
-                    <td class="text tab"><span class="atribute">border-color</span>: <span class="atribute-text">black</span>;</td>
+                    <td class="text tab"><span class="atribute">border-color</span>: <span class="atribute-text" id="color">black</span>;</td>
                 </tr>
                 <tr>
                     <td class="number">4</td>
-                    <td class="text tab"><span class="atribute">border-style</span>: <span id="style" class="atribute-text">initial</span>;</td>
+                    <td class="text tab"><span class="atribute">border-width</span>: <span class="atribute-text" id="width">5px</span>;</td>
                 </tr>
                 <tr>
                     <td class="number">5</td>
+                    <td class="text tab"><span class="atribute">border-radius</span>: <span class="atribute-text" id="radius">0px</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">6</td>
                     <td class="text">}</td>
                 </tr>
             </table>
         </div>
     </section>
-    <script>
-        function troca(value){
-            document.getElementById("div-cobaia").style.borderStyle=value
-            document.getElementById("style").innerText=value
-        }
-    </script>
+    <script src="js/border-style.js"></script>
 </body>
 </html>
