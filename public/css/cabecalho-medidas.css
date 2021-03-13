@@ -152,14 +152,14 @@ header a {
 /*Fim botão animado*/
 @font-face {
   font-family: 'Patrick Hand';
-  src: url("../Fontes/PatrickHand-Regular.ttf");
+  src: url("../fontes/PatrickHand-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Noto Sans JP';
-  src: url("../fontes/NotoSansJP-Regular.otf");
+  src: url("../fontes/NotoSansJP-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }

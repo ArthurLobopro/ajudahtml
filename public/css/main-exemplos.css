@@ -107,14 +107,14 @@ footer{
 }
 @font-face{
     font-family: 'Inconsolata';
-    src: url('../../fontes/Inconsolata-VariableFont_wdth\,wght.ttf') format("truetype");
+    src: url('../../public/fontes/Inconsolata-VariableFont_wdth\,wght.ttf') format("truetype");
     font-stretch: semi-condensed;
     font-style: normal;
     font-weight: 400;
 }
 @font-face{
     font-family: 'Roboto Slab';
-    src: url('../../fontes/RobotoSlab-Regular.ttf');
+    src: url('../../public/fontes/RobotoSlab-Regular.ttf');
     font-style: normal;
     font-weight: 400;
 }
