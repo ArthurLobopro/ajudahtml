@@ -60,19 +60,6 @@ a{
     font-weight: bold;
     color: blue;
 }
-
 .rotated{
-    animation: rotate 1s ;
     transform: rotate(180deg);
-}
-.delay-1{
-    animation-delay: -1s;
-}
-@keyframes no-rotate{
-    from {transform: rotateZ(180deg);}
-    to {transform: rotateZ(0deg);}
-}
-@keyframes rotate {
-    from {transform: rotateZ(0deg);}
-    to {transform: rotateZ(-90deg);}
 }

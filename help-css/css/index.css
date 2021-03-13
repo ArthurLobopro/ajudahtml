@@ -93,58 +93,7 @@ a {
 }
 
 .rotated {
-  -webkit-animation: rotate 1s;
-          animation: rotate 1s;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-.delay-1 {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-}
-
-@-webkit-keyframes no-rotate {
-  from {
-    -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
-  }
-  to {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-}
-
-@keyframes no-rotate {
-  from {
-    -webkit-transform: rotateZ(180deg);
-            transform: rotateZ(180deg);
-  }
-  to {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(-90deg);
-            transform: rotateZ(-90deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(-90deg);
-            transform: rotateZ(-90deg);
-  }
 }
 /*# sourceMappingURL=index.css.map */
