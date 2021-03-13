@@ -69,22 +69,16 @@ const trocaLateral = event => {
 }
 
 const border_style_select = get('border-style')
-border_style_select.oninput = event => {
-    const value = String(event.target.value).trim().split(' ')
-    get("div-cobaia").style.borderStyle= value.join(' ')
-    get("style").innerText= value.join(' ')
-}
+border_style_select.oninput = trocaFull
+
 const border_color_input = get('border-color')
 border_color_input.oninput = trocaFull
 
 const border_width_input = get('border-width')
 border_width_input.oninput = trocaFull
+
 const border_radius_input = get('border-radius')
-border_radius_input.oninput = event => {
-    const value = String(event.target.value).trim().split(' ')
-    get("div-cobaia").style.borderRadius = value.join(' ')
-    get("radius").innerText = value.join(' ')
-}
+border_radius_input.oninput = trocaFull
 
 const laterais = document.querySelectorAll('ul > ul > li')
 for(let e of laterais){ e.onchange = trocaLateral }

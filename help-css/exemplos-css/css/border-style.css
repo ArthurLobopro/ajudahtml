@@ -61,7 +61,7 @@ ul li {
   background-color: white;
 }
 
-ul li:last-child {
+ul li:last-of-type {
   border-bottom: 1px solid black;
 }
 
@@ -69,12 +69,20 @@ ul li img {
   margin-right: 10px;
 }
 
+ul > ul:last-child > li:last-child {
+  border-bottom: 1px solid black;
+}
+
 ul > ul > li:first-child {
-  border-top: 1px solid black !important;
+  border-top: 1px solid black;
 }
 
 ul > ul > li:last-child {
   border-bottom: none;
+}
+
+ul > ul:last-of-type li:first-child {
+  border-top: none;
 }
 
 .mt5px {

@@ -9,24 +9,42 @@
 </head>
 <body>
     <section class="grid">
-        
+        <datalist id="style-values">
+            <option value="initial">initial</option>
+            <option value="dashed">dashed</option>
+            <option value="dotted">dotted</option>
+            <option value="double">double</option>
+            <option value="groove">groove</option>
+            <option value="hidden">hidden</option>
+            <option value="inset">inset</option>
+            <option value="none">none</option>
+            <option value="outset">outset</option>
+            <option value="ridge">ridge</option>
+            <option value="solid" selected>solid</option>
+        </datalist>
         <ul>
-            <li>
-                border-style:
-                <select id="border-style">
-                    <option value="initial">initial</option>
-                    <option value="dashed">dashed</option>
-                    <option value="dotted">dotted</option>
-                    <option value="double">double</option>
-                    <option value="groove">groove</option>
-                    <option value="hidden">hidden</option>
-                    <option value="inset">inset</option>
-                    <option value="none">none</option>
-                    <option value="outset">outset</option>
-                    <option value="ridge">ridge</option>
-                    <option value="solid" selected>solid</option>
-                </select>
+            <li class="separado">
+                <div>
+                    border-style:
+                    <input type="text" id="border-style" data-name="Style" list="style-values" value="solid">
+                </div>
+                <img src="../../midia/seta-baixo.png" data-target="style-selectors" height="9px">
             </li>
+            <ul id="style-selectors" style="display: none;">
+                <li>
+                    border-top-style: <input type="text" id="border-top-style" name="Style" data-lado="Top" list="style-values" value="solid">
+                </li>
+                <li>
+                    border-right-style: <input type="text" id="border-right-style" name="Style" data-lado="Right" list="style-values" value="solid">
+                </li>
+                <li>
+                    border-bottom-style: <input type="text" id="border-bottom-style" name="Style" data-lado="Bottom" list="style-values" value="solid">
+                </li>
+                <li>
+                    border-left-style: <input type="text" id="border-left-style" name="Style" data-lado="Left" list="style-values" value="solid">
+                </li>
+            </ul>
+
             <li class="separado">
                 <div>border-color: <input type="text" id="border-color" data-name="Color" value="black"></div>
                 <img src="../../midia/seta-baixo.png" data-target="color-selectors" height="9px">
@@ -63,9 +81,24 @@
                     border-left-color: <input type="text" data-lado="Left" name="Width" id="border-left-width" value="5px">
                 </li>
             </ul>
-            <li>
-                border-radius: <input type="text" id="border-radius" value="0px">
+            <li class="separado">
+                <div>border-radius: <input type="text" id="border-radius" data-name="Radius" value="0px"></div>
+                <img src="../../midia/seta-baixo.png" data-target="radius-selectors" height="9px">
             </li>
+            <ul id="radius-selectors" style="display: none;">
+                <li>
+                    border-top-radius: <input type="text" data-lado="Top" name="Radius" id="border-top-radius" value="0px">
+                </li>
+                <li>
+                    border-right-radius: <input type="text" data-lado="Right" name="Radius" id="border-right-radius" value="0px">
+                </li>
+                <li>
+                    border-bottom-radius: <input type="text" data-lado="Bottom" name="Radius" id="border-bottom-radius" value="0px">
+                </li>
+                <li>
+                    border-left-radius: <input type="text" data-lado="Left" name="Radius" id="border-left-radius" value="0px">
+                </li>
+            </ul>
         </ul>
         
         <div id="div-cobaia">
