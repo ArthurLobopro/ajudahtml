@@ -13,10 +13,10 @@ const troca_tema = () => {
 const set_tema = () => {
 	if(tema=="white"){
 		document.getElementById("cores").href="css/tabela-html-white.css"
-		document.getElementById("cabecalho").href="../css/cabecalho-white.css"
+		document.getElementById("cabecalho").href="../public/css/cabecalho-white.css"
 	}else{
 		document.getElementById("cores").href="css/tabela-html-dark.css"
-		document.getElementById("cabecalho").href="../css/cabecalho-dark.css"
+		document.getElementById("cabecalho").href="../public/css/cabecalho-dark.css"
 	}
 	criaTema()
 }
