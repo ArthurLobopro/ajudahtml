@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(29, 31, 33);
+    color: gray;
+}
+.table{
+    background-color:rgb(29, 31, 33);
+    border:2px solid green;
+}
+.seletor,.definition,.full {
+    border-color: gray;
+}
+.definition:hover{
+    color: yellow;
+}
+.seletor{
+    color: rgb(156, 220, 254);
+}
+.table h2 img {
+    filter: invert(0.5);
+}
+a{
+    color: blue;
+}
