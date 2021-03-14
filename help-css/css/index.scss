@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 .table {
-    background-color:white;
-    border:2px solid green;
     border-radius: 5px;
     margin: 10px auto;
     width: 500px;
@@ -33,7 +31,7 @@
     }
 }
 .seletor,.definition,.full {
-    border: solid black;
+    border-style: solid;
     border-width: 1px 2px;
     border-radius: 3px;
     width: auto;
@@ -49,7 +47,6 @@
     font-weight: bold;
     font-size: 13px;
     grid-column: 1/1;
-    color: brown;
 }
 .definition{
     grid-column: 2/2;
@@ -62,10 +59,11 @@
     width: 100%;
     margin: 2px;
 }
-
+.invisible{
+    display: none;
+}
 a{
     font-weight: bold;
-    color: blue;
 }
 .rotated{
     transform: rotate(180deg);
