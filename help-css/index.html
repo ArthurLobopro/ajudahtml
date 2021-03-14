@@ -5,16 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/theme-white.css" id="cores">
+    <!-- CSS secundários-->
+    <link rel="stylesheet" href="../public/css/cabecalho-medidas.css" type="text/css">
+    <link rel="stylesheet" href="../public/css/cabecalho-white.css" id="cabecalho">
     <title>Ajuda CSS</title>
     
 </head>
 <body>
+    <header>
+        
+        <div class="theme-button" onclick="troca()" >
+            <div class="circle ad-2s" onload="removeDelay()">
+                <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
+            </div>
+        </div>
+
+        <div id="menu">
+            <a href="../index.html">
+                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px"         id="home">
+            </a>
+            <ul>
+                <a href="#bordas" data-target="bordas"><li class="botao">Bordas</li></a>
+                <a href="#texto" data-target="texto"><li class="botao">Texto</li></a>
+                <a href="#listas" data-target="listas"><li class="botao ">Listas</li></a>
+            </ul>
+        </div>
+    </header>
+    <!-- Bordas -->
     <div class="table">
-        <h2 data-target="border-selectors">
+        <h2 data-target="border-selectors" id="bordas">
             <img src="../public/midia/seta-baixo.png" height="9px">
             Propriedades para borda
         </h2>
-        <div class="border-selectors" style="display: none;">
+        <div id="border-selectors" class="invisible">
             <div class="grid">
                 <div class="seletor">border-width:</div>
                 <div class="definition">Define a expessura das bordas.</div>
@@ -84,30 +108,32 @@
             <div class="full">Para exemplos <a href="exemplos-css/border-style.html">clique aqui</a></div>
         </div>
     </div>
+    <!-- Texto -->
     <div class="table"> 
-        <h2 data-target="text-properties">
+        <h2 data-target="text-properties" id="texto">
             <img src="../public/midia/seta-baixo.png" height="9px">
             Propriedades para texto
         </h2>
-        <div class="text-properties" style="display: none;">
+        <div id="text-properties" class="invisible">
             <div class="grid">
-                    <div class="seletor">text-align:</div>
-                    <div class="definition">Define o alinhamento do texto.</div>
-                    <div class="seletor">font-size:</div>
-                    <div class="definition">Define o tamanho da fonte.</div>
-                    <div class="seletor">font-weight:</div>
-                    <div class="definition">Define a tonalidade da fonte.</div>
-                    <div class="seletor">font-style:</div>
-                    <div class="definition">Define o estilo da fonte(itálico por exemplo).</div>
+                <div class="seletor">text-align:</div>
+                <div class="definition">Define o alinhamento do texto.</div>
+                <div class="seletor">font-size:</div>
+                <div class="definition">Define o tamanho da fonte.</div>
+                <div class="seletor">font-weight:</div>
+                <div class="definition">Define a tonalidade da fonte.</div>
+                <div class="seletor">font-style:</div>
+                <div class="definition">Define o estilo da fonte(itálico por exemplo).</div>
             </div>
         </div>
     </div>
+    <!-- Listas -->
     <div class="table">
-        <h2 data-target="list-proprieties">
+        <h2 data-target="list-proprieties" id="listas">
             <img src="../public/midia/seta-baixo.png" height="9px">
             Propriedades para listas
         </h2>
-        <div class="list-proprieties" style="display: none;">
+        <div id="list-proprieties" class="invisible">
             <div class="grid">
                 <div class="seletor">list-style-type:</div>
                 <div class="definition">Define o estilo da lista.</div>
