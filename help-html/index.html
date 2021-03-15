@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS principal-->
+    <!-- <link href="css/tabela-html-tamanhos.css" rel="stylesheet" type="text/css"> -->
+    
+    <link rel="stylesheet" href="css/index.css" id="cores">
+    <link rel="stylesheet" href="css/theme-white.css">
+    
+    <!-- CSS secundários-->
+    <link rel="stylesheet" href="../public/css/cabecalho-medidas.css" type="text/css">
+    <link rel="stylesheet" href="../public/css/cabecalho-white.css" id="cabecalho">
+    <title>Help HTML</title>
+    <style>
+        .table{
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <div class="theme-button" onclick="troca()">
+            <div class="circle ad-2s" onload="removeDelay()">
+                <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
+            </div>
+        </div>
+
+        <div id="menu">
+            <a href="../index.html">
+                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px"         id="home">
+            </a>
+            <ul>
+                <a href="#format" data-target="format"><li class="botao">Formatação</li></a>
+                <a href="#espacamento"><li class="botao">Espaçamento</li></a>
+                <a href="#listas"><li class="botao ">Listas</li></a>
+                <a href="#tabelas"><li class="botao">Tabelas</li></a>
+                <a href="#forms"><li class="botao">Formulários</li></a>
+                <a href="#titles"><li class="botao">Títulos</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Básico -->
+
+    <div class="table"> 
+        <h2 data-target="basic" id="basico">
+            <img src="../public/midia/seta-baixo.png" height="9px">
+            Básico
+        </h2>
+        <div id="basic" class="invisible">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;html&gt;</td>
+                        <td class="tag">&lt;/html&gt;</td>
+                        <td>Define a raiz do documento html</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;head&gt;</td>
+                        <td class="tag">&lt;/head&gt;</td>
+                        <td>Tag onde são postas as informações da página.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Dentre essas informações estão:</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;title&gt;</td>
+                        <td class="tag">&lt;/title&gt;</td>
+                        <td>Define o título da página (que é visto na guia)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;link&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td>Faz a ligação de algum arquivo na página (um arquivo css, um icone, entre outros).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;meta&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td>Define metadados da página como autor,descrição,codificação de caracteres,etc</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="mensagem">Observação: as definições devem ser feitas por meio de atributos</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;body&gt;</td>
+                        <td class="tag">&lt;/body&gt;</td>
+                        <td>É o "corpo" da página, aqui onde são colocados todos os elementos visíveis.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;header&gt;</td>
+                        <td class="tag">&lt;/header&gt;</td>
+                        <td>Define o cabeçalho para a página</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;main&gt;</td>
+                        <td class="tag">&lt;/main&gt;</td>
+                        <td>Define o conteúdo principal da página</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;section&gt;</td>
+                        <td class="tag">&lt;/section&gt;</td>
+                        <td>Cria uma seção na página</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;div&gt;</td>
+                        <td class="tag">&lt;/div&gt;</td>
+                        <td>Cria uma divisão na página</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;a&gt;</td>
+                        <td class="tag">&lt;/a&gt;</td>
+                        <td>Adiciona um hiperlink, para exemplos <a href="exemplos-html/tag-a.html">clique aqui</a></td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;footer&gt;</td>
+                        <td class="tag">&lt;/footer&gt;</td>
+                        <td>Define o rodapé da página</td>
+                    </tr>
+                    <tr>
+                        <td class="coment">&lt;!--</td>
+                        <td class="coment">--&gt;</td>
+                        <td>Adiciona um comentário (só pode ser visualizado no código fonte)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!--Formatação de texto -->
+
+    <div class="table">
+        <h2 data-target="texto" id="format">
+            <img src="../public/midia/seta-baixo.png" height="9px">
+            Formatação de texto
+        </h2>
+        <div id="texto" class="invisible">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;i&gt;</td>
+                        <td class="tag">&lt;/i&gt;</td>
+                        <td>Deixa o texto em itálico (forma)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;em&gt;</td>
+                        <td class="tag"> &lt;/em&gt;</td>
+                        <td>Deixa o texto enfatizado (itálico, porém semântico)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;b&gt;</td>
+                        <td class="tag">&lt;/b&gt;</td>
+                        <td>Deixa o texto em negrito (forma)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;strong&gt;</td>
+                        <td class="tag">&lt;/strong&gt;</td>
+                        <td>Deixa o texto em destaque (negrito, porém semântico)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;mark&gt;</td>
+                        <td class="tag">&lt;/mark&gt;</td>
+                        <td>Deixa o texto em destaque (marcado,semelhante a canetinhas marca texto).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;small&gt;</td>
+                        <td class="tag">&lt;/small&gt;</td>
+                        <td>Deixa o texto pequeno</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;del&gt;</td>
+                        <td class="tag">&lt;/del&gt;</td>
+                        <td>Indica um texto deletado.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;ins&gt;</td>
+                        <td class="tag">&lt;/ins&gt;</td>
+                        <td>Indica um texto inserido.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;u&gt;</td>
+                        <td class="tag">&lt;/u&gt;</td>
+                        <td>Sublinha o texto.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;sup&gt;</td>
+                        <td class="tag">&lt;/sup&gt;</td>
+                        <td>Indica um texto sobrescrito</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;sub&gt;</td>
+                        <td class="tag">&lt;/sub&gt;</td>
+                        <td>Indica um texto subscrito</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;code&gt;</td>
+                        <td class="tag">&lt;/code&gt;</td>
+                        <td>Indica um trecho de código inline.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;pre&gt;</td>
+                        <td class="tag">&lt;/pre&gt;</td>
+                        <td>Indica um texto pré formatado (mantém todos os espaços e quebras de linha).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;abrr&gt;</td>
+                        <td class="tag">&lt;/abrr&gt;</td>
+                        <td>Indica uma abreviatura (com definição).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A definição deve ser definida pelo atributo <spam class="atribute">title="<spam class="value">definição</spam>"</spam>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;marquee&gt;</td>
+                        <td class="tag">&lt;/marquee&gt;</td>
+                        <td>Faz o texto (ou imagem) rodar na página</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Para ver os exemplos relacionados a texto <a href="exemplos-html/formatacao-de-texto.html">clique aqui</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- -->
+
+    <script src="index.js"></script> 
+</body>
+</html>
