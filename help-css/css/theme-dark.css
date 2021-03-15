@@ -4,7 +4,7 @@ body{
 }
 .table{
     background-color:rgb(29, 31, 33);
-    border:2px solid green;
+    border:2px solid rgb(0, 100, 0);
 }
 .seletor,.definition,.full {
     border-color: gray;
@@ -15,9 +15,12 @@ body{
 .seletor{
     color: rgb(156, 220, 254);
 }
+.table h2 {
+    color: #ddd;
+}
 .table h2 img {
-    filter: invert(0.5);
+    filter: invert(0.7);
 }
 a{
-    color: blue;
+    color: darkcyan;
 }
