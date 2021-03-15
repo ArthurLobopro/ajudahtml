@@ -36,7 +36,7 @@
             </a>
             <ul>
                 <a href="#format" data-target="format"><li class="botao">Formatação</li></a>
-                <a href="#espacamento"><li class="botao">Espaçamento</li></a>
+                <a href="#espacamento" data-target="espacamento"><li class="botao">Espaçamento</li></a>
                 <a href="#listas"><li class="botao ">Listas</li></a>
                 <a href="#tabelas"><li class="botao">Tabelas</li></a>
                 <a href="#forms"><li class="botao">Formulários</li></a>
@@ -242,7 +242,46 @@
         </div>
     </div>
 
-    <!-- -->
+    <!-- Espaçamento -->
+
+    <div class="table">
+        
+        <h2 data-target="spacing" id="espacamento">
+            <img src="../public/midia/seta-baixo.png" height="9px">
+            Espaçamento
+        </h2>
+        <div id="spacing" class="invisible">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;p&gt;</td>
+                        <td class="tag">&lt;/p&gt;</td>
+                        <td>Define um parágrafo</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;br&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td>Indica uma quebra de linha (enter).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;hr&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td>Cria uma linha horizontal que divide todo o elemento em que está presente</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Para exemplos de espaçamento <a href="exemplos-html/espacamento.html">clique aqui</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <script src="index.js"></script> 
 </body>

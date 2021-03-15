@@ -40,8 +40,14 @@
   margin-right: 5px;
 }
 
+table {
+  width: 100%;
+}
+
 th {
   text-align: center;
+  border: 2px solid;
+  font-weight: bold;
 }
 
 td {
