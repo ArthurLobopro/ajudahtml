@@ -39,7 +39,7 @@
                 <a href="#espacamento" data-target="espacamento"><li class="botao">Espaçamento</li></a>
                 <a href="#listas" data-target="listas"><li class="botao ">Listas</li></a>
                 <a href="#midia-expand" data-target="midia-expand"><li class="botao">Mídia</li></a>
-                <a href="#tabelas"><li class="botao">Tabelas</li></a>
+                <a href="#table" data-target="table-expand"><li class="botao">Tabelas</li></a>
                 <a href="#forms"><li class="botao">Formulários</li></a>
                 <a href="#titles"><li class="botao">Títulos</li></a>
             </ul>
@@ -378,6 +378,58 @@
                         <td colspan="3" class="mensagem">
                             <red>Atenção!!!</red> O caminho para a midia deve ser especificado no atributo <span class="atribute">src="<span class="value">nome do arquivo da imagem</span>"</span>
                         </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tabelas -->
+
+    <div class="table">
+        <h2 data-target="table" id="table-expand">
+            <img src="../public/midia/seta-baixo.png" height="9px">
+            Tabelas
+        </h2>
+        <div class="invisible" id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;table&gt;</td>
+                        <td class="tag">&lt;/table&gt;</td>
+                        <td>Cria uma tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;thead&gt;</td>
+                        <td class="tag">&lt;/thead&gt;</td>
+                        <td>Indica um cabeçalho para a tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;tbody&gt;</td>
+                        <td class="tag">&lt;/tbody&gt;</td>
+                        <td>Indica o corpo da tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;tr&gt;</td>
+                        <td class="tag">&lt;/tr&gt;</td>
+                        <td>Indica uma linha na tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;th&gt;</td>
+                        <td class="tag">&lt;/th&gt;</td>
+                        <td>Indica uma coluna de cabeçalho para a tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;td&gt;</td>
+                        <td class="tag">&lt;/td&gt;</td>
+                        <td>Indica uma coluna para a tabela.</td>
                     </tr>
                 </tbody>
             </table>
