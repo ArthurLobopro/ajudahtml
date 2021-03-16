@@ -20,6 +20,9 @@
             margin-right: 5px;
         }
     }
+    @media screen and (max-width: 750px) {
+        width: 100%;
+    }
 }
 
 table{

@@ -40,6 +40,12 @@
   margin-right: 5px;
 }
 
+@media screen and (max-width: 750px) {
+  .table {
+    width: 100%;
+  }
+}
+
 table {
   width: 100%;
 }

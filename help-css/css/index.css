@@ -7,6 +7,7 @@
   border-radius: 5px;
   margin: 10px auto;
   width: 500px;
+  min-width: 320px;
   padding: 2px 4px 2px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +53,12 @@
 
 .table h2 img {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 550px) {
+  .table {
+    width: 100%;
+  }
 }
 
 .seletor, .definition, .full {
