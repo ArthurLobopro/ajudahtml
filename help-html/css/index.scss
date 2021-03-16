@@ -28,8 +28,7 @@ body{
         }
     }
     & table{
-        max-width: 100%;
-        width: auto;
+        width: 100%;
         & td, th, .tag{
             @media screen and (max-width: 430px){
                 font-size: 12px !important;

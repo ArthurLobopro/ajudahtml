@@ -56,8 +56,7 @@ body {
 }
 
 .table table {
-  max-width: 100%;
-  width: auto;
+  width: 100%;
 }
 
 @media screen and (max-width: 430px) {
