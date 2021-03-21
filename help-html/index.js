@@ -6,12 +6,12 @@ function expandAndMinimize(event){
     target.children[0].classList.toggle('rotated')
 
     const element = get(target.dataset.target)
-    console.log(element);
     element.classList.toggle('invisible')
 }
 
 function show(event){
     let element = get(event.target.parentElement.dataset.target)
+	console.log(element);
     if(get(element.dataset.target).classList.contains('invisible')){
         element.click()
     }
@@ -20,7 +20,7 @@ function show(event){
 const titles = document.getElementsByTagName('h2')
 for(let e of titles){ e.onclick = expandAndMinimize }
 
-const buttons = document.querySelectorAll("#menu > ul > a")
+const buttons = document.querySelectorAll("nav > ul > a")
 for(let e of buttons){ e.onclick = show }
 
 
@@ -58,9 +58,6 @@ function troca(){
 	}
 	troca_tema()
 }
-setTimeout(() => {
-	document.querySelector('.circle').classList.remove('ad-2s')
-}, 1000);
 function lerTema(){
 	if(localStorage.tema == undefined){
 		criaTema()
@@ -83,3 +80,13 @@ const btn_class = () => {
 document.addEventListener("DOMContentLoaded",() => {  
 	lerTema() 
 }, false)
+
+//Detecção de eventos
+
+const theme_button = querySelector('.theme-button')
+theme_button.onclick = troca
+
+const circle = querySelector('.circle')
+setTimeout(() => {
+	circle.classList.remove('ad-2s')
+}, 1000);
