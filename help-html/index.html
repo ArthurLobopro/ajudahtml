@@ -28,26 +28,28 @@
             <a href="../index.html">
                 <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px"         id="home">
             </a>
-            <ul>
-                <a href="#format" data-target="format"><li class="botao">Formatação</li></a>
-                <a href="#espacamento" data-target="espacamento"><li class="botao">Espaçamento</li></a>
-                <a href="#listas" data-target="listas"><li class="botao ">Listas</li></a>
-                <a href="#midia-expand" data-target="midia-expand"><li class="botao">Mídia</li></a>
-                <a href="#table" data-target="table-expand"><li class="botao">Tabelas</li></a>
-                <a href="#forms" data-target="forms-expand"><li class="botao">Formulários</li></a>
-                <a href="#titles" data-target="titles-expand"><li class="botao">Títulos</li></a>
-            </ul>
+            <nav>
+                <ul>
+                    <a href="#format" data-target="format"><li class="botao">Formatação</li></a>
+                    <a href="#espacamento" data-target="espacamento"><li class="botao">Espaçamento</li></a>
+                    <a href="#listas" data-target="listas"><li class="botao ">Listas</li></a>
+                    <a href="#midia-expand" data-target="midia-expand"><li class="botao">Mídia</li></a>
+                    <a href="#table" data-target="table-expand"><li class="botao">Tabelas</li></a>
+                    <a href="#forms" data-target="forms-expand"><li class="botao">Formulários</li></a>
+                    <a href="#titles" data-target="titles-expand"><li class="botao">Títulos</li></a>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Básico -->
+    <!-- Geral -->
 
     <div class="table"> 
-        <h2 data-target="basic" id="basico">
+        <h2 data-target="geral" id="geral-expand">
             <img src="../public/midia/seta-baixo.png" height="9px">
-            Básico
+            Geral
         </h2>
-        <div id="basic" class="invisible">
+        <div id="geral" class="invisible">
             <table>
                 <thead>
                     <tr>
@@ -96,7 +98,12 @@
                     <tr>
                         <td class="tag">&lt;header&gt;</td>
                         <td class="tag">&lt;/header&gt;</td>
-                        <td>Define o cabeçalho para a página</td>
+                        <td>Define o cabeçalho para a página.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;nav&gt;</td>
+                        <td class="tag">&lt;/nav&gt;</td>
+                        <td>Define uma sessão de navegação.</td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;main&gt;</td>
@@ -117,6 +124,11 @@
                         <td class="tag">&lt;a&gt;</td>
                         <td class="tag">&lt;/a&gt;</td>
                         <td>Adiciona um hiperlink, para exemplos <a href="exemplos-html/tag-a.html">clique aqui</a></td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;address&gt;</td>
+                        <td class="tag">&lt;/address&gt;</td>
+                        <td>Define um endereço ou forma de contato do autor de um artigo ou página html.</td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;footer&gt;</td>
@@ -295,19 +307,9 @@
                 </thead>
                 <tbody id="listas">
                     <tr>
-                        <td class="tag">&lt;li&gt;</td>
-                        <td class="tag">&lt;/li&gt;</td>
-                        <td>Indica um item em uma lista.</td>
-                    </tr>
-                    <tr>
                         <td class="tag">&lt;ul&gt;</td>
                         <td class="tag">&lt;/ul&gt;</td>
                         <td>Indica uma lista não enumerada.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" class="mensagem">
-                            <red>Atenção!!!</red> A tag <spam class="tag">&lt;li&gt;</spam> deve ser usada dentro da tag <spam class="tag">&lt;ul&gt;</spam> para que ela funcione
-                        </td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;ol&gt;</td>
@@ -315,19 +317,24 @@
                         <td>Indica uma lista enumerada</td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="mensagem">
-                            <red>Atenção!!!</red> A tag <spam class="tag">&lt;li&gt;</spam> deve ser usada dentro da tag <spam class="tag">&lt;ol&gt;</spam> para que ela funcione
-                        </td>
+                        <td class="tag">&lt;li&gt;</td>
+                        <td class="tag">&lt;/li&gt;</td>
+                        <td>Indica um item em uma lista.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;dl&gt;</td>
+                        <td class="tag">&lt;/dl&gt;</td>
+                        <td>Define uma lista por definição.</td>   
                     </tr>
                     <tr>
                         <td class="tag">&lt;dt&gt;</td>
                         <td class="tag">&lt;/dt&gt;</td>
-                        <td>Define um item (como um título)</td>
+                        <td>Define um termo.</td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;dd&gt;</td>
                         <td class="tag">&lt;/dd&gt;</td>
-                        <td>Define um item secundário (como um subtítulo)</td>
+                        <td>Define uma definição para um termo.</td>
                     </tr>
                     <tr>
                         <td colspan="3">Para vez exemplos das tags de listagem <a href="exemplos-html/listas.html">clique aqui</a></td>
