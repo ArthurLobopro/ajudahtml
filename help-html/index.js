@@ -1,20 +1,12 @@
-const get = id => document.getElementById(id)
-const querySelector = str => document.querySelector(str)
+import { troca, lerTema} from "../public/scripts/tema.js"
+import { expandAndMinimize, show } from "../public/scripts/expand.js"
+import { get, querySelector } from "../public/scripts/util.js"
 
-function expandAndMinimize(event){
-    let target = event.target.tagName !== 'IMG' ? event.target : event.target.parentElement
-    target.children[0].classList.toggle('rotated')
+//Detecção de eventos
 
-    const element = get(target.dataset.target)
-    element.classList.toggle('invisible')
-}
-
-function show(event){
-    let element = get(event.target.parentElement.dataset.target)
-	console.log(element);
-    if(get(element.dataset.target).classList.contains('invisible')){
-        element.click()
-    }
+document.body.onload = ()=> {
+	lerTema()
+	document.body.style.display = ""
 }
 
 const titles = document.getElementsByTagName('h2')
@@ -23,70 +15,11 @@ for(let e of titles){ e.onclick = expandAndMinimize }
 const buttons = document.querySelectorAll("nav > ul > a")
 for(let e of buttons){ e.onclick = show }
 
-
-
-let tema = "white"
-function verifica(){
-	let hora = new Date().getHours
-	if(hora>20){
-	trocatema()
-	}
-}
-
-const troca_tema = () => {
-	tema = tema == "white" ? "dark" : "white"
-	set_tema()
-}
-const set_tema = () => {
-	if(tema=="white"){
-		document.getElementById("cores").href="css/theme-white.css"
-		document.getElementById("cabecalho").href="../public/css/cabecalho-white.css"
-	}else{
-		document.getElementById("cores").href="css/theme-dark.css"
-		document.getElementById("cabecalho").href="../public/css/cabecalho-dark.css"
-	}
-	criaTema()
-}
-function troca(){
-	const circle = document.querySelector('.circle')
-	if(tema == "white"){
-		circle.classList.toggle('left')
-		circle.classList.toggle('right')
-	}else{
-		circle.classList.toggle('right')
-		circle.classList.toggle('left')
-	}
-	troca_tema()
-}
-function lerTema(){
-	if(localStorage.tema == undefined){
-		criaTema()
-	}else{
-		tema = localStorage.tema
-	}
-	set_tema()
-	btn_class()
-}
-function criaTema(){
-	localStorage.tema = tema
-}
-const classe = {
-	white: "left", dark: "right"
-}
-const btn_class = () => {
-	const circle = document.querySelector(".circle")
-	circle.classList.add(classe[tema])
-}
-document.addEventListener("DOMContentLoaded",() => {  
-	lerTema() 
-}, false)
-
-//Detecção de eventos
-
 const theme_button = querySelector('.theme-button')
 theme_button.onclick = troca
 
 const circle = querySelector('.circle')
+
 setTimeout(() => {
 	circle.classList.remove('ad-2s')
 }, 1000);
