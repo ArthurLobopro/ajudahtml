@@ -12,9 +12,10 @@
     <!-- CSS secundários-->
     <link rel="stylesheet" href="css/theme-white.css" id="cores">
     <link rel="stylesheet" href="../public/css/cabecalho-white.css" id="cabecalho">
+    <script src="index.js" type="module"></script> 
     <title>Help HTML</title>
 </head>
-<body>
+<body style="display: none;">
 
     <header>
         
@@ -30,13 +31,13 @@
             </a>
             <nav>
                 <ul>
-                    <a href="#format" data-target="format"><li class="botao">Formatação</li></a>
-                    <a href="#espacamento" data-target="espacamento"><li class="botao">Espaçamento</li></a>
-                    <a href="#listas" data-target="listas"><li class="botao ">Listas</li></a>
-                    <a href="#midia-expand" data-target="midia-expand"><li class="botao">Mídia</li></a>
-                    <a href="#table" data-target="table-expand"><li class="botao">Tabelas</li></a>
-                    <a href="#forms" data-target="forms-expand"><li class="botao">Formulários</li></a>
-                    <a href="#titles" data-target="titles-expand"><li class="botao">Títulos</li></a>
+                    <li data-target="format" class="botao">Formatação</li>
+                    <li data-target="espacamento" class="botao">Espaçamento</li>
+                    <li data-target="listas" class="botao ">Listas</li>
+                    <li data-target="midia-expand" class="botao">Mídia</li>
+                    <li data-target="table-expand" class="botao">Tabelas</li>
+                    <li data-target="forms-expand" class="botao">Formulários</li>
+                    <li data-target="titles-expand" class="botao">Títulos</li>
                 </ul>
             </nav>
         </div>
@@ -563,6 +564,5 @@
         </div>
     </div>
 
-    <script src="index.js" type="module"></script> 
 </body>
 </html>

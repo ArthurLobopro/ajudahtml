@@ -9,7 +9,7 @@ const expandAndMinimize = event => {
 }
 
 const show = event =>{
-    let e = get(event.target.parentElement.dataset.target)
+    let e = get(event.target.dataset.target)
 	
     if(get(e.dataset.target).classList.contains('invisible')){
         e.click()

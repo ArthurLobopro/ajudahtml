@@ -12,7 +12,7 @@ document.body.onload = ()=> {
 const titles = document.getElementsByTagName('h2')
 for(let e of titles){ e.onclick = expandAndMinimize }
 
-const buttons = document.querySelectorAll("nav > ul > a")
+const buttons = document.querySelectorAll("nav > ul > li")
 for(let e of buttons){ e.onclick = show }
 
 const theme_button = querySelector('.theme-button')
