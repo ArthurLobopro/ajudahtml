@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="../public/css/cabecalho-medidas.css" type="text/css">
     <link rel="stylesheet" href="../public/css/cabecalho-white.css" id="cabecalho">
     <title>Ajuda CSS</title>
-    
+    <script src="../public/js/main_index.js" type="module"></script>
 </head>
 <body>
     <header>
         
-        <div class="theme-button" onclick="troca()" >
-            <div class="circle ad-2s" onload="removeDelay()">
+        <div class="theme-button">
+            <div class="circle ad-2s">
                 <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
             </div>
         </div>
@@ -25,11 +25,13 @@
             <a href="../index.html">
                 <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px"         id="home">
             </a>
-            <ul>
-                <a href="#bordas" data-target="bordas"><li class="botao">Bordas</li></a>
-                <a href="#texto" data-target="texto"><li class="botao">Texto</li></a>
-                <a href="#listas" data-target="listas"><li class="botao ">Listas</li></a>
-            </ul>
+            <nav>
+                <ul>
+                    <li class="botao" data-target="bordas">Bordas</li>
+                    <li class="botao" data-target="texto">Texto</li>
+                    <li class="botao" data-target="listas">Listas</li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- Bordas -->
@@ -144,6 +146,5 @@
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
 </body>
 </html>
