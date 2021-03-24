@@ -19,6 +19,7 @@ header li {
   margin: 5px 7.5px;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #menu {
