@@ -17,15 +17,16 @@ body{
     flex-direction: column;
     justify-content: center;
     & h2{
-        width: max-content;
+        width: 100%;
         margin: 2px auto;
-        display: inherit;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        padding: 0 5px;
         cursor: pointer;
         user-select: none;
-        & img{
-            margin-right: 5px;
-        }
+        font-family: 'Noto Sans JP';
+        font-size: 18px;
     }
     & table{
         width: 100%;
