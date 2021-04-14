@@ -1,15 +1,10 @@
+@import url(../../public/css/div.table.css);
+
 *{
     box-sizing: border-box;
 }
 .table {
-    border-radius: 5px;
-    margin: 10px auto;
     width: 500px;
-    min-width: 320px;
-    padding: 2px 4px 2px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     & .grid{
         display: grid;
         grid-template-columns: max-content auto;
@@ -18,18 +13,6 @@
         & > .full{
             margin: unset;
         }
-    }
-    & h2{
-        width: 100%;
-        margin: 2px auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5px;
-        cursor: pointer;
-        user-select: none;
-        font-family: 'Noto Sans JP';
-        font-size: 18px;
     }
     @media screen and (max-width: 550px) {
         width: 100%;
