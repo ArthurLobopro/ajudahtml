@@ -1,11 +1,11 @@
-.table,table{
+.table-exemple,table{
     border-radius: 5px;
     border:2px solid;
     font-family: 'Roboto Slab';
     width: 720px;
-    margin: 7.5px auto;
-}
-.table{
+    margin: 5px auto 1px;
+} 
+.table-exemple{
     padding: 2px;
     width: 712px;
 }
