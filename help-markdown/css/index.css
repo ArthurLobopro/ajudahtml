@@ -1,5 +1,5 @@
 @import url(../../public/css/div.table.css);
-
+@import url(./html-table-tamanhos.css);
 .table {
     /*width: 100%;*/
     width: 715px;
