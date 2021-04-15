@@ -1,3 +1,4 @@
+@import url(../../public/css/div.table.css);
 *{
     box-sizing: border-box;
 }
@@ -7,27 +8,9 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.table {
-    border-radius: 5px;
-    margin: 10px auto;
+
+.table{
     width: 700px;
-    max-width: 100%;
-    padding: 2px 4px 2px 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    & h2{
-        width: 100%;
-        margin: 2px auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 5px;
-        cursor: pointer;
-        user-select: none;
-        font-family: 'Noto Sans JP';
-        font-size: 18px;
-    }
     & table{
         width: 100%;
         & td, th, .tag{
@@ -35,10 +18,6 @@ body{
                 font-size: 12px !important;
             }
         }
-    }
-    @media screen and (max-width: 750px) {
-        width: calc(100% - 20px);
-        margin: 10px;
     }
 }
 
