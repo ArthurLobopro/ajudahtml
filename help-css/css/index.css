@@ -28,7 +28,7 @@
   }
 }
 
-.seletor, .definition, .full {
+dt, dd, .full {
   border-style: solid;
   border-width: 1px 2px;
   border-radius: 3px;
@@ -37,11 +37,11 @@
   padding: 0 2px;
 }
 
-.seletor :last-child, .definition :last-child, .full :last-child {
+dt :last-child, dd :last-child, .full :last-child {
   margin-bottom: 0px;
 }
 
-.seletor {
+dt {
   font-family: 'Literata', monospace;
   font-weight: bold;
   font-size: 13px;
@@ -55,7 +55,7 @@
           align-items: center;
 }
 
-.definition {
+dd {
   -ms-grid-column: 2;
   grid-column: 2/2;
   font-family: 'Roboto Slab';

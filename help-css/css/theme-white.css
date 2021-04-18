@@ -5,10 +5,10 @@ body{
     background-color:white;
     border:2px solid green;
 }
-.seletor,.definition,.full {
+dd,dt,.full {
     border-color: black;
 }
-.seletor{
+dt{
     color: brown;
 }
 a{

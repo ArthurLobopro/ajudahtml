@@ -18,7 +18,7 @@
         width: 100%;
     }
 }
-.seletor,.definition,.full {
+dt,dd,.full {
     border-style: solid;
     border-width: 1px 2px;
     border-radius: 3px;
@@ -29,7 +29,7 @@
         margin-bottom: 0px;
     }
 }
-.seletor{
+dt{
     font-family: 'Literata', monospace;
     font-weight: bold;
     font-size: 13px;
@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
 }
-.definition{
+dd{
     grid-column: 2/2;
     font-family: 'Roboto Slab';
     font-size: 14px;

@@ -6,13 +6,13 @@ body{
     background-color:rgb(29, 31, 33);
     border:2px solid rgb(0, 100, 0);
 }
-.seletor,.definition,.full {
+dd,dt,.full {
     border-color: gray;
 }
-.definition:hover{
+dd:hover{
     color: yellow;
 }
-.seletor{
+dt{
     color: rgb(156, 220, 254);
 }
 .table h2 {
