@@ -1,4 +1,5 @@
-/*cores*/
+@import url(../fontes/css-import/Roboto-Slab.css);
+@import url(../fontes/css-import/Inconsolata.css);
 body {
   background-color: lightgray;
   font-family: "Times New Roman", serif;
@@ -120,20 +121,5 @@ footer {
   font-family: 'Roboto Slab';
   font-weight: bold;
   font-size: 18px;
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  src: url("../../public/fontes/Inconsolata-VariableFont_wdth,wght.ttf") format("truetype");
-  font-stretch: semi-condensed;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url("../../public/fontes/RobotoSlab-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
 }
 /*# sourceMappingURL=main-exemplos.css.map */
