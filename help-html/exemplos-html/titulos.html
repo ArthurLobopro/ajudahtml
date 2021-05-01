@@ -10,34 +10,24 @@
             width: max-content;
             margin: auto;
         }
-        .exemplo{
+        div.exemplo{
             min-width: 375px;
             height: 114px;
             float: left;
         }
-        .grid{
-            display: grid;
-            grid-template-columns: auto auto auto;
-        }
-        @media only screen and (max-width: 1220px){
-            .grid{
-                grid-template-columns: auto auto;
-            }
-        }
-        @media only screen and (max-width: 820px){
-            .grid{
-                grid-template-columns: auto;
-            }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
         }
     </style>
 </head>
 <body>
     <h1>Títulos</h1>
-    <div class="grid">
+    <div class="flex">
         <div class="exemplo">
             <h1>Título 1</h1>
             <div class="mt15px">Código:</div>
-            <table>
+            <table class="exemplo">
                 <tr>
                     <td class="number">1</td>
                     <td class="code">&lt;<span class="tag">h1</span>&gt;<span class="text">Título 1</span>&lt;/<span class="tag">h1</span>&gt;</td>
@@ -53,7 +43,7 @@
         <div class="exemplo">
             <h2>Título 2</h2>
             <div class="mt15px">Código:</div>
-            <table>
+            <table class="exemplo">
                 <tr>
                     <td class="number">1</td>
                     <td class="code">&lt;<span class="tag">h2</span>&gt;<span class="text">Título 2</span>&lt;/<span class="tag">h2</span>&gt;</td>
@@ -69,7 +59,7 @@
         <div class="exemplo">
             <h3>Título 3</h3>
             <div class="mt15px">Código:</div>
-            <table>
+            <table class="exemplo">
                 <tr>
                     <td class="number">1</td>
                     <td class="code">&lt;<span class="tag">h3</span>&gt;<span class="text">Título 3</span>&lt;/<span class="tag">h3</span>&gt;</td>
@@ -85,7 +75,7 @@
         <div class="exemplo">
             <h4>Título 4</h4>
             <div class="mt15px">Código:</div>
-            <table>
+            <table class="exemplo">
                 <tr>
                     <td class="number">1</td>
                     <td class="code">&lt;<span class="tag">h4</span>&gt;<span class="text">Título 4</span>&lt;/<span class="tag">h4</span>&gt;</td>
@@ -101,7 +91,7 @@
         <div class="exemplo">
             <h5>Título 5</h5>
             <div class="mt15px">Código:</div>
-            <table>
+            <table class="exemplo">
                 <tr>
                     <td class="number">1</td>
                     <td class="code">&lt;<span class="tag">h5</span>&gt;<span class="text">Título 5</span>&lt;/<span class="tag">h5</span>&gt;</td>
@@ -117,7 +107,7 @@
         <div class="exemplo">
             <h6>Título 6</h6>
             <div class="mt16px">Código:</div>
-            <table>
+            <table class="exemplo">
                 <tr>
                     <td class="number">1</td>
                     <td class="code">&lt;<span class="tag">h6</span>&gt;<span class="text">Título 6</span>&lt;/<span class="tag">h6</span>&gt;</td>

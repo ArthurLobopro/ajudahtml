@@ -1,5 +1,5 @@
 @import url(../../public/css/div.table.css);
-
+@import url(../../public/fontes/css-import/Roboto-Slab.css);
 *{
     box-sizing: border-box;
 }
@@ -56,10 +56,4 @@ a{
 }
 .rotated{
     transform: rotate(180deg);
-}
-@font-face{
-    font-family: 'Roboto Slab';
-    src: url('../../public/fontes/RobotoSlab-Medium.ttf');
-    font-style: normal;
-    font-weight: 400;
 }
