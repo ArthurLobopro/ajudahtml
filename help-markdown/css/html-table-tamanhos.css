@@ -1,3 +1,5 @@
+@import url(../../public/fontes/css-import/Roboto-Slab.css);
+@import url(../../public/fontes/css-import/CourierPrime.css);
 .table-exemple,table{
     border-radius: 5px;
     border:2px solid;
@@ -102,18 +104,4 @@ code{
     margin: 0;
     font-family: inherit;
     font-weight:inherit;
-}
-@font-face{
-    font-family: 'Roboto Slab';
-    src: url('../../public/fontes/RobotoSlab-Medium.ttf');
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-}
-@font-face{
-    font-family: 'Courier Prime';
-    src: url('../../public/fontes/CourierPrime-Regular.ttf');
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
 }
