@@ -1,6 +1,7 @@
+@import url(../fontes/css-import/NotoSansJP.css);
 header{
     min-height: 100px;
-    font-family: 'Noto Sans JP', 'Patrick Hand';
+    font-family: 'Noto Sans JP', "Segoe UI";
     padding-right: 5px;
     display: grid;
     grid-template-columns: 70px auto;
@@ -81,17 +82,4 @@ header{
 @keyframes to_left{
     from{left: 26px;}
     to{left: 2px;}
-}
-/*Fim botão animado*/
-@font-face{
-    font-family: 'Patrick Hand';
-    src: url('../Fontes/PatrickHand-Regular.ttf');
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face{
-    font-family:'Noto Sans JP';
-    src: url('../fontes/NotoSansJP-Regular.ttf');
-    font-style: normal;
-    font-weight: 400;
 }
