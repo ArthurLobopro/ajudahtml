@@ -1,4 +1,5 @@
-const get = id => document.getElementById(id)
+import { get, copy } from "../../../public/js/modules/util.js";
+
 function expandAndMinimize(event){
     let target = event.target
     const parent = target.parentElement
@@ -82,3 +83,12 @@ border_radius_input.oninput = trocaFull
 
 const laterais = document.querySelectorAll('ul > ul > li')
 for(let e of laterais){ e.onchange = trocaLateral }
+
+const copyToClipboard = event => {
+    let element = document.querySelector("table.exemplo")
+    let text = String(element.innerText)
+    text = text.replace(/[0-9]\n/g,"")
+    copy(text)
+}
+const copyButton = document.querySelector("h2 > img")
+copyButton.onclick = copyToClipboard
