@@ -37,7 +37,7 @@ ul{
         width: auto;
         display: flex;
         align-items: center;
-        padding-left: 15px;
+        padding: 0 2px 0 15px;
         background-color: white;
         &:last-of-type{
             border-bottom: 1px solid black;
@@ -118,6 +118,17 @@ li,#div-cobaia{
     height: min-content;
     border-top: 1px solid black;
     max-width: 400px;
+    & h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+    & .tab{
+        padding: 0 !important;
+        white-space: pre;
+        tab-size: 3;
+    }
 }
 #div.cobaia,.options1, div.flex{
     display: flex;
