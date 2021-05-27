@@ -2,18 +2,32 @@
 @import url(../fontes/css-import/Inconsolata.css);
 
 //Variáveis
+:root{
+    --preto: rgb(30, 30, 30);
+    --cinza:#787878;
+    --verde: #6A9955;
+    --verde-claro: #B5CEA8;
+    --branco: #e5e5e5;
+    --azul: #569CD6;
+    --azul-claro: #9CDCFE;
+    --laranja: #CE9178;
+    --amarelo: #DCDCAA;
+    --tab: 20px;
+    --number-width: 35px;
+}
 
-$preto: rgb(30, 30, 30);
-$cinza:#787878;
-$verde: #6A9955;
-$verde-claro: #B5CEA8;
-$branco: #e5e5e5;
-$azul: #569CD6;
-$azul-claro: #9CDCFE;
-$laranja: #CE9178;
-$amarelo: #DCDCAA;
-$tab: 20px;
-$number-width: 35px;
+
+$preto: var(--preto);
+$cinza: var(--cinza);
+$verde: var(--verde);
+$verde-claro: var(--verde-claro);
+$branco: var(--branco);
+$azul: var(--azul);
+$azul-claro: var(--azul-claro);
+$laranja: var(--laranja);
+$amarelo: var(--amarelo);
+$tab: var(--tab);
+$number-width: var(--number-width);
 
 
 body {

@@ -1,5 +1,19 @@
 @import url(../fontes/css-import/Roboto-Slab.css);
 @import url(../fontes/css-import/Inconsolata.css);
+:root {
+  --preto: rgb(30, 30, 30);
+  --cinza:#787878;
+  --verde: #6A9955;
+  --verde-claro: #B5CEA8;
+  --branco: #e5e5e5;
+  --azul: #569CD6;
+  --azul-claro: #9CDCFE;
+  --laranja: #CE9178;
+  --amarelo: #DCDCAA;
+  --tab: 20px;
+  --number-width: 35px;
+}
+
 body {
   background-color: lightgray;
   font-family: "Times New Roman", serif;
@@ -14,7 +28,7 @@ table.exemplo {
   list-style: none;
   width: 100%;
   font-size: 17px;
-  background-color: #1e1e1e;
+  background-color: var(--preto);
   color: aliceblue;
   font-family: Consolas, 'Inconsolata', monospace;
   margin-top: 0;
@@ -25,8 +39,8 @@ table.exemplo {
 table.exemplo tr {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 35px auto;
-      grid-template-columns: 35px auto;
+  -ms-grid-columns: var(--number-width) auto;
+      grid-template-columns: var(--number-width) auto;
 }
 
 div.exemplo {
@@ -49,7 +63,7 @@ div.exemplo {
 }
 
 .code {
-  color: #787878;
+  color: var(--cinza);
 }
 
 .code, .tag, .comet, .text, .css-seletor {
@@ -63,7 +77,7 @@ div.exemplo {
 
 .tag {
   color: #2568ca;
-  color: #569CD6;
+  color: var(--azul);
 }
 
 .text {
@@ -75,28 +89,28 @@ td.text, td.code, td.atribute {
 }
 
 .atribute {
-  color: #9CDCFE;
+  color: var(--azul-claro);
 }
 
 .atribute-text {
-  color: #CE9178;
+  color: var(--laranja);
 }
 
 .coment {
-  color: #6A9955;
+  color: var(--verde);
   padding-left: 5px;
 }
 
 .css-seletor {
-  color: #DCDCAA;
+  color: var(--amarelo);
   padding-left: 5px;
 }
 
 .number {
   text-align: right;
-  color: #787878;
+  color: var(--cinza);
   padding-right: 5px;
-  width: 35px;
+  width: var(--number-width);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 5px;
@@ -104,15 +118,15 @@ td.text, td.code, td.atribute {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border-right: 1pt solid #787878;
+  border-right: 1pt solid var(--cinza);
 }
 
 .number-css {
-  color: #B5CEA8;
+  color: var(--verde-claro);
 }
 
 .tab {
-  padding-left: 20px !important;
+  padding-left: var(--tab) !important;
 }
 
 footer {
