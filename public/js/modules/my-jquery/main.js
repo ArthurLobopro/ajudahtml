@@ -5,7 +5,6 @@ export default function $(query) {
         const elements = document.querySelectorAll(query)
         return new ElementsFunctions(...elements)
     }else{
-        return new ElementsFunctions([query])
+        return new ElementsFunctions(...[query])
     }
-    
 }
