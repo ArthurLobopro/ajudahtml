@@ -1,5 +1,6 @@
 class ElementsFunctions extends Array{
 
+    //#region eventos
     ready(callback){
         if(document.readyState !== "loading"){
             callback()
@@ -16,6 +17,7 @@ class ElementsFunctions extends Array{
         )
         return this
     }
+    //#endregion
 
     parent(){
         return this.reduce( (arr,current) => {
@@ -26,7 +28,7 @@ class ElementsFunctions extends Array{
             return arr
         }, [])
     }
-
+    //#region classes
     addClass(className){
         this.forEach( e => {
             e.classList.add(className)
@@ -41,6 +43,13 @@ class ElementsFunctions extends Array{
         return this
     }
 
+    toggleClass(className){
+        this.forEach( e => {
+            e.classList.toggle(className)
+        })
+        return this
+    }
+ //#endregion
     css(propriedade, valor){
         const format = prop => prop.replaceAll(/(-[a-z])/g, s => s.replace('-','').toUpperCase())
 
