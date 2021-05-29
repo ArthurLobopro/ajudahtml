@@ -1,11 +1,12 @@
+import $ from "./my-jquery/main.js"
 function troca(){
-	const circle = document.querySelector('.circle')
+	const circle = $('.circle')
 	if(tema == "white"){
-		circle.classList.toggle('left')
-		circle.classList.toggle('right')
+		circle.toggleClass('left')
+		circle.toggleClass('right')
 	}else{
-		circle.classList.toggle('right')
-		circle.classList.toggle('left')
+		circle.toggleClass('right')
+		circle.toggleClass('left')
 	}
 	troca_tema()
 }
@@ -32,12 +33,14 @@ const criaTema = () => {
 let tema = 'white'
 
 const set_tema = () => {
+	const cores = $('#cores')[0]
+	const cabecalho = $("#cabecalho")[0]
 	if(tema=="white"){
-		document.getElementById("cores").href="css/theme-white.css"
-		document.getElementById("cabecalho").href="../public/css/cabecalho-white.css"
+		cores.href="css/theme-white.css"
+		cabecalho.href="../public/css/cabecalho-white.css"
 	}else{
-		document.getElementById("cores").href="css/theme-dark.css"
-		document.getElementById("cabecalho").href="../public/css/cabecalho-dark.css"
+		cores.href="css/theme-dark.css"
+		cabecalho.href="../public/css/cabecalho-dark.css"
 	}
 	criaTema()
 }
@@ -47,7 +50,7 @@ const classe = {
 }
 
 const btn_class = () => {
-	const circle = document.querySelector(".circle")
-	circle.classList.add(classe[tema])
+	const circle = $(".circle")
+	circle.addClass(classe[tema])
 }
 export { troca, lerTema }

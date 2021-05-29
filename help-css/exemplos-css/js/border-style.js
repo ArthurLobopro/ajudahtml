@@ -1,4 +1,5 @@
 import { get, copy } from "../../../public/js/modules/util.js";
+import $ from "../../../public/js/modules/my-jquery/main.js"
 
 function expandAndMinimize(event){
     let target = event.target
@@ -6,17 +7,18 @@ function expandAndMinimize(event){
     const after = target.parentElement.previousElementSibling
     target.classList.toggle('rotated')
 
-    const element = get(target.dataset.target)
-    const display = element.style.display
-    element.style.display = display == 'none' ? '' : 'none'
+    const element = document.querySelector(`#${target.dataset.target}`)
+    const display = element.style.display == 'none' ? '' : 'none'
+    $(element).css('display', display)
 }
-const expand_images = document.querySelectorAll('li > img')
-for(let e of expand_images){ e.onclick = expandAndMinimize }
+
+const expand_images = $('li > img')
+expand_images.on('click', expandAndMinimize)
 
 const trocaFull = event => {
     const value = String(event.target.value).trim().split(' ')
     const name = event.target.dataset.name
-    const laterais = document.getElementsByName(name)
+    const laterais = $(`[name=${name}]`)
 
     switch (value.length) {
         case 1:
@@ -41,8 +43,8 @@ const trocaFull = event => {
             laterais[3].value = value[3]
             break
     }
-    get("div-cobaia").style[`border${name}`]= value.join(' ')
-    get(name.toLowerCase()).innerText= value.join(' ')
+    $("#div-cobaia").css(`border${name}`,value.join(' '))
+    $(`#${name.toLowerCase()}`)[0].innerText = value.join(' ')
 }
 
 const trocaLateral = event => {
@@ -66,23 +68,14 @@ const trocaLateral = event => {
     }
     const eventLoad = new InputEvent('input')
     main_input.dispatchEvent(eventLoad)
-    get("div-cobaia").style[`border${lado}${style}`] = value
+    $("#div-cobaia").css(`border${lado}${style}`,value)
 }
 
-const border_style_select = get('border-style')
-border_style_select.oninput = trocaFull
+const border_style_inputs = $("#border-style,#border-color,#border-width,#border-radius")
+border_style_inputs.on('input', trocaFull)
 
-const border_color_input = get('border-color')
-border_color_input.oninput = trocaFull
-
-const border_width_input = get('border-width')
-border_width_input.oninput = trocaFull
-
-const border_radius_input = get('border-radius')
-border_radius_input.oninput = trocaFull
-
-const laterais = document.querySelectorAll('ul > ul > li')
-for(let e of laterais){ e.onchange = trocaLateral }
+const laterais = $('ul > ul > li')
+laterais.on('change', trocaLateral)
 
 const copyToClipboard = event => {
     let element = document.querySelector("table.exemplo")
@@ -90,5 +83,5 @@ const copyToClipboard = event => {
     text = text.replace(/[0-9]\n/g,"")
     copy(text)
 }
-const copyButton = document.querySelector("h2 > img")
-copyButton.onclick = copyToClipboard
+const copyButton = $("h2 > img")
+copyButton.on('click', copyToClipboard)
