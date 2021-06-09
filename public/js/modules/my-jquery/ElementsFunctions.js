@@ -26,7 +26,11 @@ class ElementsFunctions extends Array{
                 arr.push(current)
             }
             return arr
-        }, [])
+        }, new ElementsFunctions())
+    }
+
+    next(){
+        return this.map( current => current.nextElementSibling )
     }
     //#region classes
     addClass(className){
