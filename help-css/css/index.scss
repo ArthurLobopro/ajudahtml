@@ -1,8 +1,14 @@
 @import url(../../public/css/div.table.css);
 @import url(../../public/fontes/css-import/Roboto-Slab.css);
+
 *{
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 .table {
     width: 550px;
     & .grid{

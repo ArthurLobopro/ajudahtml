@@ -1,5 +1,10 @@
 @import url(../../public/css/div.table.css);
 @import url(./html-table-tamanhos.css);
+
+html{
+    scroll-behavior: smooth;
+}
+
 .table {
     /*width: 100%;*/
     width: 715px;
